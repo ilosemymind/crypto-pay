@@ -2,12 +2,123 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+		<meta name="description" content="Discover a convenient way to handle crypto payments within Telegram. Send and receive digital currencies with ease and security. Join us today!" />
+		<meta name="keywords" content="crypto payments, telegram crypto" />
+		<meta name="color-scheme" content="light dark" />
+    <title>Crypto Pay</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body class="flex flex-col px-5 pt-13 pb-8">
+		<header class="flex flex-col justify-center gap-13">
+			<nav class="w-full flex justify-between">
+				<img 
+					src="/logo.png" 
+					alt="Crypto Pay Logo"
+					class="w-12 h-12"
+				>
+
+				<button class="h-full py-3 px-8 font-medium text-lg text-blue-600 bg-blue-200 rounded-full">
+					Get started
+				</button>
+			</nav>
+
+			<div class="flex flex-col md:flex-row gap-8">
+				<article class="flex flex-col gap-6">
+					<h1 class="text-center text-[46px]">
+						Crypto payments for
+						<br/>
+						<span class="text-blue-500">telegram bots</span>
+					</h1>
+
+					<section class="flex flex-col items-center gap-3 font-normal text-lg text-center">
+						<p>Seamlessly accept crypto payments in your Telegram bots and services.</p>
+
+						<button class="py-3 px-8 font-medium text-lg text-white bg-blue-500 rounded-full">
+							Get started
+						</button>
+					</section>
+
+					<section class="flex flex-col items-center gap-3">
+						<div class="relative w-full h-16">
+							<img 
+								class="absolute w-16" 
+								style="left: calc(50% - 96px); transform: translate(-50%, 0)" 
+								src="/images/bots/first.png" 
+								alt=""
+							>
+							<img 
+								class="absolute w-16" 
+								style="left: calc(50% - 48px); transform: translate(-50%, 0)" 
+								src="/images/bots/second.png" 
+								alt=""
+							>
+							<img 
+								class="absolute w-16" 
+								style="left: 50%; transform: translate(-50%, 0)" 
+								src="/images/bots/third.png" 
+								alt=""
+							>
+							<img 
+								class="absolute w-16" 
+								style="left: calc(50% + 48px); transform: translate(-50%, 0)" 
+								src="/images/bots/fourth.png" 
+								alt=""
+							>
+							<img 
+								class="absolute w-16" 
+								style="left: calc(50% + 96px); transform: translate(-50%, 0)" 
+								src="/images/bots/fifth.png" 
+								alt=""
+							>
+						</div>
+						<p class="font-normal text-lg">Popular bots use Crypto Pay</p>
+					</section>
+				</article>
+
+				<img src="/images/phone.png" alt="Crypto Bot screenshot from Telegram preview">
+			</div>
+		</header>
+
+		<main class="flex flex-col">
+			<article class="text-white bg-gray-700 bg-full-bleed">
+				<section>
+
+				</section>
+				
+				<h2>
+					<p class="text-blue-500">Instant Auto Sales:</p>
+					<p>Boost conversion</p>
+				</h2>
+			</article>
+
+			<article class="text-white bg-gray-700 bg-full-bleed">
+				<section>
+
+				</section>
+				
+				<h2>
+					<p class="text-blue-500">Channels integration: </p>
+					<p>Seamless access</p>
+				</h2>
+			</article>
+			
+			<article class="text-white bg-gray-700 bg-full-bleed">
+				<section>
+
+				</section>
+				
+				<h2>
+					<p class="text-blue-500">Endless customization </p>
+					<p>with Webhooks</p>
+				</h2>
+			</article>
+		</main>
+
+		<footer>
+
+		</footer>
+
+    <script type="module" src="/scripts/main.js"></script>
   </body>
 </html>
