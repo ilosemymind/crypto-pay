@@ -34,32 +34,34 @@
 
 @layer base {
 	:root {
-		--lightblue-100: 199 88% 87%;
 		--lightblue-200: 217 96% 81%;
-		--lightblue-300: 209 61% 82%;
-
-		--blue-200: 213 66% 94%;
+		
 		--blue-300: 210 95% 77%;
-		--blue-500: 202 71% 56%;
 		--blue-600: 212 76% 52%;
-		--blue-700: 205 56% 49%;
-		--blue-900: 205 76% 32%;
 
-		--purple-200: 254 55% 90%;
-		--purple-300: 271 90% 88%;
+		--darkblue-100: 209 61% 82%;
+		--darkblue-400: 211 30% 68%;
 
-		--pink-200: 3 89% 82%;
+		--aqua-100: 199 88% 87%;
+		--aqua-500: 202 71% 56%;
+		--aqua-600: 205 56% 49%;
+		--aqua-900: 205 76% 32%;
+
+		--lavender-100: 254 55% 90%;
+		--lavender-300: 271 90% 88%;
+
+		--red-200: 3 89% 82%;
 
 		--orange-200: 15 94% 81%;
 
 		--yellow-200: 35 100% 91%;
 
+		--gray-50: 210 33% 98%;
 		--gray-100: 206 50% 95%;
-		--gray-200: 210 33% 98%;
+		--gray-150: 213 66% 94%;
 		--gray-300: 240 1% 82%;
-		--gray-400: 211 30% 68%;
-		--gray-700: 240 7% 15%;
-		--gray-900: 0 0% 13%;
+		--gray-700: 240 9% 10%;
+		--gray-750: 0 0% 13%;
 
 		color: hsl(240, 16%, 6%);
 		background-color: hsl(0, 0%, 100%);
@@ -565,9 +567,9 @@
 		color: hsl(240 16% 6% / var(--text-opacity))
 	}
 
-	.text-blue-500 {
+	.text-aqua-500 {
 		--text-opacity: 1;
-		color: hsl(var(--blue-500) / var(--text-opacity))
+		color: hsl(var(--aqua-500) / var(--text-opacity))
 	}
 
 	.text-blue-600 {
@@ -575,9 +577,9 @@
 		color: hsl(var(--blue-600) / var(--text-opacity))
 	}
 
-	.text-gray-400 {
+	.text-darkblue-400 {
 		--text-opacity: 1;
-		color: hsl(var(--gray-400) / var(--text-opacity))
+		color: hsl(var(--darkblue-400) / var(--text-opacity))
 	}
 
 	.text-opacity-40 {
@@ -607,24 +609,24 @@
 		--bg-color: hsl(240 16% 6% / var(--bg-opacity));
 	}
 
-	.bg-blue-200 {
+	.bg-darkblue-400 {
 		--bg-opacity: 1;
-		--bg-color: hsl(var(--blue-200) / var(--bg-opacity));
+		--bg-color: hsl(var(--darkblue-400) / var(--bg-opacity));
 	}
 
-	.bg-blue-500 {
+	.bg-aqua-500 {
 		--bg-opacity: 1;
-		--bg-color: hsl(var(--blue-500) / var(--bg-opacity))
+		--bg-color: hsl(var(--aqua-500) / var(--bg-opacity))
 	}
 
-	.bg-blue-700 {
+	.bg-aqua-900 {
 		--bg-opacity: 1;
-		--bg-color: hsl(var(--blue-700) / var(--bg-opacity))
+		--bg-color: hsl(var(--aqua-900) / var(--bg-opacity))
 	}
 
-	.bg-blue-900 {
+	.bg-aqua-600 {
 		--bg-opacity: 1;
-		--bg-color: hsl(var(--blue-900) / var(--bg-opacity))
+		--bg-color: hsl(var(--aqua-600) / var(--bg-opacity))
 	}
 
 	.bg-gray-100 {
@@ -632,19 +634,19 @@
 		--bg-color: hsl(var(--gray-100) / var(--bg-opacity));
 	}
 
-	.bg-gray-200 {
+	.bg-gray-50 {
 		--bg-opacity: 1;
-		--bg-color: hsl(var(--gray-200) / var(--bg-opacity));
+		--bg-color: hsl(var(--gray-50) / var(--bg-opacity));
 	}
 
-	.bg-gray-400 {
+	.bg-gray-150 {
 		--bg-opacity: 1;
-		--bg-color: hsl(var(--gray-400) / var(--bg-opacity));
+		--bg-color: hsl(var(--gray-150) / var(--bg-opacity));
 	}
 
-	.bg-gray-700 {
+	.bg-gray-750 {
 		--bg-opacity: 1;
-		--bg-color: hsl(var(--gray-700) / var(--bg-opacity));
+		--bg-color: hsl(var(--gray-750) / var(--bg-opacity));
 	}
 
 	.bg-telegram {
@@ -697,9 +699,9 @@
 		--border-color: 0 0% 100%;
 	}
 
-	.border-gray-200 {
+	.border-gray-50 {
 		--border-opacity: 1;
-		--border-color: var(--gray-200);
+		--border-color: var(--gray-50);
 	}
 
 	.border-opacity-60 {
@@ -799,40 +801,40 @@
 		--gradient-from: hsl(var(--lightblue-200)) var(--gradient-from-position);
 	}
 
-	.from-pink-200 {
-		--gradient-from: hsl(var(--pink-200)) var(--gradient-from-position);
+	.from-red-200 {
+		--gradient-from: hsl(var(--red-200)) var(--gradient-from-position);
 	}
 
 	.from-orange-200 {
 		--gradient-from: hsl(var(--orange-200)) var(--gradient-from-position);
 	}
 
-	.from-blue-200 {
-		--gradient-from: hsl(var(--blue-200)) var(--gradient-to-position);
-	}
-
 	.from-blue-300 {
 		--gradient-from: hsl(var(--blue-300)) var(--gradient-from-position);
 	}
 
-	.to-lightblue-100 {
-		--gradient-to: hsl(var(--lightblue-100)) var(--gradient-to-position);
+	.from-gray-150 {
+		--gradient-from: hsl(var(--gray-150)) var(--gradient-to-position);
 	}
 
-	.to-lightblue-300 {
-		--gradient-to: hsl(var(--lightblue-300)) var(--gradient-from-position);
+	.to-darkblue-100 {
+		--gradient-to: hsl(var(--darkblue-100)) var(--gradient-from-position);
 	}
 
-	.to-purple-200 {
-		--gradient-to: hsl(var(--purple-200)) var(--gradient-to-position);
+	.to-aqua-100 {
+		--gradient-to: hsl(var(--aqua-100)) var(--gradient-to-position);
+	}
+
+	.to-lavender-100 {
+		--gradient-to: hsl(var(--lavender-100)) var(--gradient-to-position);
 	}
 
 	.to-yellow-200 {
 		--gradient-to: hsl(var(--yellow-200)) var(--gradient-to-position);
 	}
 
-	.to-purple-300 {
-		--gradient-to: hsl(var(--purple-300)) var(--gradient-to-position);
+	.to-lavender-300 {
+		--gradient-to: hsl(var(--lavender-300)) var(--gradient-to-position);
 	}
 
 	.to-blue-600 {
@@ -906,14 +908,18 @@
 			--bg-color: transparent
 		}
 
+		.dark\:bg-black {
+			--bg-color: hsl(240 16% 6% / var(--bg-opacity));
+		}
+
 		.dark\:bg-gray-700 {
 			--bg-opacity: 1;
 			--bg-color: hsl(var(--gray-700) / var(--bg-opacity));
 		}
 
-		.dark\:bg-gray-900 {
+		.dark\:bg-gray-750 {
 			--bg-opacity: 1;
-			--bg-color: hsl(var(--gray-900) / var(--bg-opacity));
+			--bg-color: hsl(var(--gray-750) / var(--bg-opacity));
 		}
 		
 		/* Border */
@@ -926,9 +932,14 @@
 			border-color: hsl(0 0% 100% / var(--border-opacity));
 		}
 
-		.dark\:border-gray-700 {
+		.dark\:border-black {
 			--border-opacity: 1;
-			--border-color: var(--gray-700);
+			border-color: hsl(240 16% 6% / var(--border-opacity));
+		}
+
+		.dark\:border-gray-750 {
+			--border-opacity: 1;
+			--border-color: var(--gray-750);
 		}
 	
 		.dark\:border-opacity-60 {
