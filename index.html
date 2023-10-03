@@ -84,6 +84,8 @@
 						</div>
 					</section>
 					<picture>
+						<source srcset="/images/phone/lg-dark.png" media="(min-width: 1024px) and (prefers-color-scheme: dark)">
+						<source srcset="/images/phone/sm-dark.png" media="(prefers-color-scheme: dark)">
 						<source srcset="/images/phone/lg.png" media="(min-width: 1024px)">
 						<img class="lg:max-w-[488px]" srcset="/images/phone/sm.png" alt="Crypto Bot screenshot from Telegram preview">
 					</picture>
@@ -231,32 +233,32 @@
 								<img class="w-14" src="/images/coins/ETH.png" alt="Ethereum Icon"/>
 								<span class="hidden">ETH</span>
 							</div>
-							<div class="flex flex-col gap-2">
-								<img class="w-14 ml-3" src="/images/coins/USDT.png" alt="Tether Icon"/>
+							<div class="flex flex-col gap-2 ml-3">
+								<img class="w-14" src="/images/coins/USDT.png" alt="Tether Icon"/>
 								<span class="hidden">USDT</span>
 							</div>
-							<div class="flex flex-col gap-2">
-								<img class="w-14 ml-3" src="/images/coins/TON.png" alt="Toncoin Icon"/>
+							<div class="flex flex-col gap-2 ml-3">
+								<img class="w-14" src="/images/coins/TON.png" alt="Toncoin Icon"/>
 								<span class="hidden">TON</span>
 							</div>
-							<div class="flex flex-col gap-2">
-								<img class="w-14 ml-3" src="/images/coins/BTC.png" alt="Bitcoin Icon"/>
+							<div class="flex flex-col gap-2 ml-3">
+								<img class="w-14" src="/images/coins/BTC.png" alt="Bitcoin Icon"/>
 								<span class="hidden">BTC</span>
 							</div>
-							<div class="flex flex-col gap-2">
-								<img class="w-14 ml-3" src="/images/coins/TRX.png" alt="Tron Icon"/>
+							<div class="flex flex-col gap-2 ml-3">
+								<img class="w-14" src="/images/coins/TRX.png" alt="Tron Icon"/>
 								<span class="hidden">TRX</span>
 							</div>
-							<div class="flex flex-col gap-2">
-								<img class="w-14 ml-3" src="/images/coins/LTC.png" alt="Litecoin Icon"/>
+							<div class="flex flex-col gap-2 ml-3">
+								<img class="w-14" src="/images/coins/LTC.png" alt="Litecoin Icon"/>
 								<span class="hidden">LTC</span>
 							</div>
-							<div class="flex flex-col gap-2">
-								<img class="w-14 ml-3" src="/images/coins/USDC.png" alt="USD Coin Icon"/>
+							<div class="flex flex-col gap-2 ml-3">
+								<img class="w-14" src="/images/coins/USDC.png" alt="USD Coin Icon"/>
 								<span class="hidden">USDC</span>
 							</div>
-							<div class="flex flex-col gap-2">
-								<img class="w-14 ml-3" src="/images/coins/BNB.png" alt="BNB Icon"/>
+							<div class="flex flex-col gap-2 ml-3">
+								<img class="w-14" src="/images/coins/BNB.png" alt="BNB Icon"/>
 								<span class="hidden">BNB</span>
 							</div>
 						</div>
@@ -434,9 +436,15 @@
 					<section class="flex flex-col gap-6 px-8 pb-8 bg-gray-200 dark:bg-gray-700 rounded-3xl">
 						<div class="bg-glass">
 							<div class="relative">
-								<img src="/images/phone-bottom.png" alt="IPhone bottom screen part">
+								<picture>
+									<source srcset="/images/phone-bottom-dark.png" media="(prefers-color-scheme: dark)">
+									<img src="/images/phone-bottom.png" alt="IPhone bottom screen part">
+								</picture>
 
-								<div class="absolute flex gap-2 p-3 text-[8px] text-black bg-gray-100 bg-opacity-90 rounded-2xl" style="top: 20%; left: 10%; right: 10%;">
+								<div class="
+									absolute top-1/5 left-1/10 right-1/10 flex gap-2 p-3 text-[8px] text-black bg-gray-100 bg-opacity-90 rounded-2xl 
+									dark:text-gray-300 dark:bg-gray-900
+								">
 									<div class="relative max-w-[28px] max-h-[28px] my-auto">
 										<img class="rounded-full" src="/logo.png" alt="Crypto Pay Logo"/>
 										<img class="absolute w-3 h-3 -bottom-1 -right-1" src="/images/icons/telegram.png" alt="Telegram icon"/>
