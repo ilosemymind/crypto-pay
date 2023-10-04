@@ -321,6 +321,10 @@
 		flex: 0 0 100%;
 	}
 
+	.flex-1 {
+		flex: 1 1 0%;
+	}
+
 	.flex-col {
 		flex-direction: column;
 	}
@@ -436,6 +440,10 @@
 	.my-auto {
 		margin-top: auto;
 		margin-bottom: auto;
+	}
+
+	.mt-auto {
+		margin-top: auto;
 	}
 
 	.-mt-1 {
