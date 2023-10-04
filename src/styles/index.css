@@ -65,22 +65,13 @@
 		--gray-100: 206 50% 95%;
 		--gray-150: 213 66% 94%;
 		--gray-300: 240 1% 82%;
+		--gray-500: 240 2% 32%;
 		--gray-600: 216 19% 21%;
 		--gray-700: 240 9% 10%;
 		--gray-750: 0 0% 13%;
 		--gray-900: 240 9% 10%;
 
 		--black: 240 16% 6%;
-
-		color: hsl(240, 16%, 6%);
-		background-color: hsl(0, 0%, 100%);
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		:root {
-			color: hsl(0, 0%, 100%);
-			background-color: hsl(240, 16%, 6%);
-		}
 	}
 
 	*,
@@ -224,6 +215,14 @@
 		max-width: 1.75rem; /* 28px */
 	}
 
+	.max-w-\[1200px\] {
+		max-width: 1200px;
+	}
+
+	.w-screen {
+		width: 100vw;
+	}
+
 	.w-full {
 		width: 100%;
 	}
@@ -246,6 +245,10 @@
 
 	.w-16 {
 		width: 4rem; /* 64px */
+	}
+
+	.w-\[82px\] {
+		width: 82px;
 	}
 
 	.w-\[104px\] {
@@ -275,6 +278,10 @@
 
 	.h-full {
 		height: 100%;
+	}
+
+	.h-1 {
+		height: 0.25rem/* 4px */;
 	}
 
 	.h-3 {
@@ -308,6 +315,10 @@
 	/* Flex */
 	.flex {
 		display: flex;
+	}
+
+	.flex-0 {
+		flex: 0 0 100%;
 	}
 
 	.flex-col {
@@ -809,10 +820,16 @@
 		--bg-color: hsl(var(--gray-150) / var(--bg-opacity));
 		background-color: var(--bg-color);
 	}
-
-	.bg-gray-900 {
+	
+	.bg-gray-500 {
 		--bg-opacity: 1;
-		--bg-color: hsl(var(--gray-900) / var(--bg-opacity));
+		--bg-color: hsl(var(--gray-500) / var(--bg-opacity));
+		background-color: var(--bg-color);
+	}
+
+	.bg-gray-700 {
+		--bg-opacity: 1;
+		--bg-color: hsl(var(--gray-700) / var(--bg-opacity));
 		background-color: var(--bg-color);
 	}
 
@@ -1047,6 +1064,10 @@
 		transition-duration: 150ms;
 	}
 
+	.duration-50 {
+		transition-duration: 50ms;
+	}
+
 	.duration-200 {
 		transition-duration: 200ms;
 	}
@@ -1071,8 +1092,13 @@
 	}
 
 	/* Data Attributes */
-	.data-\[active\=true\]\:bg-opacity-60[data-active=true] {
+	.data-\[active\=true\]\:bg-opacity-60[data-active="true"] {
 		--bg-opacity: 0.6;
+	}
+
+	.data-\[active\=true\]\:bg-aqua-500[data-active="true"] {
+		--bg-opacity: 1;
+		--bg-color: hsl(var(--aqua-500) / var(--bg-opacity));
 	}
 }
 
@@ -1164,12 +1190,23 @@
 	}
 
 	@media (min-width: 480px) {
-		.xs\:flex-row {
+		/* .xs\:flex-row {
 			flex-direction: row;
-		}
+		} */
 	}
 
 	@media (min-width: 640px) {
+		/* Width */
+		.sm\:w-\[488px\] {
+			width: 488px;
+		}
+
+		/* Hieght */
+		.sm\:h-\[488px\] {
+			height: 488px;
+		}
+		
+		/* Flex */
 		.sm\:flex {
 			display: flex;
 		}
@@ -1180,12 +1217,18 @@
 	}
 
 	@media (min-width: 768px) {
+		/* Flex */
 		.md\:flex-row {
 			flex-direction: row;
 		}
 	}
 
 	@media (min-width: 1024px) {
+		/* Display */
+		.lg\:block {
+			display: block;
+		}
+
 		/* Width */
 		.lg\:w-3\/4 {
 			width: 75%;
@@ -1200,12 +1243,65 @@
 		}
 
 		/* Flex */
+		.lg\:flex {
+			display: flex;
+		}
+
 		.lg\:flex-row {
 			flex-direction: row;
 		}
 
+		.lg\:flex-col {
+			flex-direction: column;
+		}
+
+		.lg\:flex-row-reverse {
+			flex-direction: row-reverse;
+		}
+
+		.lg\:flex-col-reverse {
+			flex-direction: column-reverse;
+		}
+
 		.lg\:items-start {
 			align-items: start;
+		}
+
+		/* Grid */
+		.lg\:grid-cols-1 {
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+		}
+
+		.lg\:grid-cols-5 {
+			grid-template-columns: repeat(5, minmax(0, 1fr));
+		}
+
+		.lg\:col-span-2 {
+			grid-column: span 2 / span 2;
+		}
+
+		.lg\:col-span-3 {
+			grid-column: span 3 / span 3;
+		}
+
+		.lg\:col-span-5 {
+			grid-column: span 5 / span 5;
+		}
+
+		.lg\:row-span-2 {
+			grid-row: span 2 / span 2;
+		}
+
+		.lg\:row-span-3 {
+			grid-row: span 3 / span 3;
+		}
+
+		.lg\:row-span-4 {
+			grid-row: span 4 / span 4;
+		}
+
+		.lg\:row-start-5 {
+			grid-row-start: 5;
 		}
 
 		/* Text */
@@ -1320,11 +1416,7 @@
 		border-collapse: collapse
 	}
 
-	button,
-	input,
-	optgroup,
-	select,
-	textarea {
+	button, input, optgroup, select, textarea {
 		font-family: inherit;
 		font-feature-settings: inherit;
 		font-variation-settings: inherit;
@@ -1336,8 +1428,7 @@
 		padding: 0
 	}
 
-	button,
-	select {
+	button, select {
 		text-transform: none
 	}
 
@@ -1436,19 +1527,11 @@
 		cursor: not-allowed
 	}
 
-	img,
-	svg,
-	video,
-	canvas,
-	audio,
-	iframe,
-	embed,
-	object {
+	img, svg, video, canvas, audio, iframe, embed, object {
 		display: block;
 	}
 
-	img,
-	video {
+	img, video {
 		max-width: 100%;
 		height: auto
 	}
