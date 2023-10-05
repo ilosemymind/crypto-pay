@@ -1,0 +1,44 @@
+{
+	"name": "Crypto Pay",
+	"short_name": "CryptoPay",
+	"description": "Discover a convenient way to handle crypto payments within Telegram. Send and receive digital currencies with ease and security. Join us today!",
+	"id": "/index.html",
+	"start_url": "/index.html",
+	"theme_color": "#41A4DF",
+	"background_color": "#232328",
+	"display_override": ["fullscreen", "minimal-ui"],
+	"display": "standalone",
+	"orientation": "portrait-primary",
+	"icons": [
+		{
+			"src": "/public/logo/icon-64x64.webp",
+			"type": "image/webp",
+			"sizes": "64x64"
+		},
+		{
+			"src": "/public/logo/icon-96x96.webp",
+			"type": "image/webp",
+			"sizes": "96x96"
+		},
+		{
+			"src": "/public/logo/icon-128x128.webp",
+			"type": "image/webp",
+			"sizes": "128x128"
+		},
+		{
+			"src": "/public/logo/icon-144x144.webp",
+			"type": "image/webp",
+			"sizes": "144x144"
+		},
+		{
+			"src": "/public/logo/icon-192x192.webp",
+			"type": "image/webp",
+			"sizes": "192x192"
+		},
+		{
+			"src": "/public/logo/icon-256x256.webp",
+			"type": "image/webp",
+			"sizes": "256x256"
+		}
+	]
+}

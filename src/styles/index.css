@@ -198,6 +198,10 @@
 		width: 100%;
 	}
 
+	.w-inherit {
+		width: inherit;
+	}
+
 	.w-3 {
 		width: 0.75rem; /* 12px */
 	}
@@ -249,6 +253,10 @@
 
 	.h-full {
 		height: 100%;
+	}
+
+	.h-inherit {
+		height: inherit;
 	}
 
 	.h-1 {
