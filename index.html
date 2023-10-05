@@ -6,7 +6,7 @@
 		<meta name="description" content="Discover a convenient way to handle crypto payments within Telegram. Send and receive digital currencies with ease and security. Join us today!" />
 		<meta name="keywords" content="crypto payments, telegram crypto" />
 		<meta name="color-scheme" content="light dark" />
-		<link rel="icon" type="image/svg+xml" href="/logo.png" />
+		<link rel="icon" type="image/svg+xml" href="/logo.webp" />
 		<link rel="stylesheet" type="text/css" href="/src/styles/index.css" />
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="/src/styles/noscript.css" />
@@ -18,7 +18,7 @@
 			<nav class="w-full flex justify-between items-center">
 				<div class="w-[104px]">
 					<img 
-						src="/logo.png" 
+						src="/logo.webp" 
 						alt="Crypto Pay Logo"
 						class="w-12 h-12 lg:w-16 lg:h-16"
 					/>
@@ -89,17 +89,21 @@
 					</div>
 				</section>
 				<picture>
-					<source srcset="/images/phone/lg-dark.png" media="(min-width: 1024px) and (prefers-color-scheme: dark)">
-					<source srcset="/images/phone/sm-dark.png" media="(prefers-color-scheme: dark)">
-					<source srcset="/images/phone/lg.png" media="(min-width: 1024px)">
-					<img class="py-8 px-3 lg:px-[76px] lg:max-w-[488px]" srcset="/images/phone/sm.png" alt="Crypto Bot screenshot from Telegram preview">
+					<source srcset="/images/phone/lg-dark.webp" media="(min-width: 1024px) and (prefers-color-scheme: dark)">
+					<source srcset="/images/phone/sm-dark.webp" media="(prefers-color-scheme: dark)">
+					<source srcset="/images/phone/lg.webp" media="(min-width: 1024px)">
+					<img 
+						class="w-full h-full mx-auto py-8 px-3 lg:px-[76px] lg:max-w-[488px]" 
+						srcset="/images/phone/sm.webp" 
+						alt="Crypto Bot screenshot from Telegram preview"
+					/>
 				</picture>
 			</div>
 		</header>
 
 		<main class="flex flex-col items-center">
 			<!-- Use cases -->
-			<article id="use-cases" class="flex flex-col items-center gap-y-6 py-8 bg-gray-700 dark:bg-gray-900">
+			<article id="use-cases" class="max-w-screen flex flex-col items-center gap-y-6 py-8 bg-gray-700 dark:bg-gray-900">
 				<div id="embla" class="w-screen overflow-hidden">
 					<div class="flex flex-row noscript:flex-col noscript:gap-12">
 						<section class="w-full flex flex-0 flex-col items-center gap-6 px-5 text-white">
@@ -383,7 +387,7 @@
 				</section>
 
 				<section class="flex flex-col gap-6 p-8 bg-gray-200 dark:bg-gray-900 rounded-3xl lg:col-span-3 lg:row-span-4">
-					<div class="flex flex-col gap-[2px] py-6 px-5 text-[10px] text-black bg-telegram rounded-2xl">
+					<div class="flex flex-col gap-[2px] py-6 px-5 text-[10px] text-black bg-telegram bg-cover bg-no-repeat rounded-2xl">
 						<div class="relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm">
 							<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
 							<br/>
@@ -482,8 +486,8 @@
 					<div class="bg-glass">
 						<div class="relative">
 							<picture>
-								<source srcset="/images/phone-bottom-dark.png" media="(prefers-color-scheme: dark)">
-								<img src="/images/phone-bottom.png" alt="IPhone bottom screen part">
+								<source srcset="/images/phone-bottom-dark.webp" media="(prefers-color-scheme: dark)">
+								<img src="/images/phone-bottom.webp" alt="IPhone bottom screen part">
 							</picture>
 
 							<div class="
@@ -491,8 +495,8 @@
 								dark:text-gray-300 dark:bg-gray-750
 							">
 								<div class="relative max-w-[28px] max-h-[28px] my-auto">
-									<img class="rounded-full" src="/logo.png" alt="Crypto Pay Logo"/>
-									<img class="absolute w-3 h-3 -bottom-1 -right-1" src="/images/icons/telegram.png" alt="Telegram icon"/>
+									<img class="rounded-full" src="/logo.webp" alt="Crypto Pay Logo"/>
+									<img class="absolute w-3 h-3 -bottom-1 -right-1" src="/images/icons/telegram.webp" alt="Telegram icon"/>
 								</div>
 								<div>
 									<p><strong>Crypto Bot</strong></p>
@@ -661,8 +665,8 @@
 			<section class="relative px-5 py-20 dark:bg-black">
 				<div class="relative rounded-3xl overflow-hidden"> 
 					<picture>
-						<source srcset="/images/api/bg-horizontal.jpg" media="(min-width: 1024px)">
-						<img srcset="/images/api/bg-vertical.png" alt="Blue gradient with glass figures">
+						<source srcset="/images/api/bg-horizontal.webp" media="(min-width: 1024px)">
+						<img srcset="/images/api/bg-vertical.webp" alt="Blue gradient with glass figures">
 					</picture>
 					
 					<div class="absolute bottom-0 flex flex-col gap-6 py-7 px-8">
@@ -688,23 +692,23 @@
 				</p>
 				<div class="flex flex-wrap gap-y-6 gap-x-3">
 					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/JS.png" alt="JavaScript Icon">
+						<img class="w-16 h-16" src="/images/dev/JS.webp" alt="JavaScript Icon">
 						<p class="text-center">crypto-pay-api</p>
 					</div>
 					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/NET.png" alt=".NET Icon">
+						<img class="w-16 h-16" src="/images/dev/NET.webp" alt=".NET Icon">
 						<p class="text-center">CryptoPay</p>
 					</div>
 					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/php.png" alt="PHP Icon">
+						<img class="w-16 h-16" src="/images/dev/php.webp" alt="PHP Icon">
 						<p class="text-center">crypto-pay-api</p>
 					</div>
 					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/Python.png" alt="Python Icon">
+						<img class="w-16 h-16" src="/images/dev/Python.webp" alt="Python Icon">
 						<p class="text-center">aiocryptopay</p>
 					</div>
 					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/GO.png" alt="Go Icon">
+						<img class="w-16 h-16" src="/images/dev/GO.webp" alt="Go Icon">
 						<p class="text-center">cryptobot-sdk-golang</p>
 					</div>
 				</div>
@@ -718,7 +722,7 @@
 			<nav class="w-full flex justify-between items-center">
 				<div class="w-[104px]">
 					<img 
-						src="/logo.png" 
+						src="/logo.webp" 
 						alt="Crypto Pay Logo"
 						class="w-16 h-16"
 					/>
