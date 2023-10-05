@@ -1279,6 +1279,15 @@
 			grid-row-start: 5;
 		}
 
+		/* Gap */
+		.lg\:gap-8 {
+			gap: 2rem; /* 32px */
+		}
+
+		.lg\:gap-14 {
+			gap: 3.5rem/* 56px */;
+		}
+
 		/* Text */
 		.lg\:text-left {
 			text-align: left;
@@ -1294,6 +1303,17 @@
 	@media (min-width: 1440px) {
 		.\32xl\:flex-row {
 			flex-direction: row;
+		}
+
+		/* Text */
+		.\32xl\:text-xl {
+			font-size: 1.25rem; /* 20px */
+			line-height: 1.75rem; /* 28px */
+		}
+
+		.\32xl\:text-\[80px\] {
+			font-size: 5rem; /* 80px */
+			line-height: 5.5rem; /* 88px */
 		}
 	}
 
