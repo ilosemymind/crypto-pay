@@ -11,9 +11,10 @@ export const addDotBtnsAndClickHandlers = (
       .scrollSnapList()
       .map(() => `
 				<button 
-					id="embla-nav__dot" 
 					type="button"
-					class="w-[82px] h-1 bg-gray-500 data-[active=true]:bg-aqua-500 rounded-full transition-colors durarion-50"
+					class="
+						embla-nav__dot w-[82px] h-1 bg-gray-500 data-[active=true]:bg-aqua-500 rounded-full transition-colors durarion-50
+					"
 					data-active="false"
 				></button>
 			`)
@@ -24,7 +25,7 @@ export const addDotBtnsAndClickHandlers = (
       if (onButtonClick) onButtonClick(emblaApi);
     }
 
-    dotNodes = Array.from(dotsNode.querySelectorAll('#embla-nav__dot'))
+    dotNodes = Array.from(dotsNode.querySelectorAll('.embla-nav__dot'))
     dotNodes.forEach((dotNode, index) => {
       dotNode.addEventListener('click', () => scrollTo(index), false);
     })
