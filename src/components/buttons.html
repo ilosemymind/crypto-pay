@@ -2,23 +2,32 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" type="text/css" href="/styles/index.css">
+		<link rel="stylesheet" type="text/css" href="/src/styles/index.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Button Components</title>
 	</head>
-	<body>
+	<body class="flex flex-wrap gap-3 text-white bg-black">
 		<!-- Light Default Button -->
-		<button class="py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-blue-600 whitespace-nowrap bg-gray-150 rounded-full">
+		<button class="
+			py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-blue-600 whitespace-nowrap bg-gray-150 rounded-full
+			light:hover:bg-lightblue-50 transition-colors duration-200
+		">
 			Button
 		</button>
 		
 		<!-- Blue Default Button -->
-		<button class="py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 rounded-full">
+		<button class="
+			py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 hover:bg-blue-600 rounded-full
+			transition-colors duration-200
+		">
 			Button
 		</button>
 
 		<!-- Transparent Default Button -->
-		<button class="py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap border border-white border-opacity-60 rounded-full">
+		<button class="
+			py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap rounded-full border border-white 
+			border-opacity-60 hover:border-opacity-100 transition-colors duration-200
+		">
 			Button
 		</button>
 	</body>

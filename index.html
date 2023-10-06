@@ -26,7 +26,7 @@
 						class="w-12 h-12 lg:w-16 lg:h-16"
 					/>
 				</div>
-				<menu class="hidden sm:flex items-center gap-8 mx-auto">
+				<menu class="hidden sm:flex items-center gap-8 mx-auto text-xl">
 					<li>
 						<a href="#use-cases">Use cases</a>
 					</li>
@@ -38,8 +38,9 @@
 					</li>
 				</menu>
 				<button class="
-					h-full py-3 px-8 font-medium text-lg text-blue-600 whitespace-nowrap bg-gray-150 rounded-full
-					dark:text-white dark:bg-transparent dark:border dark:border-white dark:border-opacity-60
+					h-full py-3 px-8 font-medium text-lg text-blue-600 whitespace-nowrap bg-gray-150 rounded-full light:hover:bg-lightblue-50
+					dark:text-white dark:bg-transparent dark:border dark:border-white dark:border-opacity-60 dark:hover:border-opacity-100
+					transition-colors duration-200
 				">
 					Get started
 				</button>
@@ -56,7 +57,10 @@
 							Seamlessly accept crypto payments in your Telegram bots and services.
 						</p>
 
-						<button class="py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 rounded-full">
+						<button class="
+							py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 hover:bg-blue-600 rounded-full
+							transition-colors duration-200
+						">
 							Get started
 						</button>
 					</div>
@@ -104,7 +108,7 @@
 			</div>
 		</header>
 
-		<main class="flex flex-col items-center">
+		<main class="flex flex-col items-center bg-gray-700 dark:bg-gray-900">
 			<!-- Use cases -->
 			<article id="use-cases" class="max-w-screen w-full xl:h-screen flex justify-center bg-gray-700 dark:bg-gray-900">
 				<div class="max-w-[1200px] flex flex-col xl:flex-row items-center gap-y-6 py-8 ">
@@ -147,7 +151,7 @@
 									</p>
 									<button class="
 										max-w-max mt-auto py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap 
-										bg-aqua-500 rounded-full noscript:hidden
+										bg-aqua-500 hover:bg-blue-600 rounded-full transition-colors duration-200 noscript:hidden
 									">
 										Open API Docs
 									</button>
@@ -186,7 +190,7 @@
 									</p>
 									<button class="
 										max-w-max mt-auto py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap 
-										bg-aqua-500 rounded-full noscript:hidden
+										bg-aqua-500 hover:bg-blue-600 rounded-full transition-colors duration-200 noscript:hidden
 									">
 										Open API Docs
 									</button>
@@ -248,7 +252,7 @@
 									</p>
 									<button class="
 										max-w-max mt-auto py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap 
-										bg-aqua-500 rounded-full
+										bg-aqua-500 hover:bg-blue-600 rounded-full transition-colors duration-200
 									">
 										Open API Docs
 									</button>
@@ -275,13 +279,11 @@
 			<!-- Features -->
 			<article 
 				id="features" 
-				class="
-					max-w-[1200px] grid gap-4 py-20 px-5 dark:bg-black lg:grid-cols-5
-				"
+				class="max-w-[1200px] grid gap-4 py-20 px-5 bg-white dark:bg-black bg-full-bleed lg:grid-cols-5"
 			>
 				<section class="
 					flex flex-col lg:flex-col-reverse gap-6 p-8 text-black dark:text-gray-300 
-					bg-gray-200 dark:bg-gray-900 rounded-3xl lg:col-span-5 lg:row-span-2
+					bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-5 lg:row-span-2
 				">
 					<div class="flex flex-wrap justify-center items-center gap-y-3">
 						<div class="flex flex-col items-center items-center gap-2">
@@ -328,7 +330,7 @@
 				</section>
 
 				<section class="
-					flex flex-col items-center gap-6 p-8 dark:text-gray-300 bg-gray-200 dark:bg-gray-900 rounded-3xl lg:col-span-2 lg:row-span-2
+					flex flex-col items-center gap-6 p-8 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-2 lg:row-span-2
 				">
 					<div class="py-7 px-5">
 						<div class="
@@ -360,16 +362,16 @@
 					</div>
 				</section>
 
-				<section class="flex flex-col gap-6 p-8 bg-gray-200 dark:bg-gray-900 rounded-3xl lg:col-span-2 lg:row-span-2 lg:row-start-5">
+				<section class="flex flex-col gap-6 p-8 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-2 lg:row-span-2 lg:row-start-5">
 					<div class="flex justify-center items-center">
 						<div class="flex">
-							<div class="border-4 border-gray-200 dark:border-gray-900 rounded-full">
+							<div class="border-4 border-gray-50 dark:border-gray-900 rounded-full">
 								<img class="w-14 h-14" src="/images/coins/USDT.png" alt="Tether Icon"/>
 							</div>
-							<div class="-ml-[44px] border-4 border-gray-200 dark:border-gray-900 rounded-full">
+							<div class="-ml-[44px] border-4 border-gray-50 dark:border-gray-900 rounded-full">
 								<img class="w-14 h-14" src="/images/coins/BTC.png" alt="Bitcoin Icon"/>
 							</div>
-							<div class="-ml-[44px] border-4 border-gray-200 dark:border-gray-900 rounded-full">
+							<div class="-ml-[44px] border-4 border-gray-50 dark:border-gray-900 rounded-full">
 								<img class="w-14 h-14" src="/images/coins/TON.png" alt="Toncoin Icon"/>
 							</div>
 						</div>
@@ -398,7 +400,7 @@
 					</div>
 				</section>
 
-				<section class="flex flex-col gap-6 p-8 bg-gray-200 dark:bg-gray-900 rounded-3xl lg:col-span-3 lg:row-span-4">
+				<section class="flex flex-col gap-6 p-8 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-3 lg:row-span-4">
 					<div class="flex flex-col gap-[2px] py-6 px-5 text-[10px] text-black bg-telegram bg-cover bg-no-repeat rounded-2xl">
 						<div class="relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm">
 							<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
@@ -494,7 +496,7 @@
 					</div>
 				</section>
 
-				<section class="flex flex-col gap-6 px-8 pb-8 bg-gray-200 dark:bg-gray-900 rounded-3xl lg:col-span-3 lg:row-span-3">
+				<section class="flex flex-col gap-6 px-8 pb-8 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-3 lg:row-span-3">
 					<div class="bg-glass">
 						<div class="relative">
 							<picture>
@@ -530,7 +532,7 @@
 					</div>
 				</section>
 
-				<section class="flex flex-col gap-6 p-8 bg-gray-200 dark:bg-gray-900 rounded-3xl lg:col-span-2 lg:row-span-3">
+				<section class="flex flex-col gap-6 p-8 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-2 lg:row-span-3">
 					<div class="p-5 text-xs text-black bg-gradient direction-[233deg] from-blue-300 to-blue-600 rounded-2xl z-1">
 						<div class="relative w-full py-[6px] px-[9px] bg-white rounded-xl">
 							<p>🏝 <strong>Anonymous</strong> paid your invoice #IV53.</p> 
@@ -558,123 +560,120 @@
 			</article>
 
 			<!-- Start Guide -->
-			<article id="start-guide" class="grid gap-6 px-5 py-8 bg-gray-200 dark:bg-gray-900 bg-full-bleed">
-				<h2 class="font-semibold text-center text-[32px]">
-					Quick start using <span class="text-aqua-500 whitespace-nowrap">Crypto Pay</span>
-				</h2>
-
-				<section class="flex flex-col items-center lg:flex-row-reverse gap-4">
-					<div class="
-						w-[336px] h-[277px] flex flex-col justify-center items-center gap-2 p-7 text-sm text-black
-						bg-gradient direction-[297deg] from-blue-300 to-lavender-300 rounded-3xl
-					">
-						<div class="relative w-full py-[7px] px-3 bg-white text-[13px] rounded-t-xl rounded-b-md">
-							<p>Here is the token for the app <strong>@GoodsBot</strong></p>
-							<br/>
-							<p class="break-all">114935:AA9xMcRqHYZYl6CQlkhBStMAwTFQ1s6iJHM</p>
-							<br/>
-							<p><span class="font-arial">⚠️</span> This token can be used by anyone to control your app. Keep and store it safely.</p>
-							<p class="w-full text-[10px] text-right text-black text-opacity-40">
-								21:25
-							</p>
-						</div>
-						<div class="w-full flex p-[10px] text-[13px] text-white bg-aqua-900 bg-opacity-40 rounded-t-md rounded-b-xl">
-							<span class="mx-auto">Revoke Token</span>
-						</div>
-					</div>
-					<div class="grid auto-cols-fit lg:flex lg:flex-col gap-4">
+			<article id="start-guide" class="w-full flex justify-center bg-gray-50 dark:bg-gray-900">
+				<div class="max-w-[1200px] grid gap-6 px-5 py-8">
+					<h2 class="font-semibold text-center text-[32px]">
+						Quick start using <span class="text-aqua-500 whitespace-nowrap">Crypto Pay</span>
+					</h2>
+					<section class="flex flex-col items-center lg:flex-row-reverse gap-4">
 						<div class="
-							w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
-							dark:text-black dark:bg-white 
+							w-[336px] h-[277px] flex flex-col justify-center items-center gap-2 p-7 text-sm text-black
+							bg-gradient direction-[297deg] from-blue-300 to-lavender-300 rounded-3xl
 						">
-							1
+							<div class="relative w-full py-[7px] px-3 bg-white text-[13px] rounded-t-xl rounded-b-md">
+								<p>Here is the token for the app <strong>@GoodsBot</strong></p>
+								<br/>
+								<p class="break-all">114935:AA9xMcRqHYZYl6CQlkhBStMAwTFQ1s6iJHM</p>
+								<br/>
+								<p><span class="font-arial">⚠️</span> This token can be used by anyone to control your app. Keep and store it safely.</p>
+								<p class="w-full text-[10px] text-right text-black text-opacity-40">
+									21:25
+								</p>
+							</div>
+							<div class="w-full flex p-[10px] text-[13px] text-white bg-aqua-900 bg-opacity-40 rounded-t-md rounded-b-xl">
+								<span class="mx-auto">Revoke Token</span>
+							</div>
 						</div>
-						<h3 class="col-start-2 flex gap-4 font-semibold text-[28px]">
-							Authorizing your app
-						</h3>
-						<ol class="col-start-2 flex flex-col gap-2 list-decimal list-inside text-lg">
-							<li>Open <span class="text-aqua-500">@CryptoBot</span></li>
-							<li>Go to <span class="text-aqua-500">Crypto Pay</span></li>
-							<li>Tap <span class="text-aqua-500">Create App</span></li>
-							<li>Get <span class="text-aqua-500">API Token</span></li>
-						</ol>
-					</div>
-				</section>
-
-				<section class="flex flex-col items-center lg:flex-row gap-4">
-					<div class="
-						w-[336px] h-[277px] flex flex-col justify-center items-center gap-2 p-5 text-sm text-black
-						bg-gradient direction-[207deg] from-orange-200 to-yellow-200 rounded-3xl
-					">
-						<div class="w-full grid auto-cols-min gap-x-2 p-[10px] font-sf-mono text-xs text-white leading-[18px] bg-black rounded-xl">
-							<p>
-								asset=<span class="text-yellow-400">TON</span><span class="text-red-500">&</span>amount=<span class="text-yellow-400">2.75</span>
-							</p>
-							<p class="whitespace-nowrap">
-								{"asset":<span class="text-aqua-500">"TON"</span>, "amount": <span class="text-aqua-500">"2.75"</span>}
-							</p>
+						<div class="grid auto-cols-fit lg:flex lg:flex-col gap-4">
+							<div class="
+								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
+								dark:text-black dark:bg-white
+							">
+								1
+							</div>
+							<h3 class="col-start-2 flex gap-4 font-semibold text-[28px]">
+								Authorizing your app
+							</h3>
+							<ol class="col-start-2 flex flex-col gap-2 list-decimal list-inside text-lg">
+								<li>Open <span class="text-aqua-500">@CryptoBot</span></li>
+								<li>Go to <span class="text-aqua-500">Crypto Pay</span></li>
+								<li>Tap <span class="text-aqua-500">Create App</span></li>
+								<li>Get <span class="text-aqua-500">API Token</span></li>
+							</ol>
 						</div>
-					</div>
-
-					<div class="w-full grid auto-cols-fit lg:flex lg:flex-col gap-4">
+					</section>
+					<section class="flex flex-col items-center lg:flex-row gap-4">
 						<div class="
-							w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
-							dark:text-black dark:bg-white 
+							w-[336px] h-[277px] flex flex-col justify-center items-center gap-2 p-5 text-sm text-black
+							bg-gradient direction-[207deg] from-orange-200 to-yellow-200 rounded-3xl
 						">
-							2
+							<div class="w-full grid auto-cols-min gap-x-2 p-[10px] font-sf-mono text-xs text-white leading-[18px] bg-black rounded-xl">
+								<p>
+									asset=<span class="text-yellow-400">TON</span><span class="text-red-500">&</span>amount=<span class="text-yellow-400">2.75</span>
+								</p>
+								<p class="whitespace-nowrap">
+									{"asset":<span class="text-aqua-500">"TON"</span>, "amount": <span class="text-aqua-500">"2.75"</span>}
+								</p>
+							</div>
 						</div>
-						<h3 class="col-start-2 font-semibold text-[28px]">
-							Getting updates
-						</h3>
-						<p class="col-start-2 text-lg">There are two ways of receiving updates for your app:</p>
-						<ul class="col-start-2 flex flex-col gap-2 pl-5 list-disc text-lg indent-2 text-aqua-500">
-							<li>
-								<span class="-ml-2">getInvoices <span class="text-black dark:text-white">method to get a list of created invoices.</span></span>
-							</li>
-							<li>
-								<span class="-ml-2">Webhooks <span class="text-black dark:text-white">to receive updates in realtime.</span></span>
-							</li>
-						</ul>
-					</div>
-				</section>
-
-				<section class="flex flex-col items-center lg:flex-row-reverse gap-4">
-					<div class="
-						w-[336px] h-[277px] flex flex-col justify-center items-center gap-2 p-5 text-sm text-black
-						bg-gradient from-lightblue-200 to-aqua-100 rounded-3xl
-					">
-						<div class="w-full grid auto-cols-min gap-x-2 p-[10px] font-sf-mono text-xs text-white leading-[18px] bg-black rounded-xl">
-							<p class="col-span-2"><span class="text-aqua-500">Invoice</span>(</p>
-							<span class="ml-4 text-aqua-500">payload:</span> <span>“item:monthly_premium”,</span>
-							<span class="ml-4 text-aqua-500">status:</span> <span>“paid”,</span>
-							<span class="ml-4 text-aqua-500">amount:</span> <span>“3.99”</span>
-							<span class="ml-4 text-aqua-500">asset:</span> <span>“USDT”</span>
-							<p class="col-span-2">)</p>
+						<div class="w-full grid auto-cols-fit lg:flex lg:flex-col gap-4">
+							<div class="
+								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
+								dark:text-black dark:bg-white
+							">
+								2
+							</div>
+							<h3 class="col-start-2 font-semibold text-[28px]">
+								Getting updates
+							</h3>
+							<p class="col-start-2 text-lg">There are two ways of receiving updates for your app:</p>
+							<ul class="col-start-2 flex flex-col gap-2 pl-5 list-disc text-lg indent-2 text-aqua-500">
+								<li>
+									<span class="-ml-2">getInvoices <span class="text-black dark:text-white">method to get a list of created invoices.</span></span>
+								</li>
+								<li>
+									<span class="-ml-2">Webhooks <span class="text-black dark:text-white">to receive updates in realtime.</span></span>
+								</li>
+							</ul>
 						</div>
-					</div>
-
-					<div class="w-full grid auto-cols-fit lg:flex lg:flex-col gap-4">
+					</section>
+					<section class="flex flex-col items-center lg:flex-row-reverse gap-4">
 						<div class="
-							w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
-							dark:text-black dark:bg-white 
+							w-[336px] h-[277px] flex flex-col justify-center items-center gap-2 p-5 text-sm text-black
+							bg-gradient from-lightblue-200 to-aqua-100 rounded-3xl
 						">
-							3
+							<div class="w-full grid auto-cols-min gap-x-2 p-[10px] font-sf-mono text-xs text-white leading-[18px] bg-black rounded-xl">
+								<p class="col-span-2"><span class="text-aqua-500">Invoice</span>(</p>
+								<span class="ml-4 text-aqua-500">payload:</span> <span>“item:monthly_premium”,</span>
+								<span class="ml-4 text-aqua-500">status:</span> <span>“paid”,</span>
+								<span class="ml-4 text-aqua-500">amount:</span> <span>“3.99”</span>
+								<span class="ml-4 text-aqua-500">asset:</span> <span>“USDT”</span>
+								<p class="col-span-2">)</p>
+							</div>
 						</div>
-						<h3 class="col-start-2 font-semibold text-[28px]">
-							Crypto Pay <span class="whitespace-nowrap">API Request</span>
-						</h3>
-						<p class="col-start-2 text-lg">Requests are only served over HTTPS To pass parameters use:</p>
-						<ul class="col-start-2 flex flex-col gap-2 pl-5 list-disc text-lg text-aqua-500">
-							<li><span>URL query string</span></li>
-							<li><span>application/json</span></li>
-							<li><span>application/x-www-form-urlencoded</span></li>
-							<li><span>multipart/form-data</span></li>
-						</ul>
-					</div>
-				</section>
+						<div class="w-full grid auto-cols-fit lg:flex lg:flex-col gap-4">
+							<div class="
+								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
+								dark:text-black dark:bg-white
+							">
+								3
+							</div>
+							<h3 class="col-start-2 font-semibold text-[28px]">
+								Crypto Pay <span class="whitespace-nowrap">API Request</span>
+							</h3>
+							<p class="col-start-2 text-lg">Requests are only served over HTTPS To pass parameters use:</p>
+							<ul class="col-start-2 flex flex-col gap-2 pl-5 list-disc text-lg text-aqua-500">
+								<li><span>URL query string</span></li>
+								<li><span>application/json</span></li>
+								<li><span>application/x-www-form-urlencoded</span></li>
+								<li><span>multipart/form-data</span></li>
+							</ul>
+						</div>
+					</section>
+				</div>
 			</article>
 
-			<section class="relative px-5 py-20 dark:bg-black">
+			<section class="relative px-5 py-20 bg-white dark:bg-black">
 				<div class="relative rounded-3xl overflow-hidden"> 
 					<picture>
 						<source srcset="/images/api/bg-horizontal.webp" media="(min-width: 1024px)">
@@ -695,39 +694,44 @@
 				</div>
 			</section>
 
-			<section class="flex flex-col items-center gap-6 pt-3 pb-10 px-5 rounded-b-3xl dark:bg-black">
-				<h2 class="font-semibold text-center text-[32px]">
-					Join dev community
-				</h2>
-				<p class="font-normal text-lg text-center">
-					Connect with bot developers and explore the possibilities our crypto payments service unlocks.
-				</p>
-				<div class="flex flex-wrap gap-y-6 gap-x-3">
-					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/JS.webp" alt="JavaScript Icon">
-						<p class="text-center">crypto-pay-api</p>
+			<article class="w-full bg-white dark:bg-black rounded-b-3xl overflow-hidden">
+				<section class="flex flex-col items-center gap-6 pt-3 pb-10 px-5">
+					<h2 class="font-semibold text-center text-[32px]">
+						Join dev community
+					</h2>
+					<p class="font-normal text-lg text-center">
+						Connect with bot developers and explore the possibilities our crypto payments service unlocks.
+					</p>
+					<div class="flex flex-wrap gap-y-6 gap-x-3">
+						<div class="w-[104px] flex flex-col items-center gap-4">
+							<img class="w-16 h-16" src="/images/dev/JS.webp" alt="JavaScript Icon">
+							<p class="text-center">crypto-pay-api</p>
+						</div>
+						<div class="w-[104px] flex flex-col items-center gap-4">
+							<img class="w-16 h-16" src="/images/dev/NET.webp" alt=".NET Icon">
+							<p class="text-center">CryptoPay</p>
+						</div>
+						<div class="w-[104px] flex flex-col items-center gap-4">
+							<img class="w-16 h-16" src="/images/dev/php.webp" alt="PHP Icon">
+							<p class="text-center">crypto-pay-api</p>
+						</div>
+						<div class="w-[104px] flex flex-col items-center gap-4">
+							<img class="w-16 h-16" src="/images/dev/Python.webp" alt="Python Icon">
+							<p class="text-center">aiocryptopay</p>
+						</div>
+						<div class="w-[104px] flex flex-col items-center gap-4">
+							<img class="w-16 h-16" src="/images/dev/GO.webp" alt="Go Icon">
+							<p class="text-center">cryptobot-sdk-golang</p>
+						</div>
 					</div>
-					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/NET.webp" alt=".NET Icon">
-						<p class="text-center">CryptoPay</p>
-					</div>
-					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/php.webp" alt="PHP Icon">
-						<p class="text-center">crypto-pay-api</p>
-					</div>
-					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/Python.webp" alt="Python Icon">
-						<p class="text-center">aiocryptopay</p>
-					</div>
-					<div class="w-[104px] flex flex-col items-center gap-4">
-						<img class="w-16 h-16" src="/images/dev/GO.webp" alt="Go Icon">
-						<p class="text-center">cryptobot-sdk-golang</p>
-					</div>
-				</div>
-				<button class="w-[200px] py-3 px-8 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 rounded-full">
-					Open Devs chat
-				</button>
-			</section>
+					<button class="
+						w-[200px] py-3 px-8 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 hover:bg-blue-600 rounded-full
+						transition-colors duration-200
+					">
+						Open Devs chat
+					</button>
+				</section>
+			</article>
 		</main>
 
 		<footer class="w-full flex flex-col gap-6 px-5 py-8 bg-gray-700 dark:bg-gray-900 bg-full-bleed">
@@ -739,7 +743,7 @@
 						class="w-16 h-16"
 					/>
 				</div>
-				<menu class="hidden sm:flex items-center gap-8 mx-auto">
+				<menu class="hidden sm:flex items-center gap-8 mx-auto text-xl text-white">
 					<li>
 						<a href="#use-cases">Use cases</a>
 					</li>
@@ -751,13 +755,13 @@
 					</li>
 				</menu>
 				<button class="
-					h-full py-3 px-8 font-medium text-lg text-blue-600 whitespace-nowrap bg-gray-150 rounded-full
-					dark:text-white dark:bg-transparent dark:border dark:border-white dark:border-opacity-60
+					h-full py-3 px-8 font-medium text-lg text-white whitespace-nowrap bg-transparent rounded-full
+					border border-white border-opacity-60 hover:border-opacity-100 transition-colors duration-200
 				">
 					Get started
 				</button>
 			</nav>
-			<p class="font-medium text-lg">©2023 Crypto Bot</p>
+			<p class="font-medium text-lg text-white">©2023 Crypto Bot</p>
 		</footer>
 
 		<script type="module" src="/src/js/main.js"></script>
