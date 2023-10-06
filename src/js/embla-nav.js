@@ -17,6 +17,7 @@ export const addDotBtnsAndClickHandlers = (
 						transition-colors durarion-50
 					"
 					data-active="false"
+					aria-label="dot"
 				></button>
 			`)
       .join('')
