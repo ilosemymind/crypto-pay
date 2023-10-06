@@ -7,7 +7,7 @@
 		<meta name="keywords" content="crypto payments, telegram crypto">
 		<meta name="color-scheme" content="light dark">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="icon" type="image/svg+xml" href="/logo/icon-96x96.webp">
+		<link rel="icon" type="image/webp" href="/logo/icon-96x96.webp">
 		<link rel="stylesheet" type="text/css" href="/src/styles/index.css">
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="/src/styles/noscript.css">
@@ -15,8 +15,8 @@
 		<link rel="manifest" href="/manifest.json">
 		<title>Crypto Pay</title>
 	</head>
-	<body class="flex flex-col justify-center items-center bg-white dark:bg-black">
-		<header class="max-w-[1200px] w-full lg:w-3/4 flex flex-col justify-center gap-13 lg:mb-[120px] pt-13 px-5 dark:bg-black">
+	<body class="flex flex-col justify-center items-center bg-white dark:bg-black no-scrollbar">
+		<header class="max-w-[1200px] w-full flex flex-col justify-center gap-13 lg:mb-[120px] pt-13 px-5 dark:bg-black">
 			<nav class="w-full flex justify-between items-center">
 				<div class="w-[104px]">
 					<img 
@@ -105,160 +105,168 @@
 
 		<main class="flex flex-col items-center">
 			<!-- Use cases -->
-			<article id="use-cases" class="max-w-screen flex flex-col items-center gap-y-6 py-8 bg-gray-700 dark:bg-gray-900">
-				<div id="embla" class="w-screen overflow-hidden">
-					<div class="flex flex-row noscript:flex-col noscript:gap-12">
-						<section class="w-full flex flex-0 flex-col items-center gap-6 px-5 text-white">
-							<div class="
-								w-[336px] h-[336px] sm:w-[488px] sm:h-[488px] flex flex-col justify-center items-center gap-1 p-7 text-sm text-black
-								bg-gradient direction-[340deg] from-red-200 to-lavender-100 rounded-3xl cursor-default
-							"
-							>
-								<div class="relative w-full py-[6px] px-3 bg-white rounded-xl">
-									<p>💸 You sent 5,5 USDT ($5.50).</p>
-									<br/>
-									<p><strong>Recepient:</strong> GoodsBot</p>
-									<br/>
-									<p>🧾 1 month of Blazing Fast VPN ⚡</p>
-									<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
-										21:25
-									</span>
-								</div>
-								<div class="relative w-full py-[6px] px-3 bg-white rounded-xl">
-									<p>🔑 Access key: VPN-X3Y7-Z1W9-R6T2-Q4V8</p>
-									<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
-										21:25
-									</span>
-									<svg class="absolute bottom-0 -left-1" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
-										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.145508 17.6829V17.9514H5.05179C11.3743 17.9514 16.4998 12.826 16.4998 6.50346V0.370605H4.23437V4.00731C4.23437 8.57489 4.23437 10.8587 3.59195 12.6946C2.90395 14.6608 1.70298 16.3757 0.145508 17.6829Z" fill="white"/>
-									</svg>
-								</div>
-							</div>
-							<div class="flex flex-1 flex-col gap-6 text-center">
-								<h2 class="font-semibold text-[32px]">
-									<p class="text-aqua-500">Instant Auto Sales:</p>
-									<p>Boost conversion</p>
-								</h2>
-								<p class="text-lg">
-									Immediately deliver digital products and services to your users.
-								</p>
-								<button class="
-									mt-auto py-3 px-8 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 rounded-full noscript:hidden
-								">
-									Open API Docs
-								</button>
-							</div>
-						</section>
-		
-						<section class="w-full flex flex-0 flex-col items-center gap-6 px-5 text-white">
-							<div class="
-								w-[336px] h-[336px] sm:w-[488px] sm:h-[488px] flex flex-col justify-center items-center gap-1 p-7 text-sm text-black
-								bg-gradient direction-[207deg] from-orange-200 to-yellow-200 rounded-3xl cursor-default
-							">
-								<div class="relative w-full py-[6px] px-3 bg-white rounded-t-xl rounded-b-md">
-									<p>💸 You sent 3,5 TON ($5.08).</p>
-									<br/>
-									<p><strong>Recepient:</strong> CuteCats Channel</p>
-									<br/>
-									<p>🧾 Exclusive access to the channel 😻</p>
-									<p class="w-full text-[10px] text-right text-black text-opacity-40">
-										21:25
-									</p>
-								</div>
-								<div class="relative w-full flex p-[10px] text-white bg-darkblue-400 rounded-t-md rounded-b-xl">
-									<span class="mx-auto">View Channel</span>
-									<svg class="absolute top-1 right-1" xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
-										<path d="M1.29736 6.35965L6.20364 1.45337M6.20364 1.45337V6.35965M6.20364 1.45337H1.29736" stroke="white" stroke-width="1.38802" stroke-linecap="round" stroke-linejoin="round"/>
-									</svg>
-								</div>
-							</div>
-							<div class="flex flex-1 flex-col gap-6 text-center">
-								<h2 class="font-semibold text-[32px]">
-									<p class="text-aqua-500">Channels integration: </p>
-									<p>Seamless access</p>
-								</h2>
-								<p class="text-lg">
-									Automatically unlock exclusive content to your users.
-								</p>
-								<button class="
-									mt-auto py-3 px-8 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 rounded-full noscript:hidden
-								">
-									Open API Docs
-								</button>
-							</div>
-						</section>
-						
-						<section class="w-full flex flex-0 flex-col items-center gap-6 px-5 text-white">
-							<div class="
-								relative w-[336px] h-[336px] sm:w-[488px] sm:h-[488px] flex flex-col justify-center items-center gap-2 p-7 text-sm text-black
-								bg-gradient from-lightblue-200 to-aqua-100 rounded-3xl cursor-default
-							">
-								<div class="relative w-full py-[6px] px-3 bg-white rounded-t-xl rounded-b-md">
-									<p>💸 You sent 3,99 USDT ($3.99).</p>
-									<br/>
-									<p><strong>Recepient:</strong> <span>@StoresBot</span></p>
-									<br/>
-									<p>🧾 One month of Premuim access 🌟</p>
-									<p class="w-full text-[10px] text-right text-black text-opacity-40">
-										21:25
-									</p>
-								</div>
-								<div class="absolute top-1/2 left-1/2 -translate-1/2">
-									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-										<rect x="0.46814" y="0.78418" width="31.0731" height="31.0731" rx="8.52987"
-											fill="url(#paint0_linear_1326_439)" />
-										<ellipse cx="16.1532" cy="9.36758" rx="1.88174" ry="1.88174" fill="white" />
-										<ellipse cx="16.1532" cy="15.2814" rx="1.88174" ry="1.88174" fill="white" />
-										<path
-											d="M17.1073 24.7066C16.6565 25.4018 15.6406 25.4018 15.1898 24.7066L12.8402 21.083C12.3462 20.3211 12.8921 19.314 13.799 19.314L18.4981 19.314C19.405 19.314 19.9508 20.3211 19.4568 21.083L17.1073 24.7066Z"
-											fill="white" />
-										<defs>
-											<linearGradient id="paint0_linear_1326_439" x1="28.9777" y1="-17.5207" x2="-12.0781" y2="13.164"
-												gradientUnits="userSpaceOnUse">
-												<stop stop-color="#9FCCFA" />
-												<stop offset="1" stop-color="#0974F1" />
-											</linearGradient>
-										</defs>
-									</svg>
-								</div>
+			<article id="use-cases" class="max-w-screen w-full xl:h-screen flex justify-center bg-gray-700 dark:bg-gray-900">
+				<div class="max-w-[1200px] flex flex-col xl:flex-row items-center gap-y-6 py-8 ">
+					<div id="embla" class="w-screen overflow-hidden">
+						<div class="flex flex-row noscript:flex-col noscript:gap-12">
+							<section class="w-full flex flex-0 flex-col xl:flex-row xl:gap-30 items-center gap-6 px-5 text-white">
 								<div class="
-									w-full grid auto-cols-min gap-x-2 p-[10px] font-sf-mono text-xs text-white leading-[18px] 
-									bg-black rounded-t-md rounded-b-xl
-								">
-									<p class="col-span-2"><span class="text-aqua-500">Invoice</span>(</p>
-									<span class="ml-4 text-aqua-500">payload:</span> <span>“item:monthly_premium”,</span>
-									<span class="ml-4 text-aqua-500">status:</span> <span>“paid”,</span>
-									<span class="ml-4 text-aqua-500">amount:</span> <span>“3.99”</span>
-									<span class="ml-4 text-aqua-500">asset:</span> <span>“USDT”</span>
-									<p class="col-span-2">)</p>
+									w-[336px] h-[336px] sm:w-[488px] sm:h-[488px] flex flex-col justify-center items-center gap-1 p-7 text-sm text-black
+									bg-gradient direction-[340deg] from-red-200 to-lavender-100 rounded-3xl cursor-default
+								"
+								>
+									<div class="relative w-full py-[6px] px-3 font-sf-pro lg:text-xl bg-white rounded-xl">
+										<p>💸 You sent 5,5 USDT ($5.50).</p>
+										<br/>
+										<p><strong>Recepient:</strong> GoodsBot</p>
+										<br/>
+										<p>🧾 1 month of Blazing Fast VPN ⚡</p>
+										<span class="absolute bottom-1 right-3 text-[10px] lg:text-base text-black text-opacity-40">
+											21:25
+										</span>
+									</div>
+									<div class="relative w-full py-[6px] px-3 font-sf-pro lg:text-xl break-all bg-white rounded-xl">
+										<p>🔑 Access key: VPN-X3Y7-Z1W9-R6T2-Q4V8</p>
+										<br class="hidden lg:block"/>
+										<span class="absolute bottom-1 right-3 text-[10px] lg:text-base text-black text-opacity-40">
+											21:25
+										</span>
+										<svg class="absolute bottom-0 -left-1" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M0.145508 17.6829V17.9514H5.05179C11.3743 17.9514 16.4998 12.826 16.4998 6.50346V0.370605H4.23437V4.00731C4.23437 8.57489 4.23437 10.8587 3.59195 12.6946C2.90395 14.6608 1.70298 16.3757 0.145508 17.6829Z" fill="white"/>
+										</svg>
+									</div>
 								</div>
-							</div>
-							<div class="flex flex-1 flex-col gap-6 text-center">
-								<h2 class="font-semibold text-[32px]">
-									<p class="text-aqua-500">Endless customization </p>
-									<p>with Webhooks</p>
-								</h2>
-								<p class="text-lg">
-									Receive successful payment notifications in real-time. Integrate to any scenario of your service.
-								</p>
-								<button class="mt-auto py-3 px-8 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 rounded-full">
-									Open API Docs
-								</button>
-							</div>
-						</section>
+								<div class="flex flex-1 flex-col gap-6 items-center xl:items-start text-center xl:text-left">
+									<h2 class="font-semibold text-[32px] lg:text-[56px]">
+										<p class="text-aqua-500">Instant Auto Sales:</p>
+										<p>Boost conversion</p>
+									</h2>
+									<p class="text-lg lg:text-xl">
+										Immediately deliver digital products and services to your users.
+									</p>
+									<button class="
+										max-w-max mt-auto py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap 
+										bg-aqua-500 rounded-full noscript:hidden
+									">
+										Open API Docs
+									</button>
+								</div>
+							</section>
+			
+							<section class="w-full flex flex-0 flex-col xl:flex-row xl:gap-30 items-center gap-6 px-5 text-white">
+								<div class="
+									w-[336px] h-[336px] sm:w-[488px] sm:h-[488px] flex flex-col justify-center items-center gap-1 p-7 text-sm text-black
+									bg-gradient direction-[207deg] from-orange-200 to-yellow-200 rounded-3xl cursor-default
+								">
+									<div class="relative w-full py-[6px] px-3 font-sf-pro lg:text-xl bg-white rounded-t-xl rounded-b-md">
+										<p>💸 You sent 3,5 TON ($5.08).</p>
+										<br/>
+										<p><strong>Recepient:</strong> CuteCats Channel</p>
+										<br/>
+										<p>🧾 Exclusive access to the channel 😻</p>
+										<p class="w-full text-[10px] lg:text-base text-right text-black text-opacity-40">
+											21:25
+										</p>
+									</div>
+									<div class="relative w-full flex p-[10px] lg:text-xl text-white bg-darkblue-400 rounded-t-md rounded-b-xl">
+										<span class="mx-auto">View Channel</span>
+										<svg class="absolute top-1 right-1" xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
+											<path d="M1.29736 6.35965L6.20364 1.45337M6.20364 1.45337V6.35965M6.20364 1.45337H1.29736" stroke="white" stroke-width="1.38802" stroke-linecap="round" stroke-linejoin="round"/>
+										</svg>
+									</div>
+								</div>
+								<div class="flex flex-1 flex-col items-center xl:items-start gap-6 text-center xl:text-left">
+									<h2 class="font-semibold text-[32px] lg:text-[56px]">
+										<p class="text-aqua-500">Channels integration: </p>
+										<p>Seamless access</p>
+									</h2>
+									<p class="text-lg lg:text-xl">
+										Automatically unlock exclusive content to your users.
+									</p>
+									<button class="
+										max-w-max mt-auto py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap 
+										bg-aqua-500 rounded-full noscript:hidden
+									">
+										Open API Docs
+									</button>
+								</div>
+							</section>
+							
+							<section class="w-full flex flex-0 flex-col xl:flex-row xl:gap-30 items-center gap-6 px-5 text-white">
+								<div class="
+									relative w-[336px] h-[336px] sm:w-[488px] sm:h-[488px] flex flex-col justify-center items-center gap-2 p-7 text-sm text-black
+									bg-gradient from-lightblue-200 to-aqua-100 rounded-3xl cursor-default
+								">
+									<div class="relative w-full py-[6px] px-3 font-sf-pro lg:text-xl bg-white rounded-t-xl rounded-b-md">
+										<p>💸 You sent 3,99 USDT ($3.99).</p>
+										<br/>
+										<p><strong>Recepient:</strong> <span>@StoresBot</span></p>
+										<br/>
+										<p>🧾 One month of Premuim access 🌟</p>
+										<p class="w-full text-[10px] lg:text-base text-right text-black text-opacity-40">
+											21:25
+										</p>
+									</div>
+									<div class="absolute top-1/2 left-1/2 -translate-1/2">
+										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+											<rect x="0.46814" y="0.78418" width="31.0731" height="31.0731" rx="8.52987"
+												fill="url(#paint0_linear_1326_439)" />
+											<ellipse cx="16.1532" cy="9.36758" rx="1.88174" ry="1.88174" fill="white" />
+											<ellipse cx="16.1532" cy="15.2814" rx="1.88174" ry="1.88174" fill="white" />
+											<path
+												d="M17.1073 24.7066C16.6565 25.4018 15.6406 25.4018 15.1898 24.7066L12.8402 21.083C12.3462 20.3211 12.8921 19.314 13.799 19.314L18.4981 19.314C19.405 19.314 19.9508 20.3211 19.4568 21.083L17.1073 24.7066Z"
+												fill="white" />
+											<defs>
+												<linearGradient id="paint0_linear_1326_439" x1="28.9777" y1="-17.5207" x2="-12.0781" y2="13.164"
+													gradientUnits="userSpaceOnUse">
+													<stop stop-color="#9FCCFA" />
+													<stop offset="1" stop-color="#0974F1" />
+												</linearGradient>
+											</defs>
+										</svg>
+									</div>
+									<div class="
+										w-full grid auto-cols-min gap-x-2 p-[10px] font-sf-mono text-xs lg:text-lg text-white leading-[18px] 
+										bg-black rounded-t-md rounded-b-xl
+									">
+										<p class="col-span-2"><span class="text-aqua-500">Invoice</span>(</p>
+										<span class="ml-4 text-aqua-500">payload:</span> <span>“item:monthly_premium”,</span>
+										<span class="ml-4 text-aqua-500">status:</span> <span>“paid”,</span>
+										<span class="ml-4 text-aqua-500">amount:</span> <span>“3.99”</span>
+										<span class="ml-4 text-aqua-500">asset:</span> <span>“USDT”</span>
+										<p class="col-span-2">)</p>
+									</div>
+								</div>
+								<div class="flex flex-1 flex-col items-center xl:items-start gap-6 text-center xl:text-left">
+									<h2 class="font-semibold text-[32px] lg:text-[56px]">
+										<p class="text-aqua-500">Endless customization </p>
+										<p>with Webhooks</p>
+									</h2>
+									<p class="text-lg lg:text-xl">
+										Receive successful payment notifications in real-time. Integrate to any scenario of your service.
+									</p>
+									<button class="
+										max-w-max mt-auto py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap 
+										bg-aqua-500 rounded-full
+									">
+										Open API Docs
+									</button>
+								</div>
+							</section>
+						</div>
 					</div>
-				</div>
-					
-				<div id="embla-nav" class="noscript:hidden flex justify-center items-center gap-5 px-5">
-					<span id="embla-nav__current">01</span>
-					<div id="embla-nav__dots" class="flex items-center gap-4">
-						<button 
-							type="button"
-							class="w-[82px] h-1 bg-gray-500 data-[active=true]:bg-aqua-500 rounded-full"
-							data-active="false"
-						></button>
+						
+					<div id="embla-nav" class="noscript:hidden flex xl:flex-col justify-center items-center gap-5 px-5">
+						<span id="embla-nav__current">01</span>
+						<div id="embla-nav__dots" class="flex xl:flex-col items-center gap-4">
+							<button 
+								type="button"
+								class="w-[82px] h-1 xl:w-1 xl:h-[82px] bg-gray-500 data-[active=true]:bg-aqua-500 rounded-full"
+								data-active="false"
+							></button>
+						</div>
+						<span id="embla-nav__length">03</span>
 					</div>
-					<span id="embla-nav__length">03</span>
 				</div>
 			</article>
 

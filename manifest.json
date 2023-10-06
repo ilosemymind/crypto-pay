@@ -1,6 +1,7 @@
 {
 	"name": "Crypto Pay",
 	"short_name": "CryptoPay",
+	"default_locale": "en",
 	"description": "Discover a convenient way to handle crypto payments within Telegram. Send and receive digital currencies with ease and security. Join us today!",
 	"id": "/index.html",
 	"start_url": "/index.html",

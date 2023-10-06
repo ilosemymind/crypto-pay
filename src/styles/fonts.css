@@ -7,6 +7,15 @@
 }
 
 @font-face {
+	font-family: "SF Pro";
+	font-style:  normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("/fonts/SFPro-Regular.otf");
+}
+
+
+@font-face {
 	font-family: Inter;
 	font-style:  normal;
 	font-weight: 400;

@@ -13,7 +13,8 @@ export const addDotBtnsAndClickHandlers = (
 				<button 
 					type="button"
 					class="
-						embla-nav__dot w-[82px] h-1 bg-gray-500 data-[active=true]:bg-aqua-500 rounded-full transition-colors durarion-50
+						embla-nav__dot w-[82px] h-1 xl:w-1 xl:h-[82px] bg-gray-500 data-[active=true]:bg-aqua-500 rounded-full 
+						transition-colors durarion-50
 					"
 					data-active="false"
 				></button>

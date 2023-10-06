@@ -611,6 +611,10 @@
 		font-family: "SF Mono";
 	}
 
+	.font-sf-pro {
+		font-family: "SF Pro";
+	}
+
 	.font-normal {
 		font-weight: 400;
 	}
@@ -1091,9 +1095,16 @@
 		display: none;
 	}
 
-	.no-scrollbar {
-		-ms-overflow-style: none;
-		scrollbar-width: none;
+	@supports (scrollbar-width: none) {
+		.no-scrollbar {
+			scrollbar-width: none;
+		}
+	}
+
+	@supports (-ms-overflow-style: none) {
+		.no-scrollbar {
+			-ms-overflow-style: none;
+		}
 	}
 
 	/* Data Attributes */
@@ -1252,6 +1263,10 @@
 		}
 
 		/* Height */
+		.lg\:h-screen {
+			height: 100vh;
+		}
+
 		.lg\:h-16 {
 			height: 4rem; /* 64px */
 		}
@@ -1275,6 +1290,10 @@
 
 		.lg\:flex-col-reverse {
 			flex-direction: column-reverse;
+		}
+
+		.lg\:justify-between {
+			justify-content: space-between;
 		}
 
 		.lg\:items-start {
@@ -1356,27 +1375,78 @@
 		.lg\:text-left {
 			text-align: left;
 		}
+
+		.lg\:text-base {
+			font-size: 1rem/* 16px */;
+			line-height: 1.5rem/* 24px */;
+		}
+
+		.lg\:text-lg {
+			font-size: 1.125rem/* 18px */;
+			line-height: 1.75rem/* 28px */;
+		}
+
+		.lg\:text-xl {
+			font-size: 1.25rem; /* 20px */
+			line-height: 1.75rem; /* 28px */
+		}
+
+		.lg\:text-\[56px\] {
+			font-size: 56px;
+			line-height: 64px;
+		}
 	}
 
 	@media (min-width: 1280px) {
 		/* Width */
+		.xl\:w-1 {
+			width: 0.25rem; /* 4px */
+		}
+
 		.xl\:w-24 {
 			width: 6rem; /* 96px */
 		}
 
 		/* Height */
+		.xl\:h-screen {
+			height: 100vh;
+		}
+
+		.xl\:h-\[82px\] {
+			height: 82px;
+		}
+
 		.xl\:h-24 {
 			height: 6rem; /* 96px */
 		}
 
 		/* Margin */
 		.xl\:-ml-8 {
-			margin-left: -2rem; /* 32px */;
+			margin-left: -2rem; /* 32px */
 		}
 
-
+		/* Flex */
 		.xl\:flex-row {
 			flex-direction: row;
+		}
+
+		.xl\:flex-col {
+			flex-direction: column;
+		}
+		
+		
+		.xl\:items-start {
+			align-items: start;
+		}
+
+		/* Gap */
+		.xl\:gap-30 {
+			gap: 7.5rem; /* 120px */
+		}
+
+		/* Text */
+		.xl\:text-left {
+			text-align: left;
 		}
 	}
 
