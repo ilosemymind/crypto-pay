@@ -1,0 +1,22 @@
+@layer media {
+	@media (min-width: 640px) {
+		/* Width */
+		.sm\:w-\[488px\] {
+			width: 488px;
+		}
+
+		/* Hieght */
+		.sm\:h-\[488px\] {
+			height: 488px;
+		}
+		
+		/* Flex */
+		.sm\:flex {
+			display: flex;
+		}
+
+		.sm\:flex-row {
+			flex-direction: row;
+		}
+	}
+}

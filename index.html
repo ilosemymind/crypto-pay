@@ -8,8 +8,18 @@
 		<meta name="color-scheme" content="light dark">
 		<meta name="theme-color" content="#41A4DF">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<link rel="icon" type="image/webp" href="/logo/icon-96x96.webp">
+		<link rel="icon" type="image/webp" href="/logo/icon-128x128.webp">
 		<link rel="stylesheet" type="text/css" href="/src/styles/index.css">
+		<link rel="stylesheet" type="text/css" media="all and (prefers-color-scheme: light)" href="/src/styles/media/light.css"/>
+		<link rel="stylesheet" type="text/css" media="all and (prefers-color-scheme: dark)" href="/src/styles/media/dark.css"/>
+		<link rel="stylesheet" type="text/css" media="screen and (hover: hover)" href="/src/styles/media/hover.css"/>
+		<link rel="preload" as="style" type="text/css" media="screen and (min-width: 480px)" href="/src/styles/media/screen/xs.css">
+		<link rel="preload" as="style" type="text/css" media="screen and (min-width: 640px)" href="/src/styles/media/screen/sm.css">
+		<link rel="preload" as="style" type="text/css" media="screen and (min-width: 768px)" href="/src/styles/media/screen/md.css">
+		<link rel="preload" as="style" type="text/css" media="screen and (min-width: 1024px)" href="/src/styles/media/screen/lg.css">
+		<link rel="preload" as="style" type="text/css" media="screen and (min-width: 1280px)" href="/src/styles/media/screen/xl.css">
+		<link rel="preload" as="style" type="text/css" media="screen and (min-width: 1440px)" href="/src/styles/media/screen/2xl.css">
+		<link rel="preload" as="style" type="text/css" media="screen and (min-width: 1600px)" href="/src/styles/media/screen/3xl.css">
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="/src/styles/noscript.css">
 		</noscript>
@@ -21,7 +31,7 @@
 			<nav class="w-full flex justify-between items-center">
 				<div class="w-[104px]">
 					<img 
-						src="/logo/icon-96x96.webp" 
+						src="/logo/icon-128x128.webp"
 						alt="Crypto Pay Logo"
 						class="w-12 h-12 lg:w-16 lg:h-16"
 					/>
@@ -37,13 +47,17 @@
 						<a href="#start-guide">How to start</a>
 					</li>
 				</menu>
-				<button class="
-					h-full py-3 px-8 font-medium text-lg text-blue-600 whitespace-nowrap bg-gray-150 rounded-full light:hover:bg-lightblue-50
-					dark:text-white dark:bg-transparent dark:border dark:border-white dark:border-opacity-60 dark:hover:border-opacity-100
-					transition-colors duration-200
-				">
+				<a 
+				class="
+						h-full py-3 px-8 font-medium text-lg text-blue-600 whitespace-nowrap bg-gray-150 rounded-full light:hover:bg-lightblue-50
+						dark:text-white dark:bg-transparent dark:border dark:border-white dark:border-opacity-60 dark:hover:border-opacity-100
+						transition-colors duration-200
+					"
+					href="https://t.me/CryptoBot"
+					target="_blank"
+				>
 					Get started
-				</button>
+				</a>
 			</nav>
 
 			<div class="flex flex-col md:flex-row gap-4">
@@ -57,12 +71,16 @@
 							Seamlessly accept crypto payments in your Telegram bots and services.
 						</p>
 
-						<button class="
-							py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 hover:bg-blue-600 rounded-full
-							transition-colors duration-200
-						">
+						<a 
+							class="
+								py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap bg-aqua-500 hover:bg-blue-600 rounded-full
+								transition-colors duration-200
+							"
+							href="https://t.me/CryptoBot"
+							target="_blank"
+						>
 							Get started
-						</button>
+						</a>
 					</div>
 					<div class="flex flex-col items-center lg:items-start gap-3 lg:mt-6">
 						<div class="flex">
@@ -108,7 +126,7 @@
 			</div>
 		</header>
 
-		<main class="flex flex-col items-center bg-gray-700 dark:bg-gray-900">
+		<main class="w-full flex flex-col items-center bg-gray-700 dark:bg-gray-900">
 			<!-- Use cases -->
 			<article id="use-cases" class="max-w-screen w-full xl:h-screen flex justify-center bg-gray-700 dark:bg-gray-900">
 				<div class="max-w-[1200px] flex flex-col xl:flex-row items-center gap-y-6 py-8 ">
@@ -120,7 +138,7 @@
 									bg-gradient direction-[340deg] from-red-200 to-lavender-100 rounded-3xl cursor-default
 								"
 								>
-									<div class="relative w-full py-[6px] px-3 font-sf-pro lg:text-xl bg-white rounded-xl">
+									<div class="relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 font-sf-pro lg:text-xl bg-white rounded-xl">
 										<p>💸 You sent 5,5 USDT ($5.50).</p>
 										<br/>
 										<p><strong>Recepient:</strong> GoodsBot</p>
@@ -130,9 +148,9 @@
 											21:25
 										</span>
 									</div>
-									<div class="relative w-full py-[6px] px-3 font-sf-pro lg:text-xl break-all bg-white rounded-xl">
+									<div class="relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 font-sf-pro lg:text-xl break-all bg-white rounded-xl">
 										<p>🔑 Access key: VPN-X3Y7-Z1W9-R6T2-Q4V8</p>
-										<br class="hidden lg:block"/>
+										<span class="hidden lg:block">&nbsp;</span>
 										<span class="absolute bottom-1 right-3 text-[10px] lg:text-base text-black text-opacity-40">
 											21:25
 										</span>
@@ -163,7 +181,7 @@
 									w-[336px] h-[336px] sm:w-[488px] sm:h-[488px] flex flex-col justify-center items-center gap-1 p-7 text-sm text-black
 									bg-gradient direction-[207deg] from-orange-200 to-yellow-200 rounded-3xl cursor-default
 								">
-									<div class="relative w-full py-[6px] px-3 font-sf-pro lg:text-xl bg-white rounded-t-xl rounded-b-md">
+									<div class="relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 font-sf-pro lg:text-xl bg-white rounded-t-xl rounded-b-md">
 										<p>💸 You sent 3,5 TON ($5.08).</p>
 										<br/>
 										<p><strong>Recepient:</strong> CuteCats Channel</p>
@@ -202,7 +220,7 @@
 									relative w-[336px] h-[336px] sm:w-[488px] sm:h-[488px] flex flex-col justify-center items-center gap-2 p-7 text-sm text-black
 									bg-gradient from-lightblue-200 to-aqua-100 rounded-3xl cursor-default
 								">
-									<div class="relative w-full py-[6px] px-3 font-sf-pro lg:text-xl bg-white rounded-t-xl rounded-b-md">
+									<div class="relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 font-sf-pro lg:text-xl bg-white rounded-t-xl rounded-b-md">
 										<p>💸 You sent 3,99 USDT ($3.99).</p>
 										<br/>
 										<p><strong>Recepient:</strong> <span>@StoresBot</span></p>
@@ -212,8 +230,8 @@
 											21:25
 										</p>
 									</div>
-									<div class="absolute top-1/2 left-1/2 -translate-1/2">
-										<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+									<div class="absolute top-1/2 left-1/2 -translate-1/2 w-8 h-8 lg:w-12 lg:h-12">
+										<svg xmlns="http://www.w3.org/2000/svg" class="w-inherit h-inherit" viewBox="0 0 32 32" fill="none">
 											<rect x="0.46814" y="0.78418" width="31.0731" height="31.0731" rx="8.52987"
 												fill="url(#paint0_linear_1326_439)" />
 											<ellipse cx="16.1532" cy="9.36758" rx="1.88174" ry="1.88174" fill="white" />
@@ -261,7 +279,7 @@
 						</div>
 					</div>
 						
-					<div id="embla-nav" class="noscript:hidden flex xl:flex-col justify-center items-center gap-5 px-5">
+					<div id="embla-nav" class="noscript:hidden flex xl:flex-col justify-center items-center gap-5 px-5 text-white">
 						<span id="embla-nav__current">01</span>
 						<div id="embla-nav__dots" class="flex xl:flex-col items-center gap-4">
 							<button 
@@ -402,19 +420,92 @@
 
 				<section class="flex flex-col gap-6 p-8 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-3 lg:row-span-4">
 					<div class="flex flex-col gap-[2px] py-6 px-5 text-[10px] text-black bg-telegram bg-cover bg-no-repeat rounded-2xl">
-						<div class="relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm">
-							<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
-							<br/>
-							<p>Volume: <strong>$6,530</strong></p>
-							<br/>
-							<p>The number of created invoices: <strong>15,569</strong></p>
-							<p>Number of payments: <strong>6,453</strong></p>
-							<p>Number of users: <strong>5,606</strong></p>
-							<br/>
-							<p>Conversion: <strong>41%</strong></p>
-							<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
-								21:25
-							</span>
+						<div>
+							<div 
+								class="relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								data-value="all"
+							>
+								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+								<br/>
+								<p>Volume: <strong>$6,530</strong></p>
+								<br/>
+								<p>The number of created invoices: <strong>15,569</strong></p>
+								<p>Number of payments: <strong>6,453</strong></p>
+								<p>Number of users: <strong>5,606</strong></p>
+								<br/>
+								<p>Conversion: <strong>41%</strong></p>
+								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+									21:25
+								</span>
+							</div>
+							<div 
+								class="hidden relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								data-value="today"
+							>
+								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+								<br/>
+								<p>Volume: <strong>$6,530</strong></p>
+								<br/>
+								<p>The number of created invoices: <strong>15,569</strong></p>
+								<p>Number of payments: <strong>6,453</strong></p>
+								<p>Number of users: <strong>5,606</strong></p>
+								<br/>
+								<p>Conversion: <strong>41%</strong></p>
+								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+									21:25
+								</span>
+							</div>
+							<div 
+								class="hidden relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								data-value="yesterday"
+							>
+								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+								<br/>
+								<p>Volume: <strong>$6,530</strong></p>
+								<br/>
+								<p>The number of created invoices: <strong>15,569</strong></p>
+								<p>Number of payments: <strong>6,453</strong></p>
+								<p>Number of users: <strong>5,606</strong></p>
+								<br/>
+								<p>Conversion: <strong>41%</strong></p>
+								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+									21:25
+								</span>
+							</div>
+							<div 
+								class="hidden relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								data-value="week"
+							>
+								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+								<br/>
+								<p>Volume: <strong>$6,530</strong></p>
+								<br/>
+								<p>The number of created invoices: <strong>15,569</strong></p>
+								<p>Number of payments: <strong>6,453</strong></p>
+								<p>Number of users: <strong>5,606</strong></p>
+								<br/>
+								<p>Conversion: <strong>41%</strong></p>
+								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+									21:25
+								</span>
+							</div>
+							<div 
+								class="hidden relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								data-value="month"
+							>
+								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+								<br/>
+								<p>Volume: <strong>$6,530</strong></p>
+								<br/>
+								<p>The number of created invoices: <strong>15,569</strong></p>
+								<p>Number of payments: <strong>6,453</strong></p>
+								<p>Number of users: <strong>5,606</strong></p>
+								<br/>
+								<p>Conversion: <strong>41%</strong></p>
+								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+									21:25
+								</span>
+							</div>
 						</div>
 						<div class="grid grid-cols-2 gap-[2px] text-center text-white">
 							<button 
@@ -423,8 +514,8 @@
 									data-[active=true]:bg-opacity-60
 								"
 								type="button"
-								data-active="true"
 								data-value="all"
+								data-active="true"
 							>
 								· All Time ·
 							</button>
@@ -501,7 +592,7 @@
 						<div class="relative">
 							<picture>
 								<source srcset="/images/phone-bottom-dark.webp" media="(prefers-color-scheme: dark)">
-								<img src="/images/phone-bottom.webp" alt="IPhone bottom screen part">
+								<img src="/images/phone-bottom.webp" alt="IPhone bottom screen part" loading="lazy">
 							</picture>
 
 							<div class="
@@ -509,7 +600,7 @@
 								dark:text-gray-300 dark:bg-gray-750
 							">
 								<div class="relative max-w-[28px] max-h-[28px] my-auto">
-									<img class="rounded-full" src="/logo/icon-96x96.webp" alt="Crypto Pay Logo"/>
+									<img class="rounded-full" src="/logo/icon-128x128.webp" alt="Crypto Pay Logo"/>
 									<img class="absolute w-3 h-3 -bottom-1 -right-1" src="/images/icons/telegram.webp" alt="Telegram icon"/>
 								</div>
 								<div>
@@ -587,7 +678,7 @@
 						<div class="grid auto-cols-fit lg:flex lg:flex-col gap-4">
 							<div class="
 								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
-								dark:text-black dark:bg-white
+								text-white dark:text-black dark:bg-white
 							">
 								1
 							</div>
@@ -619,7 +710,7 @@
 						<div class="w-full grid auto-cols-fit lg:flex lg:flex-col gap-4">
 							<div class="
 								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
-								dark:text-black dark:bg-white
+								text-white dark:text-black dark:bg-white
 							">
 								2
 							</div>
@@ -654,7 +745,7 @@
 						<div class="w-full grid auto-cols-fit lg:flex lg:flex-col gap-4">
 							<div class="
 								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
-								dark:text-black dark:bg-white
+								text-white dark:text-black dark:bg-white
 							">
 								3
 							</div>
@@ -673,26 +764,35 @@
 				</div>
 			</article>
 
-			<section class="relative px-5 py-20 bg-white dark:bg-black">
-				<div class="relative rounded-3xl overflow-hidden"> 
-					<picture>
-						<source srcset="/images/api/bg-horizontal.webp" media="(min-width: 1024px)">
-						<img srcset="/images/api/bg-vertical.webp" alt="Blue gradient with glass figures">
-					</picture>
-					
-					<div class="absolute bottom-0 flex flex-col gap-6 py-7 px-8">
-						<h2 class="font-semibold text-[32px]">
-							Crypto Pay API
-						</h2>
-						<p class="text-lg">
-							Explore available methods and types and integrate them in any programming language.
-						</p>
-						<a class="py-3 px-8 text-lg text-center border rounded-full" href="#" target="_blank">
-							Open API Docs
-						</a>
+			<article class="w-full flex justify-center py-20 bg-white dark:bg-black">
+				<section class="max-w-[1200px] relative">
+					<div class="relative rounded-3xl overflow-hidden"> 
+						<picture>
+							<source srcset="/images/api/bg-horizontal.webp" media="(min-width: 1024px)">
+							<img srcset="/images/api/bg-vertical.webp" alt="Blue gradient with glass figures">
+						</picture>
+						
+						<div class="absolute bottom-0 flex flex-col gap-6 py-7 px-8 text-white">
+							<h2 class="font-semibold text-[32px]">
+								Crypto Pay API
+							</h2>
+							<p class="text-lg">
+								Explore available methods and types and integrate them in any programming language.
+							</p>
+							<a 
+								class="
+									py-3 px-8 text-lg text-center text-white whitespace-nowrap bg-transparent rounded-full 
+									border border-white border-opacity-60 hover:border-opacity-100 transition-colors duration-200
+								"
+								href="#"
+								target="_blank"
+							>
+								Open API Docs
+							</a>
+						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			</article>
 
 			<article class="w-full bg-white dark:bg-black rounded-b-3xl overflow-hidden">
 				<section class="flex flex-col items-center gap-6 pt-3 pb-10 px-5">
@@ -734,11 +834,11 @@
 			</article>
 		</main>
 
-		<footer class="w-full flex flex-col gap-6 px-5 py-8 bg-gray-700 dark:bg-gray-900 bg-full-bleed">
+		<footer class="max-w-[1200px] w-full flex flex-col gap-6 px-5 py-8 bg-gray-700 dark:bg-gray-900 bg-full-bleed">
 			<nav class="w-full flex justify-between items-center">
 				<div class="w-[104px]">
 					<img 
-						src="/logo/icon-96x96.webp" 
+						src="/logo/icon-128x128.webp" 
 						alt="Crypto Pay Logo"
 						class="w-16 h-16"
 					/>
@@ -754,12 +854,16 @@
 						<a href="#start-guide">How to start</a>
 					</li>
 				</menu>
-				<button class="
-					h-full py-3 px-8 font-medium text-lg text-white whitespace-nowrap bg-transparent rounded-full
-					border border-white border-opacity-60 hover:border-opacity-100 transition-colors duration-200
-				">
+				<a 
+					class="
+						h-full py-3 px-8 font-medium text-lg text-white whitespace-nowrap bg-transparent rounded-full
+						border border-white border-opacity-60 hover:border-opacity-100 transition-colors duration-200
+					"
+					href="https://t.me/CryptoBot"
+					target="_blank"
+				>
 					Get started
-				</button>
+				</a>
 			</nav>
 			<p class="font-medium text-lg text-white">©2023 Crypto Bot</p>
 		</footer>

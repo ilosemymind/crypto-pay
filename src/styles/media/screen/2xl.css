@@ -1,0 +1,19 @@
+@layer media {
+	@media (min-width: 1440px) {
+		/* Flex */
+		.\32xl\:flex-row {
+			flex-direction: row;
+		}
+
+		/* Text */
+		.\32xl\:text-xl {
+			font-size: 1.25rem; /* 20px */
+			line-height: 1.75rem; /* 28px */
+		}
+
+		.\32xl\:text-\[80px\] {
+			font-size: 5rem; /* 80px */
+			line-height: 5.5rem; /* 88px */
+		}
+	}
+}

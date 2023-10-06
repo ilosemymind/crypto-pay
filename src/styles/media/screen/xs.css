@@ -1,0 +1,7 @@
+@layer media {
+	@media (min-width: 480px) {
+		.xs\:flex-row {
+			flex-direction: row;
+		}
+	}
+}

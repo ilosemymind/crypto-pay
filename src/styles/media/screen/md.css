@@ -1,0 +1,8 @@
+@layer media {
+	@media (min-width: 768px) {
+		/* Flex */
+		.md\:flex-row {
+			flex-direction: row;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+@layer media {
+	@media (min-width: 1280px) {
+		/* Width */
+		.xl\:w-1 {
+			width: 0.25rem; /* 4px */
+		}
+
+		.xl\:w-24 {
+			width: 6rem; /* 96px */
+		}
+
+		/* Height */
+		.xl\:h-screen {
+			height: 100vh;
+		}
+
+		.xl\:h-\[82px\] {
+			height: 82px;
+		}
+
+		.xl\:h-24 {
+			height: 6rem; /* 96px */
+		}
+
+		/* Margin */
+		.xl\:-ml-8 {
+			margin-left: -2rem; /* 32px */
+		}
+
+		/* Flex */
+		.xl\:flex-row {
+			flex-direction: row;
+		}
+
+		.xl\:flex-col {
+			flex-direction: column;
+		}
+		
+		
+		.xl\:items-start {
+			align-items: start;
+		}
+
+		/* Gap */
+		.xl\:gap-30 {
+			gap: 7.5rem; /* 120px */
+		}
+
+		/* Text */
+		.xl\:text-left {
+			text-align: left;
+		}
+	}
+}

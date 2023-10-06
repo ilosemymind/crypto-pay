@@ -1,0 +1,86 @@
+@layer media {
+	@media(prefers-color-scheme: dark) {
+		/* Text */
+		.dark\:text-white {
+			--text-opacity: 1;
+			color: hsl(var(--white) / var(--text-opacity))
+		}
+		
+		.dark\:text-gray-300 {
+			--text-opacity: 1;
+			color: hsl(var(--gray-300) / var(--text-opacity))
+		}
+
+		.dark\:text-black {
+			--text-opacity: 1;
+			color: hsl(var(--black) / var(--text-opacity))
+		}
+
+		/* Background */
+		.dark\:bg-transparent {
+			--bg-color: transparent;
+			background-color: var(--bg-color);
+		}
+
+		.dark\:bg-white {
+			--bg-opacity: 1;
+			--bg-color: hsl(var(--white) / var(--bg-opacity));
+			background: var(--bg-color);
+		}
+
+		.dark\:bg-black {
+			--bg-color: hsl(var(--black) / var(--bg-opacity));
+			background-color: var(--bg-color);
+		}
+
+		.dark\:bg-gray-900 {
+			--bg-opacity: 1;
+			--bg-color: hsl(var(--gray-900) / var(--bg-opacity));
+			background-color: var(--bg-color);
+		}
+
+		.dark\:bg-gray-750 {
+			--bg-opacity: 1;
+			--bg-color: hsl(var(--gray-750) / var(--bg-opacity));
+			background-color: var(--bg-color);
+		}
+		
+		/* Border */
+		.dark\:border {
+			border-width: 1px;
+		}
+	
+		.dark\:border-white {
+			--border-opacity: 1;
+			border-color: hsl(var(--white) / var(--border-opacity));
+		}
+
+		.dark\:border-black {
+			--border-opacity: 1;
+			border-color: hsl(var(--black) / var(--border-opacity));
+		}
+
+		.dark\:border-gray-750 {
+			--border-opacity: 1;
+			--border-color: var(--gray-750);
+		}
+	
+		.dark\:border-gray-900 {
+			--border-opacity: 1;
+			--border-color: var(--gray-900);
+		}
+
+		.dark\:border-opacity-60 {
+			--border-opacity: 0.6;
+		}
+
+		/* Gradients */
+		.dark\:from-blue-300 {
+			--gradient-from: hsl(var(--blue-300)) var(--gradient-from-position);
+		}
+
+		.dark\:to-blue-600 {
+			--gradient-to: hsl(var(--blue-600)) var(--gradient-to-position);
+		}
+	}
+}

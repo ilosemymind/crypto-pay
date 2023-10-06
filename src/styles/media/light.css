@@ -1,0 +1,9 @@
+@layer media {
+	@media(prefers-color-scheme: light) {
+		/* Background */
+		.light\:hover\:bg-lightblue-50:hover {
+			--bg-opacity: 1;
+			--bg-color: hsl(var(--lightblue-50) / var(--bg-opacity));
+		}
+	}
+}

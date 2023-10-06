@@ -1,0 +1,22 @@
+@layer media {
+	@media (hover: hover) {
+		/* Background */
+		.hover\:bg-blue-600:hover {
+			--bg-opacity: 1;
+			--bg-color: hsl(var(--blue-600) / var(--bg-opacity));
+		}
+
+		.hover\:bg-opacity-60:hover {
+			--bg-opacity: 0.6;
+		}
+
+		/* Border */
+		.hover\:border-opacity-100:hover {
+			--border-opacity: 1;
+		}
+
+		.dark\:hover\:border-opacity-100:hover {
+			--border-opacity: 1;
+		}
+	}
+}

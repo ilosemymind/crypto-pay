@@ -1,0 +1,7 @@
+@layer media {
+	@media (min-width: 1600px) {
+		.\33xl\:flex-row {
+			flex-direction: row;
+		}
+	}
+}
