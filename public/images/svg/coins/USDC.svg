@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" aria-labelledby="usdc-title" role="img">
+	<title id="usdc-title">USD Coin Icon</title>
+	<defs>
+		<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+			id="filter0_dd_955_4358" width="112" x="0" y="0">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+			<feOffset />
+			<feGaussianBlur stdDeviation="4" />
+			<feComposite in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix"
+				values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+			<feBlend in2="BackgroundImageFix" />
+			<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+			<feOffset dy="2" />
+			<feGaussianBlur stdDeviation="1.5" />
+			<feComposite in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+			<feBlend in2="effect1_dropShadow_955_4358" />
+			<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4358" />
+		</filter>
+		<linearGradient id="paint0_linear_955_4358" x1="0.55" x2="-0.4" y1="0.41" y2="1.83">
+			<stop stop-color="#2775CA" />
+			<stop offset="1" stop-color="#00BBF9" />
+		</linearGradient>
+	</defs>
+	<g class="layer">
+		<g filter="url(#filter0_dd_955_4358)" id="svg_1">
+			<rect fill="url(#paint0_linear_955_4358)" height="112" id="svg_2" rx="56" width="112" x="0"
+				y="0" />
+			<path
+				d="m72.26,64.76c0,-8.27 -5.01,-11.1 -15.02,-12.28c-7.14,-0.95 -8.58,-2.83 -8.58,-6.14c0,-3.31 2.38,-5.43 7.15,-5.43c4.29,0 6.67,1.41 7.86,4.96c0.23,0.71 0.96,1.18 1.67,1.18l3.82,0c0.96,0 1.67,-0.71 1.67,-1.65l0,-0.23c-0.96,-5.2 -5.25,-9.22 -10.72,-9.69l0,-5.67c0,-0.95 -0.72,-1.65 -1.91,-1.9l-3.57,0c-0.96,0 -1.67,0.72 -1.91,1.9l0,5.43c-7.15,0.94 -11.68,5.67 -11.68,11.57c0,7.79 4.77,10.86 14.78,12.04c6.67,1.19 8.82,2.6 8.82,6.38c0,3.78 -3.34,6.38 -7.86,6.38c-6.21,0 -8.34,-2.6 -9.07,-6.15c-0.23,-0.94 -0.95,-1.41 -1.67,-1.41l-4.05,0c-0.96,0 -1.67,0.71 -1.67,1.65l0,0.23c0.96,5.91 4.77,10.16 12.64,11.34l0,5.67c0,0.95 0.71,1.65 1.9,1.9l3.58,0c0.95,0 1.67,-0.72 1.9,-1.9l0,-5.67c7.15,-1.18 11.91,-6.14 11.91,-12.52l0.01,0.01z"
+				fill="white" id="svg_3" />
+			<path clip-rule="evenodd"
+				d="m23.17,44.22c-6.91,18.19 2.63,38.73 21.21,45.35c0.71,0.47 1.44,1.42 1.44,2.13l0,3.31c0,0.47 0,0.71 -0.25,0.95c-0.23,0.94 -1.19,1.41 -2.15,0.94c-13.35,-4.24 -23.59,-14.41 -27.88,-27.63c-7.15,-22.43 5.25,-46.3 27.88,-53.38c0.25,-0.23 0.72,-0.23 0.96,-0.23c0.96,0.23 1.44,0.95 1.44,1.88l0,3.31c0,1.19 -0.48,1.9 -1.44,2.37c-9.77,3.54 -17.63,11.1 -21.21,21.02l0,-0.02zm44.32,-27.4c0.25,-0.95 1.19,-1.41 2.15,-0.95c13.11,4.25 23.6,14.42 27.88,27.88c7.15,22.44 -5.24,46.3 -27.88,53.38c-0.23,0.23 -0.71,0.23 -0.96,0.23c-0.95,-0.23 -1.42,-0.94 -1.42,-1.88l0,-3.31c0,-1.18 0.48,-1.9 1.42,-2.36c9.78,-3.55 17.64,-11.11 21.21,-21.03c6.92,-18.19 -2.61,-38.73 -21.21,-45.35c-0.71,-0.47 -1.42,-1.41 -1.42,-2.36l0,-3.31c0,-0.47 0,-0.71 0.23,-0.95l0,0.01z"
+				fill="white" fill-rule="evenodd" id="svg_4" />
+		</g>
+	</g>
+</svg>

@@ -9,7 +9,7 @@
 		<meta name="theme-color" content="#41A4DF">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<link rel="icon" type="image/webp" href="/logo/icon-128x128.webp">
-		<link rel="stylesheet" type="text/css" href="/src/styles/index.css">
+		<link rel="stylesheet" type="text/css" media="all" href="/src/styles/index.css">
 		<link rel="stylesheet" type="text/css" media="all and (prefers-color-scheme: light)" href="/src/styles/media/light.css"/>
 		<link rel="stylesheet" type="text/css" media="all and (prefers-color-scheme: dark)" href="/src/styles/media/dark.css"/>
 		<link rel="stylesheet" type="text/css" media="screen and (hover: hover)" href="/src/styles/media/hover.css"/>
@@ -49,7 +49,7 @@
 				</menu>
 				<a 
 				class="
-						h-full py-3 px-8 font-medium text-lg text-blue-600 whitespace-nowrap bg-gray-150 rounded-full light:hover:bg-lightblue-50
+						h-full py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-blue-600 whitespace-nowrap bg-gray-150 rounded-full light:hover:bg-lightblue-50
 						dark:text-white dark:bg-transparent dark:border dark:border-white dark:border-opacity-60 dark:hover:border-opacity-100
 						transition-colors duration-200
 					"
@@ -300,45 +300,327 @@
 				class="max-w-[1200px] grid gap-4 py-20 px-5 bg-white dark:bg-black bg-full-bleed lg:grid-cols-5"
 			>
 				<section class="
-					flex flex-col lg:flex-col-reverse gap-6 p-8 text-black dark:text-gray-300 
+					flex flex-col lg:flex-col-reverse gap-6 p-8 lg:py-[42px] lg:px-14 text-black dark:text-gray-300 
 					bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-5 lg:row-span-2
 				">
-					<div class="flex flex-wrap justify-center items-center gap-y-3">
+					<div class="flex flex-wrap justify-center lg:justify-between items-center gap-y-3">
 						<div class="flex flex-col items-center items-center gap-2">
-							<img class="w-14 h-14" src="/images/coins/ETH.png" alt="Ethereum Icon"/>
-							<span class="hidden lg:block">ETH</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="etc-title" role="img">
+								<title id="etc-title">Ethereum Icon</title>
+								<defs>
+									<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+										id="filter0_dd_955_4317" width="112" x="0" y="0">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset />
+										<feGaussianBlur stdDeviation="4" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix"
+											values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+										<feBlend in2="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset dy="2" />
+										<feGaussianBlur stdDeviation="1.5" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+										<feBlend in2="effect1_dropShadow_955_4317" />
+										<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4317" />
+									</filter>
+									<linearGradient id="paint0_linear_955_4317" x1="1.54" x2="-0.39" y1="-0.41" y2="1.52">
+										<stop stop-color="#E9E9E7" />
+										<stop offset="0.27" stop-color="#EFEEEC" />
+										<stop offset="0.61" stop-color="#EEEEEC" />
+										<stop offset="1" stop-color="#D5D4D0" />
+									</linearGradient>
+									<linearGradient id="paint1_linear_955_4317" x1="-0.02" x2="1.16" y1="1.86" y2="1.61">
+										<stop stop-color="#EEEDF1" />
+										<stop offset="1" stop-color="white" />
+									</linearGradient>
+								</defs>
+								<g class="layer">
+									<g filter="url(#filter0_dd_955_4317)" id="svg_1">
+										<rect fill="url(#paint0_linear_955_4317)" height="96" id="svg_2" rx="48" width="96" x="8"
+											y="8" />
+										<rect fill="url(#paint1_linear_955_4317)" height="112" id="svg_3" rx="56" width="112" x="0"
+											y="0" />
+										<path d="m55.77,24.58l-0.44,1.44l0,41.68l0.44,0.42l19.83,-11.43l-19.83,-32.11z" fill="#343434"
+											id="svg_4" transform="matrix(1 0 0 1 0 0)" />
+										<path d="m55.76,24.58l-19.83,32.11l19.83,11.43l0,-20.23l0,-23.31z" fill="#8C8C8C" id="svg_5" />
+										<path d="m55.76,71.78l-0.24,0.3l0,14.84l0.24,0.7l19.85,-27.27l-19.85,11.43z" fill="#3C3C3B"
+											id="svg_6" />
+										<path d="m55.76,87.62l0,-15.84l-19.83,-11.43l19.83,27.27z" fill="#8C8C8C" id="svg_7" />
+										<path d="m55.76,68.12l19.84,-11.44l-19.84,-8.79l0,20.23z" fill="#141414" id="svg_8" />
+										<path d="m35.93,56.68l19.83,11.44l0,-20.23l-19.83,8.79z" fill="#393939" id="svg_9" />
+									</g>
+								</g>
+							</svg>
+							<span class="hidden lg:block cursor-default">ETH</span>
 						</div>
 						<div class="flex flex-col items-center gap-2 ml-3">
-							<img class="w-14 h-14" src="/images/coins/USDT.png" alt="Tether Icon"/>
-							<span class="hidden lg:block">USDT</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="usdt-title" role="img">
+								<title id="usdt-title">Tether Icon</title>
+								<defs>
+									<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+										id="filter0_dd_955_4327" width="112" x="0" y="0">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset />
+										<feGaussianBlur stdDeviation="4" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix"
+											values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+										<feBlend in2="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset dy="2" />
+										<feGaussianBlur stdDeviation="1.5" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+										<feBlend in2="effect1_dropShadow_955_4327" />
+										<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4327" />
+									</filter>
+									<linearGradient id="paint0_linear_955_4327" x1="0.1" x2="0.59" y1="1.37" y2="0.32">
+										<stop stop-color="#8DDAD5" />
+										<stop offset="1" stop-color="#1BA27A" />
+									</linearGradient>
+								</defs>
+								<g class="layer">
+									<g filter="url(#filter0_dd_955_4327)" id="svg_1">
+										<rect fill="url(#paint0_linear_955_4327)" height="112" id="svg_2" rx="56" width="112" x="0.5"
+											y="0" />
+										<path d="m83.05,26.62l-53.89,0l0,12.83l20.44,0l0,18.87l13.01,0l0,-18.87l20.44,0l0,-12.83z"
+											fill="white" id="svg_3" transform="matrix(1 0 0 1 0 0)" />
+										<path
+											d="m56.23,60.33c-16.91,0 -30.61,-2.64 -30.61,-5.89c0,-3.26 13.71,-5.9 30.61,-5.9c16.92,0 30.63,2.65 30.63,5.9c0,3.26 -13.71,5.89 -30.63,5.89zm34.38,-4.91c0,-4.2 -15.39,-7.61 -34.38,-7.61c-18.98,0 -34.38,3.41 -34.38,7.61c0,3.69 11.94,6.78 27.76,7.47l0,27.08l13.01,0l0,-27.08c15.94,-0.66 28,-3.75 28,-7.47l-0.01,0z"
+											fill="white" id="svg_4" />
+									</g>
+								</g>
+							</svg>
+							<span class="hidden lg:block cursor-default">USDT</span>
 						</div>
 						<div class="flex flex-col items-center gap-2 ml-3">
-							<img class="w-14 h-14" src="/images/coins/TON.png" alt="Toncoin Icon"/>
-							<span class="hidden lg:block">TON</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="bnb-title" role="img">
+								<title id="ton-title">Toncoin Icon</title>
+								<defs>
+									<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+										id="filter0_dd_955_4333" width="112" x="0" y="0">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset />
+										<feGaussianBlur stdDeviation="4" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix"
+											values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+										<feBlend in2="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset dy="2" />
+										<feGaussianBlur stdDeviation="1.5" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+										<feBlend in2="effect1_dropShadow_955_4333" />
+										<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4333" />
+									</filter>
+									<linearGradient id="paint0_linear_955_4333" x1="0.93" x2="0.15" y1="-0.08" y2="1.22">
+										<stop stop-color="#04BEFE" />
+										<stop offset="1" stop-color="#4481EB" />
+									</linearGradient>
+								</defs>
+								<g class="layer">
+									<g filter="url(#filter0_dd_955_4333)" id="svg_1">
+										<rect fill="url(#paint0_linear_955_4333)" height="112" id="svg_2" rx="56" width="112" x="0"
+											y="0" />
+										<path
+											d="m72.82,34.79l-32.78,0c-6.03,0 -9.85,6.5 -6.82,11.76l20.23,35.06c1.32,2.29 4.63,2.29 5.95,0l20.24,-35.06c3.02,-5.25 -0.8,-11.76 -6.82,-11.76l0,0zm-19.38,36.31l-4.41,-8.53l-10.63,-19.01c-0.7,-1.22 0.16,-2.78 1.63,-2.78l13.4,0l0,30.32l0.01,0zm21.01,-27.55l-10.63,19.02l-4.41,8.53l0,-30.32l13.4,0c1.47,0 2.34,1.56 1.64,2.77z"
+											fill="white" id="svg_3" />
+									</g>
+								</g>
+							</svg>
+							<span class="hidden lg:block cursor-default">TON</span>
 						</div>
 						<div class="flex flex-col items-center gap-2 ml-3">
-							<img class="w-14 h-14" src="/images/coins/BTC.png" alt="Bitcoin Icon"/>
-							<span class="hidden lg:block">BTC</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="btc-title" role="img">
+								<title id="btc-title">Bitcoin Icon</title>
+								<defs>
+									<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+										id="filter0_dd_955_4337" width="112" x="0" y="0">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset />
+										<feGaussianBlur stdDeviation="4" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix"
+											values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+										<feBlend in2="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset dy="2" />
+										<feGaussianBlur stdDeviation="1.5" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+										<feBlend in2="effect1_dropShadow_955_4337" />
+										<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4337" />
+									</filter>
+									<linearGradient id="paint0_linear_955_4337" x1="-0.17" x2="0.82" y1="1.7" y2="0">
+										<stop stop-color="#FF930F" />
+										<stop offset="1" stop-color="#FBC411" />
+									</linearGradient>
+								</defs>
+								<g class="layer">
+									<g filter="url(#filter0_dd_955_4337)" id="svg_1">
+										<rect fill="url(#paint0_linear_955_4337)" height="112" id="svg_2" rx="56" width="112" x="0" y="0" />
+										<path
+											d="m79.26,49.09c1.06,-7.05 -4.31,-10.83 -11.66,-13.36l2.38,-9.56l-5.81,-1.44l-2.31,9.29c-1.53,-0.38 -3.1,-0.74 -4.66,-1.09l2.33,-9.36l-5.81,-1.45l-2.38,9.55c-1.26,-0.29 -2.51,-0.58 -3.71,-0.88l0,-0.03l-8.01,-2l-1.55,6.21c0,0 4.32,0.99 4.22,1.05c2.36,0.59 2.78,2.14 2.71,3.38l-2.71,10.88c0.17,0.04 0.37,0.1 0.6,0.19l-0.61,-0.15l-3.8,15.24c-0.29,0.72 -1.02,1.79 -2.66,1.38c0.06,0.09 -4.23,-1.05 -4.23,-1.05l-2.88,6.65l7.57,1.89c1.4,0.35 2.78,0.72 4.14,1.06l-2.4,9.66l5.8,1.45l2.38,-9.56c1.59,0.43 3.13,0.83 4.63,1.21l-2.37,9.51l5.81,1.44l2.4,-9.63c9.91,1.87 17.38,1.11 20.51,-7.85c2.53,-7.22 -0.13,-11.39 -5.34,-14.1c3.8,-0.87 6.66,-3.37 7.42,-8.53zm-13.27,18.62c-1.8,7.22 -13.96,3.32 -17.9,2.34l3.19,-12.8c3.94,0.99 16.58,2.94 14.71,10.46zm1.79,-18.73c-1.64,6.57 -11.76,3.23 -15.04,2.42l2.89,-11.6c3.28,0.81 13.86,2.34 12.15,9.18z"
+											fill="white" id="svg_3" transform="matrix(1 0 0 1 0 0)" />
+										<path d="m42.37,50.03l0.86,0.21l-0.16,0.64l-0.86,-0.22l0.16,-0.63z" fill="white" id="svg_4" />
+									</g>
+								</g>
+							</svg>
+							<span class="hidden lg:block cursor-default">BTC</span>
 						</div>
 						<div class="flex flex-col items-center gap-2 ml-3">
-							<img class="w-14 h-14" src="/images/coins/TRX.png" alt="Tron Icon"/>
-							<span class="hidden lg:block">TRX</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="trx-title" role="img">
+								<title id="trx-title">Tron Icon</title>
+								<defs>
+									<linearGradient id="paint0_linear_955_4343" x1="0.65" x2="0" y1="0.15" y2="1.49">
+										<stop stop-color="#FC070C" />
+										<stop offset="1" stop-color="#F45C43" />
+									</linearGradient>
+								</defs>
+								<g class="layer">
+									<rect fill="url(#paint0_linear_955_4343)" height="112" id="svg_2" rx="56" width="112" x="0" y="0" />
+									<path clip-rule="evenodd"
+										d="m88.07,46.03c-1.33,-1.23 -2.88,-2.72 -4.5,-4.28c-2.27,-2.2 -4.67,-4.51 -6.79,-6.37l-0.21,-0.15c-0.36,-0.28 -0.76,-0.51 -1.19,-0.66l-1.64,-0.3c-11.27,-2.08 -47.81,-8.86 -48.56,-8.77c-0.22,0.03 -0.43,0.1 -0.62,0.23l-0.21,0.16c-0.25,0.26 -0.43,0.56 -0.55,0.9l-0.06,0.14l0,0.76l0,0.12c2.48,6.86 8.93,22.19 14.88,36.32l0,0l0,0l0,0.01c5.03,11.95 9.7,23.08 11.33,27.53l0.01,0c0.21,0.66 0.62,1.92 1.38,1.99l0.16,0c0.41,0 2.14,-2.28 2.14,-2.28c0,0 31.06,-37.41 34.19,-41.39c0.41,-0.49 0.77,-1.01 1.08,-1.57c0.15,-0.88 -0.16,-1.79 -0.85,-2.38l0.01,-0.01zm-26.44,4.35l13.25,-10.91l7.77,7.1l-21.02,3.8l0,0.01zm-27.96,-19.28l22.81,18.57l14.11,-11.81l-36.92,-6.76zm24.87,23.44l23.35,-3.74l-26.7,31.95l3.35,-28.21zm-3.97,-1.36l-24,-20.23l20.52,49.82l3.48,-29.59z"
+										fill="white" fill-rule="evenodd" id="svg_3" />
+								</g>
+							</svg>
+							<span class="hidden lg:block cursor-default">TRX</span>
 						</div>
 						<div class="flex flex-col items-center gap-2 ml-3">
-							<img class="w-14 h-14" src="/images/coins/LTC.png" alt="Litecoin Icon"/>
-							<span class="hidden lg:block">LTC</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 97 96" aria-labelledby="ltc-title" role="img">
+								<title id="ltc-title">Litecion Icon</title>
+								<g clip-path="url(#clip0_955_5686)">
+									<path d="M48.5714 90.8049C72.2119 90.8049 91.3763 71.6405 91.3763 48C91.3763 24.3596 72.2119 5.19519 48.5714 5.19519C24.931 5.19519 5.7666 24.3596 5.7666 48C5.7666 71.6405 24.931 90.8049 48.5714 90.8049Z" fill="white"/>
+									<g filter="url(#filter0_dd_955_5686)">
+										<path d="M48.5715 0C39.078 0 29.7977 2.81515 21.9041 8.08946C14.0106 13.3638 7.85828 20.8603 4.22528 29.6312C0.59227 38.4021 -0.35829 48.0532 1.4938 57.3643C3.34589 66.6754 7.91745 75.2282 14.6304 81.9411C21.3433 88.654 29.8961 93.2256 39.2072 95.0777C48.5182 96.9298 58.1694 95.9792 66.9403 92.3462C75.7112 88.7132 83.2077 82.5609 88.482 74.6674C93.7563 66.7738 96.5715 57.4935 96.5715 48C96.5898 41.7149 95.37 35.4876 92.9818 29.6739C90.5935 23.8602 87.0835 18.5738 82.6521 14.1166C78.2208 9.65937 72.955 6.11861 67.1553 3.69648C61.3556 1.27436 55.1356 0.0182884 48.8504 0H48.5715ZM49.3851 49.6271L44.3875 66.4794H71.1187C71.2958 66.4732 71.4723 66.502 71.6383 66.564C71.8042 66.6261 71.9563 66.7203 72.0859 66.8412C72.2154 66.9621 72.3198 67.1073 72.3932 67.2686C72.4665 67.4299 72.5074 67.604 72.5134 67.7811V68.2228L70.1889 76.2421C70.0864 76.6214 69.858 76.9545 69.5413 77.1868C69.2245 77.4191 68.8381 77.5368 68.4456 77.5206H27.5352L34.3923 54.1598L26.7216 56.4843L28.465 51.138L36.1357 48.8136L45.7822 16.0387C45.8883 15.6616 46.1177 15.3309 46.4336 15.0992C46.7495 14.8675 47.1339 14.7482 47.5255 14.7603H57.8693C58.0464 14.7541 58.2229 14.7828 58.3889 14.8449C58.5549 14.907 58.7069 15.0012 58.8365 15.122C58.966 15.2429 59.0704 15.3882 59.1438 15.5495C59.2171 15.7107 59.258 15.8849 59.264 16.062V16.5036L51.1284 44.1646L58.7991 41.8402L57.172 47.4189L49.3851 49.6271Z" fill="url(#paint0_linear_955_5686)"/>
+									</g>
+								</g>
+								<defs>
+									<filter id="filter0_dd_955_5686" x="-7.42853" y="-8" width="112" height="112" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+										<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+										<feOffset/>
+										<feGaussianBlur stdDeviation="4"/>
+										<feComposite in2="hardAlpha" operator="out"/>
+										<feColorMatrix type="matrix" values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0"/>
+										<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_955_5686"/>
+										<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+										<feOffset dy="2"/>
+										<feGaussianBlur stdDeviation="1.5"/>
+										<feComposite in2="hardAlpha" operator="out"/>
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0"/>
+										<feBlend mode="normal" in2="effect1_dropShadow_955_5686" result="effect2_dropShadow_955_5686"/>
+										<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_955_5686" result="shape"/>
+									</filter>
+									<linearGradient id="paint0_linear_955_5686" x1="16.5715" y1="-2.5" x2="76.0715" y2="102" gradientUnits="userSpaceOnUse">
+										<stop stop-color="#3F68A8"/>
+										<stop offset="1" stop-color="#2C5493"/>
+									</linearGradient>
+									<clipPath id="clip0_955_5686">
+										<rect width="96" height="96" fill="white" transform="translate(0.571472)"/>
+									</clipPath>
+								</defs>
+							</svg>
+							<span class="hidden lg:block cursor-default">LTC</span>
 						</div>
 						<div class="flex flex-col items-center gap-2 ml-3">
-							<img class="w-14 h-14" src="/images/coins/USDC.png" alt="USD Coin Icon"/>
-							<span class="hidden lg:block">USDC</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="usdc-title" role="img">
+								<title id="usdc-title">USD Coin Icon</title>
+								<defs>
+									<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+										id="filter0_dd_955_4358" width="112" x="0" y="0">
+										<feFlood flood-opacity="0" result="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset />
+										<feGaussianBlur stdDeviation="4" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix"
+											values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+										<feBlend in2="BackgroundImageFix" />
+										<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+											values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+										<feOffset dy="2" />
+										<feGaussianBlur stdDeviation="1.5" />
+										<feComposite in2="hardAlpha" operator="out" />
+										<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+										<feBlend in2="effect1_dropShadow_955_4358" />
+										<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4358" />
+									</filter>
+									<linearGradient id="paint0_linear_955_4358" x1="0.55" x2="-0.4" y1="0.41" y2="1.83">
+										<stop stop-color="#2775CA" />
+										<stop offset="1" stop-color="#00BBF9" />
+									</linearGradient>
+								</defs>
+								<g class="layer">
+									<g filter="url(#filter0_dd_955_4358)" id="svg_1">
+										<rect fill="url(#paint0_linear_955_4358)" height="112" id="svg_2" rx="56" width="112" x="0"
+											y="0" />
+										<path
+											d="m72.26,64.76c0,-8.27 -5.01,-11.1 -15.02,-12.28c-7.14,-0.95 -8.58,-2.83 -8.58,-6.14c0,-3.31 2.38,-5.43 7.15,-5.43c4.29,0 6.67,1.41 7.86,4.96c0.23,0.71 0.96,1.18 1.67,1.18l3.82,0c0.96,0 1.67,-0.71 1.67,-1.65l0,-0.23c-0.96,-5.2 -5.25,-9.22 -10.72,-9.69l0,-5.67c0,-0.95 -0.72,-1.65 -1.91,-1.9l-3.57,0c-0.96,0 -1.67,0.72 -1.91,1.9l0,5.43c-7.15,0.94 -11.68,5.67 -11.68,11.57c0,7.79 4.77,10.86 14.78,12.04c6.67,1.19 8.82,2.6 8.82,6.38c0,3.78 -3.34,6.38 -7.86,6.38c-6.21,0 -8.34,-2.6 -9.07,-6.15c-0.23,-0.94 -0.95,-1.41 -1.67,-1.41l-4.05,0c-0.96,0 -1.67,0.71 -1.67,1.65l0,0.23c0.96,5.91 4.77,10.16 12.64,11.34l0,5.67c0,0.95 0.71,1.65 1.9,1.9l3.58,0c0.95,0 1.67,-0.72 1.9,-1.9l0,-5.67c7.15,-1.18 11.91,-6.14 11.91,-12.52l0.01,0.01z"
+											fill="white" id="svg_3" />
+										<path clip-rule="evenodd"
+											d="m23.17,44.22c-6.91,18.19 2.63,38.73 21.21,45.35c0.71,0.47 1.44,1.42 1.44,2.13l0,3.31c0,0.47 0,0.71 -0.25,0.95c-0.23,0.94 -1.19,1.41 -2.15,0.94c-13.35,-4.24 -23.59,-14.41 -27.88,-27.63c-7.15,-22.43 5.25,-46.3 27.88,-53.38c0.25,-0.23 0.72,-0.23 0.96,-0.23c0.96,0.23 1.44,0.95 1.44,1.88l0,3.31c0,1.19 -0.48,1.9 -1.44,2.37c-9.77,3.54 -17.63,11.1 -21.21,21.02l0,-0.02zm44.32,-27.4c0.25,-0.95 1.19,-1.41 2.15,-0.95c13.11,4.25 23.6,14.42 27.88,27.88c7.15,22.44 -5.24,46.3 -27.88,53.38c-0.23,0.23 -0.71,0.23 -0.96,0.23c-0.95,-0.23 -1.42,-0.94 -1.42,-1.88l0,-3.31c0,-1.18 0.48,-1.9 1.42,-2.36c9.78,-3.55 17.64,-11.11 21.21,-21.03c6.92,-18.19 -2.61,-38.73 -21.21,-45.35c-0.71,-0.47 -1.42,-1.41 -1.42,-2.36l0,-3.31c0,-0.47 0,-0.71 0.23,-0.95l0,0.01z"
+											fill="white" fill-rule="evenodd" id="svg_4" />
+									</g>
+								</g>
+							</svg>
+							<span class="hidden lg:block cursor-default">USDC</span>
 						</div>
 						<div class="flex flex-col items-center gap-2 ml-3">
-							<img class="w-14 h-14" src="/images/coins/BNB.png" alt="BNB Icon"/>
-							<span class="hidden lg:block">BNB</span>
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 96 96" aria-labelledby="bnb-title" role="img">
+								<title id="bnb-icon">Binance Coin Icon</title>
+								<defs>
+									<linearGradient id="paint0_linear_955_5626" x1="0.79" x2="0.03" y1="1.13" y2="-0.15">
+										<stop stop-color="#E9B204" />
+										<stop offset="1" stop-color="#F0B90B" />
+									</linearGradient>
+									<clipPath id="clip0_955_5626">
+										<rect fill="white" height="96" id="svg_1" width="96" />
+									</clipPath>
+								</defs>
+								<g class="layer">
+									<g clip-path="url(#clip0_955_5626)" id="svg_2">
+										<mask height="96" id="mask0_955_5626" maskUnits="userSpaceOnUse" width="96" x="0" y="0">
+											<path d="m0,0l96,0l0,96l-96,0l0,-96z" fill="white" id="svg_3" />
+										</mask>
+										<g id="svg_4" mask="url(#mask0_955_5626)">
+											<path
+												d="m48,0c26.51,0 48,21.49 48,48c0,26.51 -21.49,48 -48,48c-26.51,0 -48,-21.49 -48,-48c0,-26.51 21.49,-48 48,-48z"
+												fill="url(#paint0_linear_955_5626)" id="svg_5" />
+											<path
+												d="m35.58,42.84l7.27,-7.24l1.53,-1.53l3.63,-3.63l12.37,12.4l7.2,-7.24l-19.57,-19.6l-19.63,19.6l7.2,7.24z"
+												fill="white" id="svg_6" />
+											<path d="m40.79,47.99l7.23,-7.23l7.23,7.23l-7.23,7.23l-7.23,-7.23z" fill="white" id="svg_7" />
+											<path
+												d="m60.38,53.17l-12.37,12.37l-4.35,-4.34l-0.8,-0.8l-7.28,-7.23l-7.2,7.2l19.63,19.6l19.57,-19.6l-7.2,-7.2z"
+												fill="white" id="svg_8" />
+											<path d="m16,48.01l7.23,-7.23l7.23,7.23l-7.23,7.23l-7.23,-7.23z" fill="white" id="svg_9" />
+											<path d="m65.54,48l7.23,-7.23l7.23,7.23l-7.23,7.23l-7.23,-7.23z" fill="white" id="svg_10" />
+										</g>
+									</g>
+								</g>
+							</svg>
+							<span class="hidden lg:block cursor-default">BNB</span>
 						</div>
 					</div>
 					<div class="flex flex-col gap-4">
-						<h2 class="font-semibold text-[28px] dark:text-white">
+						<h2 class="font-semibold text-[28px] lg:text-[42px] dark:text-white">
 							Accept a wide range of cryptocurrencies
 						</h2>
 						<p class="text-lg">
@@ -348,7 +630,8 @@
 				</section>
 
 				<section class="
-					flex flex-col items-center gap-6 p-8 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-2 lg:row-span-2
+					flex flex-col items-center gap-6 p-8 lg:py-[42px] lg:px-14 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl 
+					lg:col-span-2 lg:row-span-2
 				">
 					<div class="py-7 px-5">
 						<div class="
@@ -370,7 +653,7 @@
 						</div>
 					</div>
 					<div class="w-full flex flex-col items-start gap-4">
-						<h2 class="font-semibold text-[28px] dark:text-white">
+						<h2 class="font-semibold text-[28px] lg:text-[42px] dark:text-white">
 							One click to start
 						</h2>
 						<p class="text-lg">
@@ -380,17 +663,133 @@
 					</div>
 				</section>
 
-				<section class="flex flex-col gap-6 p-8 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-2 lg:row-span-2 lg:row-start-5">
+				<section class="
+					flex flex-col gap-6 p-8 lg:py-[42px] lg:px-14 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-2 
+					lg:row-span-2 lg:row-start-5
+				">
 					<div class="flex justify-center items-center">
 						<div class="flex">
 							<div class="border-4 border-gray-50 dark:border-gray-900 rounded-full">
-								<img class="w-14 h-14" src="/images/coins/USDT.png" alt="Tether Icon"/>
+								<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="usdt-title-2" role="img">
+									<title id="usdt-title-2">Tether Icon</title>
+									<defs>
+										<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+											id="filter0_dd_955_4327" width="112" x="0" y="0">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+											<feOffset />
+											<feGaussianBlur stdDeviation="4" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix"
+												values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+											<feBlend in2="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+											<feOffset dy="2" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+											<feBlend in2="effect1_dropShadow_955_4327" />
+											<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4327" />
+										</filter>
+										<linearGradient id="paint0_linear_955_4327" x1="0.1" x2="0.59" y1="1.37" y2="0.32">
+											<stop stop-color="#8DDAD5" />
+											<stop offset="1" stop-color="#1BA27A" />
+										</linearGradient>
+									</defs>
+									<g class="layer">
+										<g filter="url(#filter0_dd_955_4327)" id="svg_1">
+											<rect fill="url(#paint0_linear_955_4327)" height="112" id="svg_2" rx="56" width="112" x="0.5"
+												y="0" />
+											<path d="m83.05,26.62l-53.89,0l0,12.83l20.44,0l0,18.87l13.01,0l0,-18.87l20.44,0l0,-12.83z"
+												fill="white" id="svg_3" transform="matrix(1 0 0 1 0 0)" />
+											<path
+												d="m56.23,60.33c-16.91,0 -30.61,-2.64 -30.61,-5.89c0,-3.26 13.71,-5.9 30.61,-5.9c16.92,0 30.63,2.65 30.63,5.9c0,3.26 -13.71,5.89 -30.63,5.89zm34.38,-4.91c0,-4.2 -15.39,-7.61 -34.38,-7.61c-18.98,0 -34.38,3.41 -34.38,7.61c0,3.69 11.94,6.78 27.76,7.47l0,27.08l13.01,0l0,-27.08c15.94,-0.66 28,-3.75 28,-7.47l-0.01,0z"
+												fill="white" id="svg_4" />
+										</g>
+									</g>
+								</svg>
 							</div>
 							<div class="-ml-[44px] border-4 border-gray-50 dark:border-gray-900 rounded-full">
-								<img class="w-14 h-14" src="/images/coins/BTC.png" alt="Bitcoin Icon"/>
+								<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="btc-title-2" role="img">
+									<title id="btc-title-2">Bitcoin Icon</title>
+									<defs>
+										<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+											id="filter0_dd_955_4337" width="112" x="0" y="0">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+											<feOffset />
+											<feGaussianBlur stdDeviation="4" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix"
+												values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+											<feBlend in2="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+											<feOffset dy="2" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+											<feBlend in2="effect1_dropShadow_955_4337" />
+											<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4337" />
+										</filter>
+										<linearGradient id="paint0_linear_955_4337" x1="-0.17" x2="0.82" y1="1.7" y2="0">
+											<stop stop-color="#FF930F" />
+											<stop offset="1" stop-color="#FBC411" />
+										</linearGradient>
+									</defs>
+									<g class="layer">
+										<g filter="url(#filter0_dd_955_4337)" id="svg_1">
+											<rect fill="url(#paint0_linear_955_4337)" height="112" id="svg_2" rx="56" width="112" x="0" y="0" />
+											<path
+												d="m79.26,49.09c1.06,-7.05 -4.31,-10.83 -11.66,-13.36l2.38,-9.56l-5.81,-1.44l-2.31,9.29c-1.53,-0.38 -3.1,-0.74 -4.66,-1.09l2.33,-9.36l-5.81,-1.45l-2.38,9.55c-1.26,-0.29 -2.51,-0.58 -3.71,-0.88l0,-0.03l-8.01,-2l-1.55,6.21c0,0 4.32,0.99 4.22,1.05c2.36,0.59 2.78,2.14 2.71,3.38l-2.71,10.88c0.17,0.04 0.37,0.1 0.6,0.19l-0.61,-0.15l-3.8,15.24c-0.29,0.72 -1.02,1.79 -2.66,1.38c0.06,0.09 -4.23,-1.05 -4.23,-1.05l-2.88,6.65l7.57,1.89c1.4,0.35 2.78,0.72 4.14,1.06l-2.4,9.66l5.8,1.45l2.38,-9.56c1.59,0.43 3.13,0.83 4.63,1.21l-2.37,9.51l5.81,1.44l2.4,-9.63c9.91,1.87 17.38,1.11 20.51,-7.85c2.53,-7.22 -0.13,-11.39 -5.34,-14.1c3.8,-0.87 6.66,-3.37 7.42,-8.53zm-13.27,18.62c-1.8,7.22 -13.96,3.32 -17.9,2.34l3.19,-12.8c3.94,0.99 16.58,2.94 14.71,10.46zm1.79,-18.73c-1.64,6.57 -11.76,3.23 -15.04,2.42l2.89,-11.6c3.28,0.81 13.86,2.34 12.15,9.18z"
+												fill="white" id="svg_3" transform="matrix(1 0 0 1 0 0)" />
+											<path d="m42.37,50.03l0.86,0.21l-0.16,0.64l-0.86,-0.22l0.16,-0.63z" fill="white" id="svg_4" />
+										</g>
+									</g>
+								</svg>
 							</div>
 							<div class="-ml-[44px] border-4 border-gray-50 dark:border-gray-900 rounded-full">
-								<img class="w-14 h-14" src="/images/coins/TON.png" alt="Toncoin Icon"/>
+								<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="bnb-title-2" role="img">
+									<title id="ton-title-2">Toncoin Icon</title>
+									<defs>
+										<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+											id="filter0_dd_955_4333" width="112" x="0" y="0">
+											<feFlood flood-opacity="0" result="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+											<feOffset />
+											<feGaussianBlur stdDeviation="4" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix"
+												values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+											<feBlend in2="BackgroundImageFix" />
+											<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+												values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+											<feOffset dy="2" />
+											<feGaussianBlur stdDeviation="1.5" />
+											<feComposite in2="hardAlpha" operator="out" />
+											<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+											<feBlend in2="effect1_dropShadow_955_4333" />
+											<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4333" />
+										</filter>
+										<linearGradient id="paint0_linear_955_4333" x1="0.93" x2="0.15" y1="-0.08" y2="1.22">
+											<stop stop-color="#04BEFE" />
+											<stop offset="1" stop-color="#4481EB" />
+										</linearGradient>
+									</defs>
+									<g class="layer">
+										<g filter="url(#filter0_dd_955_4333)" id="svg_1">
+											<rect fill="url(#paint0_linear_955_4333)" height="112" id="svg_2" rx="56" width="112" x="0"
+												y="0" />
+											<path
+												d="m72.82,34.79l-32.78,0c-6.03,0 -9.85,6.5 -6.82,11.76l20.23,35.06c1.32,2.29 4.63,2.29 5.95,0l20.24,-35.06c3.02,-5.25 -0.8,-11.76 -6.82,-11.76l0,0zm-19.38,36.31l-4.41,-8.53l-10.63,-19.01c-0.7,-1.22 0.16,-2.78 1.63,-2.78l13.4,0l0,30.32l0.01,0zm21.01,-27.55l-10.63,19.02l-4.41,8.53l0,-30.32l13.4,0c1.47,0 2.34,1.56 1.64,2.77z"
+												fill="white" id="svg_3" />
+										</g>
+									</g>
+								</svg>
 							</div>
 						</div>
 
@@ -406,10 +805,47 @@
 							</svg>
 						</div>
 
-						<img class="w-14 h-14" src="/images/coins/USD.png" alt="USD Icon">
+						<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="usd-title" role="img">
+							<title id="usd-title">USD Icon</title>
+							<defs>
+								<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+									id="filter0_dd_955_4382" width="112" x="0" y="0">
+									<feFlood flood-opacity="0" result="BackgroundImageFix" />
+									<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+									<feOffset />
+									<feGaussianBlur stdDeviation="4" />
+									<feComposite in2="hardAlpha" operator="out" />
+									<feColorMatrix type="matrix"
+										values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+									<feBlend in2="BackgroundImageFix" />
+									<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+										values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+									<feOffset dy="2" />
+									<feGaussianBlur stdDeviation="1.5" />
+									<feComposite in2="hardAlpha" operator="out" />
+									<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+									<feBlend in2="effect1_dropShadow_955_4382" />
+									<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4382" />
+								</filter>
+								<linearGradient id="paint0_linear_955_4382" x1="-0.02" x2="1.16" y1="1.86" y2="1.61">
+									<stop stop-color="#181818" />
+									<stop offset="1" stop-color="#2F2F2F" />
+								</linearGradient>
+							</defs>
+							<g class="layer">
+								<g filter="url(#filter0_dd_955_4382)" id="svg_1">
+									<rect fill="url(#paint0_linear_955_4382)" height="112" id="svg_2" rx="56" width="112" x="0"
+										y="0" />
+									<path
+										d="m53.96,81.09l0,-50.91l3.26,0l0,50.91l-3.26,0zm10.2,-35.12c-0.21,-1.88 -1.08,-3.34 -2.62,-4.37c-1.54,-1.05 -3.47,-1.57 -5.81,-1.57c-1.67,0 -3.11,0.26 -4.33,0.79c-1.22,0.52 -2.17,1.23 -2.85,2.15c-0.66,0.9 -0.99,1.93 -0.99,3.08c0,0.97 0.22,1.8 0.68,2.51c0.46,0.7 1.06,1.29 1.8,1.77c0.76,0.46 1.57,0.85 2.43,1.17c0.86,0.3 1.69,0.56 2.49,0.76l3.97,1.03c1.3,0.32 2.64,0.75 4,1.29c1.37,0.55 2.63,1.26 3.8,2.15c1.17,0.89 2.11,1.99 2.82,3.3c0.73,1.31 1.1,2.88 1.1,4.71c0,2.31 -0.6,4.36 -1.79,6.15c-1.18,1.79 -2.9,3.2 -5.15,4.24c-2.24,1.03 -4.95,1.55 -8.14,1.55c-3.05,0 -5.68,-0.49 -7.91,-1.46c-2.23,-0.96 -3.97,-2.34 -5.23,-4.11c-1.26,-1.79 -1.96,-3.91 -2.09,-6.37l6.17,0c0.11,1.48 0.59,2.7 1.43,3.68c0.85,0.97 1.93,1.69 3.24,2.17c1.32,0.46 2.78,0.7 4.35,0.7c1.74,0 3.28,-0.27 4.64,-0.82c1.36,-0.56 2.44,-1.32 3.22,-2.31c0.78,-0.99 1.17,-2.15 1.17,-3.48c0,-1.2 -0.34,-2.19 -1.03,-2.96c-0.68,-0.77 -1.6,-1.4 -2.77,-1.91c-1.15,-0.5 -2.46,-0.95 -3.91,-1.33l-4.82,-1.31c-3.26,-0.89 -5.84,-2.2 -7.75,-3.92c-1.9,-1.72 -2.85,-4 -2.85,-6.84c0,-2.35 0.64,-4.4 1.91,-6.15c1.28,-1.75 3,-3.1 5.17,-4.07c2.18,-0.98 4.63,-1.47 7.36,-1.47c2.76,0 5.19,0.48 7.3,1.45c2.12,0.97 3.79,2.3 5.01,3.99c1.22,1.69 1.86,3.62 1.91,5.81l-5.93,0z"
+										fill="white" id="svg_3" />
+								</g>
+							</g>
+						</svg>
 					</div>
 					<div class="flex flex-col gap-4">
-						<h2 class="font-semibold text-[28px] dark:text-white">
+						<h2 class="font-semibold text-[28px] lg:text-[42px] dark:text-white">
 							Real-time exchange rates
 						</h2>
 						<p class="text-lg">
@@ -418,12 +854,19 @@
 					</div>
 				</section>
 
-				<section class="flex flex-col gap-6 p-8 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-3 lg:row-span-4">
-					<div class="flex flex-col gap-[2px] py-6 px-5 text-[10px] text-black bg-telegram bg-cover bg-no-repeat rounded-2xl">
+				<section class="
+					flex flex-col items-center gap-6 p-8 lg:py-[42px] lg:px-14 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl 
+					lg:col-span-3 lg:row-span-4
+				">
+					<div class="
+						max-w-[336px] lg:max-w-reset flex flex-col gap-[2px] lg:gap-1 py-6 px-5 lg:py-12 lg:px-[76px] text-[10px] text-black 
+						bg-telegram bg-cover bg-no-repeat rounded-2xl
+					">
 						<div>
 							<div 
-								class="relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								class="relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:text-lg bg-white rounded-t-[9px] rounded-b-sm"
 								data-value="all"
+								aria-hidden="false"
 							>
 								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
 								<br/>
@@ -434,13 +877,17 @@
 								<p>Number of users: <strong>5,606</strong></p>
 								<br/>
 								<p>Conversion: <strong>41%</strong></p>
-								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+								<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
 									21:25
 								</span>
 							</div>
 							<div 
-								class="hidden relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								class="
+									hidden relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:py-[10px] lg:px-4 lg:text-lg bg-white 
+									rounded-t-[9px] rounded-b-sm
+								"
 								data-value="today"
+								aria-hidden="true"
 							>
 								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
 								<br/>
@@ -451,13 +898,17 @@
 								<p>Number of users: <strong>5,606</strong></p>
 								<br/>
 								<p>Conversion: <strong>41%</strong></p>
-								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+								<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
 									21:25
 								</span>
 							</div>
 							<div 
-								class="hidden relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								class="
+									hidden relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:py-[10px] lg:px-4 lg:text-lg bg-white 
+									rounded-t-[9px] rounded-b-sm
+								"
 								data-value="yesterday"
+								aria-hidden="true"
 							>
 								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
 								<br/>
@@ -468,13 +919,17 @@
 								<p>Number of users: <strong>5,606</strong></p>
 								<br/>
 								<p>Conversion: <strong>41%</strong></p>
-								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+								<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
 									21:25
 								</span>
 							</div>
 							<div 
-								class="hidden relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								class="
+									hidden relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:py-[10px] lg:px-4 lg:text-lg bg-white 
+									rounded-t-[9px] rounded-b-sm
+								"
 								data-value="week"
+								aria-hidden="true"
 							>
 								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
 								<br/>
@@ -485,13 +940,17 @@
 								<p>Number of users: <strong>5,606</strong></p>
 								<br/>
 								<p>Conversion: <strong>41%</strong></p>
-								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+								<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
 									21:25
 								</span>
 							</div>
 							<div 
-								class="hidden relative w-full py-[6px] px-3 bg-white rounded-t-[9px] rounded-b-sm"
+								class="
+									hidden relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:py-[10px] lg:px-4 lg:text-lg bg-white 
+									rounded-t-[9px] rounded-b-sm
+								"
 								data-value="month"
+								aria-hidden="true"
 							>
 								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
 								<br/>
@@ -502,15 +961,15 @@
 								<p>Number of users: <strong>5,606</strong></p>
 								<br/>
 								<p>Conversion: <strong>41%</strong></p>
-								<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+								<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
 									21:25
 								</span>
 							</div>
 						</div>
-						<div class="grid grid-cols-2 gap-[2px] text-center text-white">
+						<div class="grid grid-cols-2 gap-[2px] lg:gap-1 text-center text-white">
 							<button 
 								class="
-									p-2 bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
+									p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
 									data-[active=true]:bg-opacity-60
 								"
 								type="button"
@@ -521,7 +980,7 @@
 							</button>
 							<button 
 								class="
-									p-2 bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
+									p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
 									data-[active=true]:bg-opacity-60
 								"
 								type="button"
@@ -531,7 +990,7 @@
 							</button>
 							<button 
 								class="
-									p-2 bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
+									p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
 									data-[active=true]:bg-opacity-60
 								"
 								type="button"
@@ -541,7 +1000,7 @@
 							</button>
 							<button 
 								class="
-									p-2 bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
+									p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
 									data-[active=true]:bg-opacity-60
 								"
 								type="button"
@@ -551,7 +1010,7 @@
 							</button>
 							<button 
 								class="
-									col-span-2 p-2 bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors
+									col-span-2 p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors
 									data-[active=true]:bg-opacity-60
 								"
 								type="button"
@@ -561,13 +1020,13 @@
 							</button>
 							<button 
 								class="
-									col-span-2 flex justify-center items-center gap-1 p-2 bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 
+									col-span-2 flex justify-center items-center gap-1 p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 
 									rounded-t-md rounded-b-[9px] transition-colors data-[active=true]:bg-opacity-60
 								" 
 								type="button"
 								data-value="back"
 							>
-								<svg xmlns="http://www.w3.org/2000/svg" width="5" height="7" viewBox="0 0 5 7" fill="none">
+								<svg xmlns="http://www.w3.org/2000/svg" class="w-[5px] lg:w-[7px]" viewBox="0 0 5 7" fill="none">
 									<path d="M3.49012 1.66394L1.47705 3.67701L3.49012 5.69008" stroke="white" stroke-width="1.5098" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg>
 								<span>Back</span>
@@ -575,7 +1034,7 @@
 						</div>
 					</div>
 					<div class="flex flex-col gap-4">
-						<h2 class="font-semibold text-[28px] dark:text-white">
+						<h2 class="font-semibold text-[28px] lg:text-[42px] dark:text-white">
 							Payment statistics
 						</h2>
 						<p class="text-lg">
@@ -587,8 +1046,11 @@
 					</div>
 				</section>
 
-				<section class="flex flex-col gap-6 px-8 pb-8 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-3 lg:row-span-3">
-					<div class="bg-glass">
+				<section class="
+					flex flex-col items-center gap-6 px-8 lg:px-[42px] pb-8 lg:pb-[42px] dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl 
+					lg:col-span-3 lg:row-span-3
+				">
+					<div class="max-w-[460px]">
 						<div class="relative">
 							<picture>
 								<source srcset="/images/phone-bottom-dark.webp" media="(prefers-color-scheme: dark)">
@@ -596,25 +1058,25 @@
 							</picture>
 
 							<div class="
-								absolute top-1/5 left-1/10 right-1/10 flex gap-2 p-3 text-[8px] text-black bg-gray-100 bg-opacity-90 rounded-2xl 
+								absolute top-1/5 left-1/10 right-1/10 flex gap-2 lg:gap-4 p-3 text-[8px] text-black bg-gray-100 bg-opacity-90 rounded-2xl 
 								dark:text-gray-300 dark:bg-gray-750
 							">
-								<div class="relative max-w-[28px] max-h-[28px] my-auto">
+								<div class="relative max-w-[28px] max-h-[28px] lg:max-w-[44px] lg:max-h-[44px] my-auto">
 									<img class="rounded-full" src="/logo/icon-128x128.webp" alt="Crypto Pay Logo"/>
-									<img class="absolute w-3 h-3 -bottom-1 -right-1" src="/images/icons/telegram.webp" alt="Telegram icon"/>
+									<img class="absolute w-3 h-3 lg:w-[18px] lg:h-[18px] -bottom-1 -right-1" src="/images/icons/telegram.webp" alt="Telegram icon"/>
 								</div>
-								<div>
+								<div class="lg:text-sm text-black dark:text-white">
 									<p><strong>Crypto Bot</strong></p>
 									<p>💸 You recieved 3448 TON ($5000) from @CryptoBot #A777.</p>
 									<br/>
 									<p>💬 Design contest award 🥇</p>
 								</div>
-								<div class="mb-auto text-darkblue-400">now</div>
+								<div class="mb-auto text-gray-400 lg:text-xs">now</div>
 							</div>
 						</div>
 					</div>
 					<div class="flex flex-col gap-4">
-						<h2 class="font-semibold text-[28px] dark:text-white">
+						<h2 class="font-semibold text-[28px] lg:text-[42px] dark:text-white">
 							Send coins to users
 						</h2>
 						<p class="text-lg">
@@ -623,14 +1085,20 @@
 					</div>
 				</section>
 
-				<section class="flex flex-col gap-6 p-8 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-2 lg:row-span-3">
-					<div class="p-5 text-xs text-black bg-gradient direction-[233deg] from-blue-300 to-blue-600 rounded-2xl z-1">
-						<div class="relative w-full py-[6px] px-[9px] bg-white rounded-xl">
+				<section class="
+					flex flex-col items-center gap-6 p-8 lg:p-[42px] dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl 
+					lg:col-span-2 lg:row-span-3
+				">
+					<div class="
+						max-w-[336px] lg:max-w-reset p-5 text-xs text-black bg-gradient direction-[233deg] from-blue-300 to-blue-600 
+						rounded-2xl z-1
+					">
+						<div class="relative w-full py-[6px] px-[9px] lg:text-base bg-white rounded-xl">
 							<p>🏝 <strong>Anonymous</strong> paid your invoice #IV53.</p> 
 							<p>You received <strong>3442 TON ($5000).</strong></p>
 							<br/>
 							<p>💬 A generous donation! Keep working hard 💪</p>
-							<span class="absolute bottom-1 right-3 text-[10px] text-black text-opacity-40">
+							<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
 								21:25
 							</span>
 							<svg class="absolute bottom-0 -left-1 -z-1" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
@@ -639,7 +1107,7 @@
 						</div>
 					</div>
 					<div class="flex flex-col gap-4">
-						<h2 class="font-semibold text-[28px] dark:text-white">
+						<h2 class="font-semibold text-[28px] lg:text-[42px] dark:text-white">
 							Anonymous payments
 						</h2>
 						<p class="text-lg">
@@ -856,7 +1324,7 @@
 				</menu>
 				<a 
 					class="
-						h-full py-3 px-8 font-medium text-lg text-white whitespace-nowrap bg-transparent rounded-full
+						h-full py-3 px-8 lg:py-4 lg:px-10 font-medium text-lg text-white whitespace-nowrap bg-transparent rounded-full
 						border border-white border-opacity-60 hover:border-opacity-100 transition-colors duration-200
 					"
 					href="https://t.me/CryptoBot"

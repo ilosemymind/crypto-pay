@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-labelledby="bnb-title" role="img">
+	<title id="bnb-icon">Binance Coin Icon</title>
+	<defs>
+		<linearGradient id="paint0_linear_955_5626" x1="0.79" x2="0.03" y1="1.13" y2="-0.15">
+			<stop stop-color="#E9B204" />
+			<stop offset="1" stop-color="#F0B90B" />
+		</linearGradient>
+		<clipPath id="clip0_955_5626">
+			<rect fill="white" height="96" id="svg_1" width="96" />
+		</clipPath>
+	</defs>
+	<g class="layer">
+		<g clip-path="url(#clip0_955_5626)" id="svg_2">
+			<mask height="96" id="mask0_955_5626" maskUnits="userSpaceOnUse" width="96" x="0" y="0">
+				<path d="m0,0l96,0l0,96l-96,0l0,-96z" fill="white" id="svg_3" />
+			</mask>
+			<g id="svg_4" mask="url(#mask0_955_5626)">
+				<path
+					d="m48,0c26.51,0 48,21.49 48,48c0,26.51 -21.49,48 -48,48c-26.51,0 -48,-21.49 -48,-48c0,-26.51 21.49,-48 48,-48z"
+					fill="url(#paint0_linear_955_5626)" id="svg_5" />
+				<path
+					d="m35.58,42.84l7.27,-7.24l1.53,-1.53l3.63,-3.63l12.37,12.4l7.2,-7.24l-19.57,-19.6l-19.63,19.6l7.2,7.24z"
+					fill="white" id="svg_6" />
+				<path d="m40.79,47.99l7.23,-7.23l7.23,7.23l-7.23,7.23l-7.23,-7.23z" fill="white" id="svg_7" />
+				<path
+					d="m60.38,53.17l-12.37,12.37l-4.35,-4.34l-0.8,-0.8l-7.28,-7.23l-7.2,7.2l19.63,19.6l19.57,-19.6l-7.2,-7.2z"
+					fill="white" id="svg_8" />
+				<path d="m16,48.01l7.23,-7.23l7.23,7.23l-7.23,7.23l-7.23,-7.23z" fill="white" id="svg_9" />
+				<path d="m65.54,48l7.23,-7.23l7.23,7.23l-7.23,7.23l-7.23,-7.23z" fill="white" id="svg_10" />
+			</g>
+		</g>
+	</g>
+</svg>

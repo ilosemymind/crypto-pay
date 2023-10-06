@@ -39,6 +39,7 @@
 		--gray-100: 206 50% 95%;
 		--gray-150: 213 66% 94%;
 		--gray-300: 240 1% 82%;
+		--gray-400: 300 1% 61%;
 		--gray-500: 240 2% 32%;
 		--gray-700: 240 9% 10%;
 		--gray-750: 0 0% 13%;
@@ -188,6 +189,14 @@
 		max-width: 1.75rem; /* 28px */
 	}
 
+	.max-w-\[336px\] {
+		max-width: 336px;
+	}
+
+	.max-w-\[460px\] {
+		max-width: 460px;
+	}
+
 	.max-w-\[1200px\] {
 		max-width: 1200px;
 	}
@@ -202,6 +211,10 @@
 
 	.w-inherit {
 		width: inherit;
+	}
+
+	.w-\[5px\] {
+		width: 5px;
 	}
 
 	.w-3 {
@@ -739,6 +752,11 @@
 	.text-yellow-400 {
 		--text-opacity: 1;
 		color: hsl(var(--yellow-400) / var(--text-opacity))
+	}
+
+	.text-gray-400 {
+		--text-opacity: 1;
+		color: hsl(var(--gray-400) / var(--text-opacity))
 	}
 
 	.text-opacity-40 {
