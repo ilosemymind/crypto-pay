@@ -859,12 +859,17 @@
 					lg:col-span-3 lg:row-span-4
 				">
 					<div class="
-						max-w-[336px] lg:max-w-reset flex flex-col gap-[2px] lg:gap-1 py-6 px-5 lg:py-12 lg:px-[76px] text-[10px] text-black 
-						bg-telegram bg-cover bg-no-repeat rounded-2xl
+						max-w-[336px] lg:max-w-reset flex flex-col gap-[2px] lg:gap-1 py-6 px-5 lg:py-12 lg:px-[76px] 
+						text-[10px] text-black bg-telegram bg-cover bg-no-repeat rounded-2xl
 					">
-						<div>
+						<div
+							class="
+								relative min-h-[138px] min-w-[255px] lg:min-h-[272px] lg:min-w-[445px] w-full py-[6px] 
+								px-3 lg:py-[10px] lg:px-4 lg:text-lg bg-white rounded-t-[9px] rounded-b-sm
+							"
+						>
 							<div 
-								class="relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:text-lg bg-white rounded-t-[9px] rounded-b-sm"
+								class="statistics-view"
 								data-value="all"
 								aria-hidden="false"
 							>
@@ -882,14 +887,11 @@
 								</span>
 							</div>
 							<div 
-								class="
-									hidden relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:py-[10px] lg:px-4 lg:text-lg bg-white 
-									rounded-t-[9px] rounded-b-sm
-								"
+								class="statistics-view hidden"
 								data-value="today"
 								aria-hidden="true"
 							>
-								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>today:</strong></p>
 								<br/>
 								<p>Volume: <strong>$6,530</strong></p>
 								<br/>
@@ -903,14 +905,11 @@
 								</span>
 							</div>
 							<div 
-								class="
-									hidden relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:py-[10px] lg:px-4 lg:text-lg bg-white 
-									rounded-t-[9px] rounded-b-sm
-								"
+								class="statistics-view hidden"
 								data-value="yesterday"
 								aria-hidden="true"
 							>
-								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+								<p class="whitespace-nowrap">Application Statistics <strong>@GoodsBot</strong> for <strong>yesterday:</strong></p>
 								<br/>
 								<p>Volume: <strong>$6,530</strong></p>
 								<br/>
@@ -924,14 +923,11 @@
 								</span>
 							</div>
 							<div 
-								class="
-									hidden relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:py-[10px] lg:px-4 lg:text-lg bg-white 
-									rounded-t-[9px] rounded-b-sm
-								"
+								class="statistics-view hidden"
 								data-value="week"
 								aria-hidden="true"
 							>
-								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>week:</strong></p>
 								<br/>
 								<p>Volume: <strong>$6,530</strong></p>
 								<br/>
@@ -945,14 +941,11 @@
 								</span>
 							</div>
 							<div 
-								class="
-									hidden relative w-full py-[6px] px-3 lg:py-[10px] lg:px-4 lg:py-[10px] lg:px-4 lg:text-lg bg-white 
-									rounded-t-[9px] rounded-b-sm
-								"
+								class="statistics-view hidden"
 								data-value="month"
 								aria-hidden="true"
 							>
-								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>all time:</strong></p>
+								<p>Application Statistics <strong>@GoodsBot</strong> for <strong>month:</strong></p>
 								<br/>
 								<p>Volume: <strong>$6,530</strong></p>
 								<br/>
@@ -969,8 +962,8 @@
 						<div class="grid grid-cols-2 gap-[2px] lg:gap-1 text-center text-white">
 							<button 
 								class="
-									p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
-									data-[active=true]:bg-opacity-60
+									statistics-timeframe p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
+									transition-colors data-[active=true]:bg-opacity-60
 								"
 								type="button"
 								data-value="all"
@@ -980,8 +973,8 @@
 							</button>
 							<button 
 								class="
-									p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
-									data-[active=true]:bg-opacity-60
+									statistics-timeframe p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
+									transition-colors data-[active=true]:bg-opacity-60
 								"
 								type="button"
 								data-value="today"
@@ -990,8 +983,8 @@
 							</button>
 							<button 
 								class="
-									p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
-									data-[active=true]:bg-opacity-60
+									statistics-timeframe p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
+									transition-colors data-[active=true]:bg-opacity-60
 								"
 								type="button"
 								data-value="yesterday"
@@ -1000,8 +993,8 @@
 							</button>
 							<button 
 								class="
-									p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors 
-									data-[active=true]:bg-opacity-60
+									statistics-timeframe p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
+									transition-colors data-[active=true]:bg-opacity-60
 								"
 								type="button"
 								data-value="week"
@@ -1010,8 +1003,8 @@
 							</button>
 							<button 
 								class="
-									col-span-2 p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm transition-colors
-									data-[active=true]:bg-opacity-60
+									statistics-timeframe col-span-2 p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
+									transition-colors data-[active=true]:bg-opacity-60
 								"
 								type="button"
 								data-value="month"
@@ -1020,8 +1013,8 @@
 							</button>
 							<button 
 								class="
-									col-span-2 flex justify-center items-center gap-1 p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 
-									rounded-t-md rounded-b-[9px] transition-colors data-[active=true]:bg-opacity-60
+									statistics-timeframe col-span-2 flex justify-center items-center gap-1 p-2 lg:text-lg bg-aqua-900 
+									bg-opacity-40 hover:bg-opacity-60 rounded-t-md rounded-b-[9px] transition-colors data-[active=true]:bg-opacity-60
 								" 
 								type="button"
 								data-value="back"

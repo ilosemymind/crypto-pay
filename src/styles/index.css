@@ -177,6 +177,10 @@
 	}
 
 	/* Width */
+	.min-w-\[255px\] {
+		min-width: 255px;
+	}
+
 	.max-w-screen {
 		max-width: 100vw;
 	}
@@ -258,6 +262,10 @@
 	}
 
 	/* Height */
+	.min-h-\[138px\] {
+		min-height: 138px;
+	}
+
 	.max-h-min {
 		max-height: min-content;
 	}
@@ -627,15 +635,15 @@
 	}
 
 	.font-inter {
-		font-family: Inter;
+		font-family: Inter, sans-serif;
 	}
 
 	.font-sf-mono {
-		font-family: "SF Mono";
+		font-family: "SF Mono", sans-serif;
 	}
 
 	.font-sf-pro {
-		font-family: "SF Pro";
+		font-family: "SF Pro", sans-serif;
 	}
 
 	.font-normal {
@@ -1138,6 +1146,11 @@
 		.no-scrollbar {
 			-ms-overflow-style: none;
 		}
+	}
+
+	/* Aria States */
+	.aria-hidden\:hidden[aria-hidden="true"] {
+		display: none;
 	}
 
 	/* Data Attributes */

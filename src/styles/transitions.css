@@ -1,0 +1,12 @@
+@layer transitions {
+	/* Fade */	
+	.fade-enter-active,
+	.fade-leave-active {
+		transition: all 300ms ease;
+	}
+	
+	.fade-enter,
+	.fade-leave {
+		opacity: 0;
+	}
+}

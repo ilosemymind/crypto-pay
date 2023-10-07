@@ -6,6 +6,10 @@
 		}
 
 		/* Width */
+		.lg\:min-w-\[445px\] {
+			min-width: 445px;
+		}
+
 		.lg\:max-w-reset {
 			max-width: initial;
 		}
@@ -47,6 +51,10 @@
 		}
 
 		/* Height */
+		.lg\:min-h-\[272px\] {
+			min-height: 272px;
+		}
+
 		.lg\:max-h-\[44px\] {
 			max-height: 44px;
 		}
