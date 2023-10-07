@@ -1,0 +1,4 @@
+/* Aria States */
+.aria-hidden\:hidden[aria-hidden="true"] {
+	display: none;
+}

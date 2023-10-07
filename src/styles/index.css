@@ -55,6 +55,13 @@
 		--gradient-from-position: ;
 		--gradient-via-position: ;
 		--gradient-to-position: ;
+		--translate-x: 0;
+		--translate-y: 0;
+		--rotate: 0;
+		--skew-x: 0;
+		--skew-y: 0;
+		--scale-x: 1;
+		--scale-y: 1;
 		--blur: ;
 		--brightness: ;
 		--contrast: ;
@@ -76,6 +83,13 @@
 	}
 
 	::backdrop {
+		--translate-x: 0;
+		--translate-y: 0;
+		--rotate: 0;
+		--skew-x: 0;
+		--skew-y: 0;
+		--scale-x: 1;
+		--scale-y: 1;
 		--blur: ;
 		--brightness: ;
 		--contrast: ;
@@ -1104,6 +1118,12 @@
 		transition-duration: 150ms;
 	}
 
+	.transition-transform {
+		transition-property: transform;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+		transition-duration: 150ms;
+	}
+
 	.duration-50 {
 		transition-duration: 50ms;
 	}
@@ -1146,11 +1166,6 @@
 		.no-scrollbar {
 			-ms-overflow-style: none;
 		}
-	}
-
-	/* Aria States */
-	.aria-hidden\:hidden[aria-hidden="true"] {
-		display: none;
 	}
 
 	/* Data Attributes */

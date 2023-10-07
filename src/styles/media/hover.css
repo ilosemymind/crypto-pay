@@ -15,8 +15,24 @@
 			--border-opacity: 1;
 		}
 
-		.dark\:hover\:border-opacity-100:hover {
-			--border-opacity: 1;
+		/* Group */
+		.group:hover .group-hover\:text-black {
+			--text-opacity: 1;
+			color: hsl(var(--black) / var(--text-opacity))
+		}
+
+		.group:hover .group-hover\:scale-110 {
+			--scale-x: 1.1;
+			--scale-y: 1.1;
+			transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
+		}
+
+		@media(prefers-color-scheme: dark) {
+			/* Group */
+			.group:hover .group-hover\:dark\:text-white {
+				--text-opacity: 1;
+				color: hsl(var(--white) / var(--text-opacity))
+			}
 		}
 	}
 }
