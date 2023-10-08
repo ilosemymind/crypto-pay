@@ -22,6 +22,10 @@
 			max-width: 488px;
 		}
 
+		.lg\:max-w-\[590px\] {
+			max-width: 590px;
+		}
+
 		.lg\:max-w-\[1200px\] {
 			max-width: 1200px;
 		}
@@ -48,6 +52,10 @@
 		
 		.lg\:w-24 {
 			width: 6rem; /* 96px */
+		}
+
+		.lg\:w-\[180px\] {
+			width: 180px;
 		}
 
 		/* Height */
@@ -152,6 +160,10 @@
 
 		.lg\:gap-4 {
 			gap: 1rem; /* 16px */
+		}
+
+		.lg\:gap-6 {
+			gap: 1.5rem; /* 24px */
 		}
 
 		.lg\:gap-8 {
