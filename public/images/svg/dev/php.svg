@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" aria-labelledby="php-title" role="img">
+	<title id="php-title">PHP Icon</title>
+	<defs>
+		<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
+			id="filter0_dd_1326_227" width="112" x="0" y="-8">
+			<feFlood flood-opacity="0" result="BackgroundImageFix" />
+			<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+			<feOffset />
+			<feGaussianBlur stdDeviation="4" />
+			<feComposite in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix"
+				values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
+			<feBlend in2="BackgroundImageFix" />
+			<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
+				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
+			<feOffset dy="2" />
+			<feGaussianBlur stdDeviation="1.5" />
+			<feComposite in2="hardAlpha" operator="out" />
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
+			<feBlend in2="effect1_dropShadow_1326_227" />
+			<feBlend in="SourceGraphic" in2="effect2_dropShadow_1326_227" />
+		</filter>
+		<linearGradient id="paint0_linear_1326_227" x1="0.1" x2="0.81" y1="0.04" y2="1.04">
+			<stop stop-color="#6181B6" />
+			<stop offset="1" stop-color="#5979AE" />
+		</linearGradient>
+	</defs>
+	<g filter="url(#filter0_dd_1326_227)" id="svg_1">
+		<rect fill="url(#paint0_linear_1326_227)" height="96" id="svg_2" rx="48" width="96" x="0" y="0" />
+		<path
+			d="m35.51,52.74c-1.15,1.07 -2.42,1.51 -3.82,1.97c-1.4,0.46 -3.18,0.36 -5.35,0.36l-4.91,0l-1.36,7.86l-5.74,0l5.12,-26.72l11.03,0c3.32,0 5.74,0.96 7.26,2.7c1.52,1.74 1.98,4.22 1.37,7.34c-0.25,1.28 -0.67,2.48 -1.26,3.54c-0.62,1.1 -1.41,2.1 -2.34,2.95zm16.74,2.33l2.27,-11.33c0.25,-1.32 0.16,-2.31 -0.29,-2.79c-0.44,-0.48 -1.4,-0.81 -2.85,-0.81l-4.55,0l-2.93,14.93l-5.69,0l5.11,-25.93l5.7,0l-1.36,7.07l5.07,0c3.19,0 5.39,0.65 6.6,1.76c1.21,1.11 1.57,2.63 1.09,5.13l-2.39,11.97l-5.78,0zm31.63,-8.78c-0.25,1.28 -0.67,2.46 -1.26,3.52c-0.6,1.07 -1.38,2.05 -2.34,2.93c-1.14,1.07 -2.42,1.51 -3.82,1.97c-1.4,0.46 -3.18,0.36 -5.35,0.36l-4.91,0l-1.36,7.86l-5.74,0l5.12,-26.72l11.03,0c3.32,0 5.74,0.96 7.26,2.7c1.52,1.74 1.98,4.26 1.37,7.38zm-10.8,-6.15l-3.93,0l-2.14,11l3.49,0c2.31,0 4.03,-0.23 5.16,-1.1c1.14,-0.87 1.9,-2.22 2.3,-4.26c0.38,-1.95 0.2,-3.48 -0.52,-4.28c-0.73,-0.81 -2.18,-1.36 -4.36,-1.36zm-44.77,0l-3.93,0l-2.15,11l3.49,0c2.32,0 4.04,-0.23 5.17,-1.1c1.13,-0.87 1.9,-2.22 2.29,-4.26c0.38,-1.95 0.21,-3.48 -0.52,-4.28c-0.72,-0.81 -2.17,-1.36 -4.35,-1.36z"
+			fill="white" id="svg_3" />
+	</g>
+</svg>
