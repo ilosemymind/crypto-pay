@@ -462,6 +462,11 @@
 		margin-bottom: auto;
 	}
 
+	.my-8 {
+		margin-top: 2rem; /* 32px */
+		margin-bottom: 2rem; /* 32px */
+	}
+
 	.mt-auto {
 		margin-top: auto;
 	}

@@ -304,7 +304,7 @@
 			<!-- Features -->
 			<article 
 				id="features" 
-				class="max-w-[1200px] grid gap-4 py-20 px-5 bg-white dark:bg-black bg-full-bleed lg:grid-cols-5"
+				class="max-w-[1200px] grid gap-4 py-20 lg:py-[144px] px-5 bg-white dark:bg-black bg-full-bleed lg:grid-cols-5"
 			>
 				<section class="
 					flex flex-col lg:flex-col-reverse gap-6 p-8 lg:py-[42px] lg:px-14 text-black dark:text-gray-300 
@@ -1183,38 +1183,41 @@
 			</article>
 
 			<!-- Start Guide -->
-			<article id="start-guide" class="w-full flex justify-center bg-gray-50 dark:bg-gray-900">
-				<div class="max-w-[1200px] grid gap-6 px-5 py-8">
-					<h2 class="font-semibold text-center text-[32px]">
+			<article id="start-guide" class="w-full flex justify-center lg:my-[120px] bg-gray-50 dark:bg-gray-900">
+				<div class="max-w-[1200px] flex flex-col gap-6 lg:gap-10 px-5 xl:px-0">
+					<h2 class="font-semibold text-center text-[32px] lg:text-[56px]">
 						Quick start using <span class="text-aqua-500 whitespace-nowrap">Crypto Pay</span>
 					</h2>
-					<section class="flex flex-col items-center lg:flex-row-reverse gap-4">
+					<section class="flex flex-col lg:justify-between items-center lg:flex-row-reverse gap-4">
 						<div class="
-							w-[336px] h-[277px] flex flex-col justify-center items-center gap-2 p-7 text-sm text-black
+							w-[336px] h-[277px] lg:w-[590px] lg:h-[488px] flex justify-center items-center p-7 lg:px-0 text-sm text-black
 							bg-gradient direction-[297deg] from-blue-300 to-lavender-300 rounded-3xl
 						">
-							<div class="relative w-full py-[7px] px-3 bg-white text-[13px] rounded-t-xl rounded-b-md">
-								<p>Here is the token for the app <strong>@GoodsBot</strong></p>
-								<br/>
-								<p class="break-all">114935:AA9xMcRqHYZYl6CQlkhBStMAwTFQ1s6iJHM</p>
-								<br/>
-								<p><span class="font-arial">⚠️</span> This token can be used by anyone to control your app. Keep and store it safely.</p>
-								<p class="w-full text-[10px] text-right text-black text-opacity-40">
-									21:25
-								</p>
-							</div>
-							<div class="w-full flex p-[10px] text-[13px] text-white bg-aqua-900 bg-opacity-40 rounded-t-md rounded-b-xl">
-								<span class="mx-auto">Revoke Token</span>
+							<div class="w-full lg:w-2/3 flex flex-col gap-2">
+								<div class="relative w-full py-[7px] px-3 bg-white text-[13px] lg:text-lg rounded-t-xl rounded-b-md">
+									<p>Here is the token for the app <strong>@GoodsBot</strong></p>
+									<br/>
+									<p class="break-all">114935:AA9xMcRqHYZYl6CQlkhBStMAwTFQ1s6iJHM</p>
+									<br/>
+									<p><span class="font-arial">⚠️</span> This token can be used by anyone to control your app. Keep and store it safely.</p>
+									<p class="w-full text-[10px] lg:text-sm text-right text-black text-opacity-40">
+										21:25
+									</p>
+								</div>
+								<div class="w-full flex p-[10px] text-[13px] lg:text-lg text-white bg-aqua-900 bg-opacity-40 rounded-t-md rounded-b-xl">
+									<span class="mx-auto">Revoke Token</span>
+								</div>
 							</div>
 						</div>
-						<div class="w-full grid grid-cols-max lg:flex lg:flex-col gap-4">
+						<div class="w-full lg:w-reset grid grid-cols-max lg:flex lg:flex-col gap-4 lg:gap-5">
 							<div class="
-								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
+								w-9 h-9 lg:w-16 lg:h-16 flex justify-center items-center text-2xl lg:text-[42px] 
+								bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
 								text-white dark:text-black dark:bg-white
 							">
 								1
 							</div>
-							<h3 class="col-start-2 flex gap-4 font-semibold text-[28px]">
+							<h3 class="col-start-2 flex gap-4 font-semibold text-[28px] lg:text-[42px]">
 								Authorizing your app
 							</h3>
 							<ol class="col-start-2 flex flex-col gap-2 list-decimal list-inside text-lg">
@@ -1225,28 +1228,32 @@
 							</ol>
 						</div>
 					</section>
-					<section class="flex flex-col items-center lg:flex-row gap-4">
+					<section class="flex flex-col lg:justify-between items-center lg:flex-row gap-4">
 						<div class="
-							w-[336px] h-[277px] flex flex-col justify-center items-center gap-2 p-5 text-sm text-black
+							w-[336px] h-[277px] lg:w-[590px] lg:h-[488px] flex flex-col justify-center items-center gap-2 p-5 lg:px-0 text-sm text-black
 							bg-gradient direction-[207deg] from-orange-200 to-yellow-200 rounded-3xl
 						">
-							<div class="w-full grid auto-cols-min gap-x-2 p-[10px] font-sf-mono text-xs text-white leading-[18px] bg-black rounded-xl">
+							<div class="
+								w-full lg:w-7/10 grid auto-cols-min gap-x-2 p-[10px] lg:p-4 font-sf-mono text-xs lg:text-lg text-white 
+								leading-[18px] bg-black rounded-xl
+							">
 								<p>
-									asset=<span class="text-yellow-400">TON</span><span class="text-red-500">&</span>amount=<span class="text-yellow-400">2.75</span>
+									asset<span class="text-aqua-500">=</span><span class="text-yellow-400">TON</span><span class="text-red-500">&</span>amount<span class="text-aqua-500">=</span><span class="text-yellow-400">2.75</span>
 								</p>
 								<p class="whitespace-nowrap">
 									{"asset":<span class="text-aqua-500">"TON"</span>, "amount": <span class="text-aqua-500">"2.75"</span>}
 								</p>
 							</div>
 						</div>
-						<div class="w-full w-full grid grid-cols-max lg:flex lg:flex-col gap-4">
+						<div class="w-full lg:w-reset grid grid-cols-max lg:flex lg:flex-col gap-4 lg:gap-5">
 							<div class="
-								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
+								w-9 h-9 lg:w-16 lg:h-16 flex justify-center items-center text-2xl lg:text-[42px]
+								bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
 								text-white dark:text-black dark:bg-white
 							">
 								2
 							</div>
-							<h3 class="col-start-2 font-semibold text-[28px]">
+							<h3 class="col-start-2 font-semibold text-[28px] lg:text-[42px]">
 								Getting updates
 							</h3>
 							<p class="col-start-2 text-lg">There are two ways of receiving updates for your app:</p>
@@ -1260,12 +1267,15 @@
 							</ul>
 						</div>
 					</section>
-					<section class="flex flex-col items-center lg:flex-row-reverse gap-4">
+					<section class="flex flex-col lg:justify-between items-center lg:flex-row-reverse gap-4">
 						<div class="
-							w-[336px] h-[277px] flex flex-col justify-center items-center gap-2 p-5 text-sm text-black
+							w-[336px] h-[277px] lg:w-[590px] lg:h-[488px] flex flex-col justify-center items-center gap-2 p-5 lg:px-0 text-sm text-black
 							bg-gradient from-lightblue-200 to-aqua-100 rounded-3xl
 						">
-							<div class="w-full grid auto-cols-min gap-x-2 p-[10px] font-sf-mono text-xs text-white leading-[18px] bg-black rounded-xl">
+							<div class="
+								w-full lg:w-2/3 grid auto-cols-min gap-x-2 p-[10px] font-sf-mono text-xs lg:text-lg text-white 
+								leading-[18px] bg-black rounded-xl
+							">
 								<p class="col-span-2"><span class="text-aqua-500">Invoice</span>(</p>
 								<span class="ml-4 text-aqua-500">payload:</span> <span>“item:monthly_premium”,</span>
 								<span class="ml-4 text-aqua-500">status:</span> <span>“paid”,</span>
@@ -1274,14 +1284,15 @@
 								<p class="col-span-2">)</p>
 							</div>
 						</div>
-						<div class="w-full w-full grid grid-cols-max lg:flex lg:flex-col gap-4">
+						<div class="w-full lg:w-reset grid grid-cols-max lg:flex lg:flex-col gap-4 lg:gap-5">
 							<div class="
-								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
+								w-9 h-9 lg:w-16 lg:h-16 flex justify-center items-center text-2xl lg:text-[42px]
+								bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
 								text-white dark:text-black dark:bg-white
 							">
 								3
 							</div>
-							<h3 class="col-start-2 font-semibold text-[28px]">
+							<h3 class="col-start-2 font-semibold text-[28px] lg:text-[42px]">
 								Crypto Pay <span class="whitespace-nowrap">API Request</span>
 							</h3>
 							<p class="col-start-2 text-lg">Requests are only served over HTTPS To pass parameters use:</p>
@@ -1296,7 +1307,7 @@
 				</div>
 			</article>
 
-			<article class="w-full flex justify-center py-20 px-5 bg-white dark:bg-black">
+			<article class="w-full flex justify-center py-20 lg:py-[120px] px-5 bg-white dark:bg-black">
 				<section class="max-w-[460px] lg:max-w-[1200px] relative">
 					<div class="relative rounded-3xl overflow-hidden"> 
 						<picture>
@@ -1331,7 +1342,7 @@
 
 			<article class="w-full flex justify-center bg-white dark:bg-black rounded-b-3xl overflow-hidden">
 				<section class="lg:max-w-[1200px] w-full flex flex-col items-center gap-6 pt-3 pb-10 px-5">
-					<h2 class="font-semibold text-center text-[32px]">
+					<h2 class="font-semibold text-center text-[32px] lg:text-[56px]">
 						Join dev community
 					</h2>
 					<p class="lg:max-w-[590px] font-normal text-lg text-center">

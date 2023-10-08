@@ -36,7 +36,6 @@
 			flex-direction: column;
 		}
 		
-		
 		.xl\:items-start {
 			align-items: start;
 		}
@@ -44,6 +43,12 @@
 		/* Gap */
 		.xl\:gap-30 {
 			gap: 7.5rem; /* 120px */
+		}
+
+		/* Padding */
+		.xl\:px-0 {
+			padding-left: 0px;
+			padding-right: 0px;
 		}
 
 		/* Text */
