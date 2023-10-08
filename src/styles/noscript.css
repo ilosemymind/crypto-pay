@@ -4,6 +4,11 @@
 		display: none; 
 	}
 
+	/* Height */
+	.noscript\:h-reset {
+		height: initial;
+	}
+
 	/* Flex */
 	.noscript\:flex-col {
 		flex-direction: column;
