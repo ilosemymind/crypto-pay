@@ -1207,7 +1207,7 @@
 								<span class="mx-auto">Revoke Token</span>
 							</div>
 						</div>
-						<div class="grid auto-cols-fit lg:flex lg:flex-col gap-4">
+						<div class="w-full grid grid-cols-max lg:flex lg:flex-col gap-4">
 							<div class="
 								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
 								text-white dark:text-black dark:bg-white
@@ -1239,7 +1239,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="w-full grid auto-cols-fit lg:flex lg:flex-col gap-4">
+						<div class="w-full w-full grid grid-cols-max lg:flex lg:flex-col gap-4">
 							<div class="
 								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
 								text-white dark:text-black dark:bg-white
@@ -1274,7 +1274,7 @@
 								<p class="col-span-2">)</p>
 							</div>
 						</div>
-						<div class="w-full grid auto-cols-fit lg:flex lg:flex-col gap-4">
+						<div class="w-full w-full grid grid-cols-max lg:flex lg:flex-col gap-4">
 							<div class="
 								w-9 h-9 flex justify-center items-center text-2xl bg-gradient direction-[220deg] from-black to-darkblue-800 rounded-full
 								text-white dark:text-black dark:bg-white
@@ -1296,16 +1296,19 @@
 				</div>
 			</article>
 
-			<article class="w-full flex justify-center py-20 bg-white dark:bg-black">
-				<section class="max-w-[1200px] relative">
+			<article class="w-full flex justify-center py-20 px-5 bg-white dark:bg-black">
+				<section class="max-w-[460px] lg:max-w-[1200px] relative">
 					<div class="relative rounded-3xl overflow-hidden"> 
 						<picture>
 							<source srcset="/images/api/bg-horizontal.webp" media="(min-width: 1024px)">
 							<img srcset="/images/api/bg-vertical.webp" alt="Blue gradient with glass figures">
 						</picture>
 						
-						<div class="absolute bottom-0 flex flex-col gap-6 py-7 px-8 text-white">
-							<h2 class="font-semibold text-[32px]">
+						<div class="
+							absolute bottom-0 lg:top-1/2 lg:max-w-[570px] flex flex-col gap-6 lg:gap-8 py-7 px-8 lg:px-20 text-white 
+							lg:-translate-y-1/2
+						">
+							<h2 class="font-semibold text-[32px] lg:text-[56px] whitespace-nowrap">
 								Crypto Pay API
 							</h2>
 							<p class="text-lg">
@@ -1313,7 +1316,7 @@
 							</p>
 							<a 
 								class="
-									py-3 px-8 text-lg text-center text-white whitespace-nowrap bg-transparent rounded-full 
+									max-w-max py-3 px-8 text-lg text-center text-white whitespace-nowrap bg-transparent rounded-full 
 									border border-white border-opacity-60 hover:border-opacity-100 transition-colors duration-200
 								"
 								href="#"
@@ -1326,8 +1329,8 @@
 				</section>
 			</article>
 
-			<article class="w-full bg-white dark:bg-black rounded-b-3xl overflow-hidden">
-				<section class="flex flex-col items-center gap-6 pt-3 pb-10 px-5">
+			<article class="w-full flex justify-center bg-white dark:bg-black rounded-b-3xl overflow-hidden">
+				<section class="lg:max-w-[1200px] w-full flex flex-col items-center gap-6 pt-3 pb-10 px-5">
 					<h2 class="font-semibold text-center text-[32px]">
 						Join dev community
 					</h2>
@@ -1354,7 +1357,7 @@
 							<p class="text-center lg:text-lg">crypto-pay-api</p>
 						</div>
 						<div class="w-[104px] lg:w-[180px] flex flex-col items-center gap-4">
-							<svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 lg:w-24 lg:h-24" viewBox="0 0 96 96 lg:w-24 lg:h-24" aria-labelledby="net-title" role="img">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 lg:w-24 lg:h-24" viewBox="0 0 96 96" aria-labelledby="net-title" role="img">
 								<title id="net-title">.NET Icon</title>
 								<defs>
 									<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
