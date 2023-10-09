@@ -3,7 +3,8 @@ import Autoplay from 'embla-carousel-autoplay';
 import { addDotBtnsAndClickHandlers } from './embla-nav';
 import { listen } from './utils';
 import { enter, leave } from './transition';
-import SwapAnimation from './SwapAnimation';
+import SwapAnimation from './animations/SwapAnimation';
+import FlowAnimation from './animations/FlowAnimation';
 
 const emblaNode = document.querySelector('#embla');
 const dotsNode = document.querySelector('#embla-nav__dots');
@@ -27,6 +28,8 @@ async function selectStatisticsTimeframe(_, eventTrigger) {
 	const newButton = eventTrigger;
 	const newView = document.querySelector(`.statistics-view[data-value="${newButton.dataset.value}"]`);
 
+	if(currentButton.dataset.value === newButton.dataset.value) return;
+
 	currentButton.dataset.active = false;
 	await leave(currentView, 'fade');
 	currentView.ariaHidden = true;
@@ -44,6 +47,18 @@ listen('click', '.statistics-timeframe[data-value="month"]', selectStatisticsTim
 
 const exchangeRatesSection = document.getElementById('exchange-rates-section');
 const exchangeRatesContainer = document.getElementById('exchange-rates-container');
-const exchangeRatesAnimation = new SwapAnimation(exchangeRatesContainer, 1500);
+const exchangeRatesAnimation = new SwapAnimation(exchangeRatesContainer, 1200);
 exchangeRatesSection.addEventListener('pointerenter', () => { exchangeRatesAnimation.run() });
 exchangeRatesSection.addEventListener('pointerleave', () => { exchangeRatesAnimation.stop() }); 
+
+const transfersSection = document.getElementById('transfers-section');
+const transfersContainer = document.getElementById('transfers-container');
+const transfersAnimation = new FlowAnimation(transfersContainer, 2000);
+transfersSection.addEventListener('pointerenter', () => { transfersAnimation.run() });
+transfersSection.addEventListener('pointerleave', () => { transfersAnimation.stop() }); 
+
+const anonPaymentsSection = document.getElementById('anon-payments-section');
+const anonPaymentsContainer = document.getElementById('anon-payments-container');
+const anonPaymentsAnimation = new FlowAnimation(anonPaymentsContainer, 2000);
+anonPaymentsSection.addEventListener('pointerenter', () => { anonPaymentsAnimation.run() });
+anonPaymentsSection.addEventListener('pointerleave', () => { anonPaymentsAnimation.stop() }); 

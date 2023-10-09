@@ -1052,17 +1052,19 @@
 								class="
 									statistics-timeframe p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
 									transition-colors data-[active=true]:bg-opacity-60
+									data-[active=true]:before:content-dot data-[active=true]:after:content-dot
 								"
 								type="button"
 								data-value="all"
 								data-active="true"
 							>
-								· All Time ·
+								All Time
 							</button>
 							<button 
 								class="
 									statistics-timeframe p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
-									transition-colors data-[active=true]:bg-opacity-60
+									transition-colors data-[active=true]:bg-opacity-60 
+									data-[active=true]:before:content-dot data-[active=true]:after:content-dot
 								"
 								type="button"
 								data-value="today"
@@ -1073,6 +1075,7 @@
 								class="
 									statistics-timeframe p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
 									transition-colors data-[active=true]:bg-opacity-60
+									data-[active=true]:before:content-dot data-[active=true]:after:content-dot
 								"
 								type="button"
 								data-value="yesterday"
@@ -1083,6 +1086,7 @@
 								class="
 									statistics-timeframe p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
 									transition-colors data-[active=true]:bg-opacity-60
+									data-[active=true]:before:content-dot data-[active=true]:after:content-dot
 								"
 								type="button"
 								data-value="week"
@@ -1093,6 +1097,7 @@
 								class="
 									statistics-timeframe col-span-2 p-2 lg:text-lg bg-aqua-900 bg-opacity-40 hover:bg-opacity-60 rounded-sm 
 									transition-colors data-[active=true]:bg-opacity-60
+									data-[active=true]:before:content-dot data-[active=true]:after:content-dot
 								"
 								type="button"
 								data-value="month"
@@ -1127,10 +1132,13 @@
 					</div>
 				</section>
 
-				<section class="
-					flex flex-col items-center gap-6 px-8 lg:px-[42px] pb-8 lg:pb-[42px] dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl 
-					lg:col-span-3 lg:row-span-3
-				">
+				<section 
+					class="
+						flex flex-col items-center gap-6 px-8 lg:px-[42px] pb-8 lg:pb-[42px] dark:text-gray-300 
+						bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-3 lg:row-span-3
+					"
+					id="transfers-section"
+				>
 					<div class="max-w-[460px]">
 						<div class="relative">
 							<picture>
@@ -1138,21 +1146,88 @@
 								<img src="/images/phone-bottom.webp" alt="IPhone bottom screen part" loading="lazy">
 							</picture>
 
-							<div class="
-								absolute top-1/5 left-1/10 right-1/10 flex gap-2 lg:gap-4 p-3 text-[8px] text-black bg-gray-100 bg-opacity-90 rounded-2xl 
-								dark:text-gray-300 dark:bg-gray-750
-							">
-								<div class="relative max-w-[28px] max-h-[28px] lg:max-w-[44px] lg:max-h-[44px] my-auto">
-									<img class="rounded-full" src="/logo/icon-128x128.webp" alt="Crypto Pay Logo"/>
-									<img class="absolute w-3 h-3 lg:w-[18px] lg:h-[18px] -bottom-1 -right-1" src="/images/icons/telegram.webp" alt="Telegram icon"/>
+							<div class="absolute top-1/5 left-1/10 right-1/10">
+								<div id="transfers-container" class="relative h-[108px]">
+									<div 
+										class="
+											absolute top-0 left-0 flex gap-2 lg:gap-4 p-3 text-[8px] text-black bg-gray-100 bg-opacity-90 rounded-2xl 
+											dark:text-gray-300 dark:bg-gray-750 transition-all duration-500 z-0
+										"
+										style="transform: translateY(0%); scale: 1; z-index: 1;"
+									>
+										<div class="relative max-w-[28px] max-h-[28px] lg:max-w-[44px] lg:max-h-[44px] my-auto">
+											<img class="rounded-full" src="/logo/icon-128x128.webp" alt="Crypto Pay Logo"/>
+											<img class="absolute w-3 h-3 lg:w-[18px] lg:h-[18px] -bottom-1 -right-1" src="/images/icons/telegram.webp" alt="Telegram icon"/>
+										</div>
+										<div class="lg:text-sm text-black dark:text-white">
+											<p><strong>Crypto Bot</strong></p>
+											<p>💸 You recieved 3448 TON ($5000) from @CryptoBot #A777.</p>
+											<br/>
+											<p>💬 Design contest award 🥇</p>
+										</div>
+										<div class="mb-auto text-gray-400 lg:text-xs">now</div>
+									</div>
+
+									<div 
+										class="
+											absolute top-0 left-0 flex gap-2 lg:gap-4 p-3 text-[8px] text-black bg-gray-100 bg-opacity-90 rounded-2xl 
+											dark:text-gray-300 dark:bg-gray-750 transition-all duration-500 z-0
+										"
+										style="transform: translateY(-15%); scale: 0.9; opacity: 0.25; z-index: 0;"
+									>
+										<div class="relative max-w-[28px] max-h-[28px] lg:max-w-[44px] lg:max-h-[44px] my-auto">
+											<img class="rounded-full" src="/logo/icon-128x128.webp" alt="Crypto Pay Logo"/>
+											<img class="absolute w-3 h-3 lg:w-[18px] lg:h-[18px] -bottom-1 -right-1" src="/images/icons/telegram.webp" alt="Telegram icon"/>
+										</div>
+										<div class="lg:text-sm text-black dark:text-white">
+											<p><strong>Crypto Bot</strong></p>
+											<p>💸 You recieved 8478 TON ($10000) from @CryptoBot #A820.</p>
+											<br/>
+											<p>💬 Congrats! You are winner 🙌</p>
+										</div>
+										<div class="mb-auto text-gray-400 lg:text-xs">now</div>
+									</div>
+
+									<div 
+										class="
+											absolute top-0 left-0 flex gap-2 lg:gap-4 p-3 text-[8px] text-black bg-gray-100 bg-opacity-90 rounded-2xl 
+											dark:text-gray-300 dark:bg-gray-750 transition-all duration-500 z-0
+										"
+										style="transform: translateY(-15%); scale: 0.9; opacity: 0.25; z-index: 0;"
+									>
+										<div class="relative max-w-[28px] max-h-[28px] lg:max-w-[44px] lg:max-h-[44px] my-auto">
+											<img class="rounded-full" src="/logo/icon-128x128.webp" alt="Crypto Pay Logo"/>
+											<img class="absolute w-3 h-3 lg:w-[18px] lg:h-[18px] -bottom-1 -right-1" src="/images/icons/telegram.webp" alt="Telegram icon"/>
+										</div>
+										<div class="lg:text-sm text-black dark:text-white">
+											<p><strong>Crypto Bot</strong></p>
+											<p>💸 You recieved 2300 TON ($1000) from @CryptoBot #A911.</p>
+											<br/>
+											<p>💬 We appreciate your interest 🚀</p>
+										</div>
+										<div class="mb-auto text-gray-400 lg:text-xs">now</div>
+									</div>
+								
+									<div 
+										class="
+											absolute top-0 left-0 flex gap-2 lg:gap-4 p-3 text-[8px] text-black bg-gray-100 bg-opacity-90 rounded-2xl 
+											dark:text-gray-300 dark:bg-gray-750 transition-all duration-500 z-0
+										"
+										style="transform: translateY(-15%); scale: 0.9; opacity: 0.25; z-index: 0;"
+									>
+										<div class="relative max-w-[28px] max-h-[28px] lg:max-w-[44px] lg:max-h-[44px] my-auto">
+											<img class="rounded-full" src="/logo/icon-128x128.webp" alt="Crypto Pay Logo"/>
+											<img class="absolute w-3 h-3 lg:w-[18px] lg:h-[18px] -bottom-1 -right-1" src="/images/icons/telegram.webp" alt="Telegram icon"/>
+										</div>
+										<div class="lg:text-sm text-black dark:text-white">
+											<p><strong>Crypto Bot</strong></p>
+											<p>💸 You recieved 3448 TON ($5000) from @CryptoBot #A777.</p>
+											<br/>
+											<p>💬 Design contest award 🥇</p>
+										</div>
+										<div class="mb-auto text-gray-400 lg:text-xs">now</div>
+									</div>
 								</div>
-								<div class="lg:text-sm text-black dark:text-white">
-									<p><strong>Crypto Bot</strong></p>
-									<p>💸 You recieved 3448 TON ($5000) from @CryptoBot #A777.</p>
-									<br/>
-									<p>💬 Design contest award 🥇</p>
-								</div>
-								<div class="mb-auto text-gray-400 lg:text-xs">now</div>
 							</div>
 						</div>
 					</div>
@@ -1166,25 +1241,89 @@
 					</div>
 				</section>
 
-				<section class="
-					flex flex-col items-center gap-6 p-8 lg:p-[42px] dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl 
-					lg:col-span-2 lg:row-span-3
-				">
+				<section 
+					class="
+						flex flex-col items-center gap-6 p-8 lg:p-[42px] dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl 
+						lg:col-span-2 lg:row-span-3
+					"
+					id="anon-payments-section"
+				>
 					<div class="
-						max-w-[336px] lg:max-w-reset p-5 lg:py-12 text-xs text-black bg-gradient direction-[233deg] from-blue-300 to-blue-600 
+						max-w-[336px] lg:max-w-reset p-5 lg:py-12 text-black bg-gradient direction-[233deg] from-blue-300 to-blue-600 
 						rounded-2xl z-1
 					">
-						<div class="relative w-full py-[6px] px-[9px] lg:text-base bg-white rounded-xl">
-							<p>🏝 <strong>Anonymous</strong> paid your invoice #IV53.</p> 
-							<p>You received <strong>3442 TON ($5000).</strong></p>
-							<br/>
-							<p>💬 A generous donation! Keep working hard 💪</p>
-							<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
-								21:25
-							</span>
-							<svg class="absolute bottom-0 -left-1 -z-1" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M0.145508 17.6829V17.9514H5.05179C11.3743 17.9514 16.4998 12.826 16.4998 6.50346V0.370605H4.23437V4.00731C4.23437 8.57489 4.23437 10.8587 3.59195 12.6946C2.90395 14.6608 1.70298 16.3757 0.145508 17.6829Z" fill="white"/>
-							</svg>
+						<div id="anon-payments-container" class="relative w-[228px] h-[80px] lg:w-[356px] lg:h-[126px] text-[10px] lg:text-xs">
+							<div 
+								class="absolute top-0 left-0"
+								style="transform: translateY(0%); scale: 1; z-index: 1;"
+							>
+								<div class="relative w-full py-[6px] px-[9px] lg:text-base bg-white rounded-xl">
+									<p>🏝 <strong>Anonymous</strong> paid your invoice #IV53.</p> 
+									<p>You received <strong>3442 TON ($5000).</strong></p>
+									<br/>
+									<p>💬 A generous donation! Keep working hard 💪</p>
+									<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
+										21:25
+									</span>
+									<svg class="absolute bottom-0 -left-1 -z-1" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.145508 17.6829V17.9514H5.05179C11.3743 17.9514 16.4998 12.826 16.4998 6.50346V0.370605H4.23437V4.00731C4.23437 8.57489 4.23437 10.8587 3.59195 12.6946C2.90395 14.6608 1.70298 16.3757 0.145508 17.6829Z" fill="white"/>
+									</svg>
+								</div>
+							</div>
+
+							<div 
+								class="absolute top-0 left-0"
+								style="transform: translateY(-15%); scale: 0.9; opacity: 0.25; z-index: 0;"
+							>
+								<div class="relative w-full py-[6px] px-[9px] lg:text-base bg-white rounded-xl">
+									<p>🏝 <strong>Anonymous</strong> paid your invoice #IV80.</p> 
+									<p>You received <strong>3823 TON ($6500).</strong></p>
+									<br/>
+									<p>💬 A bountufl gift! Keep reaching for the stars! 🙌</p>
+									<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
+										21:25
+									</span>
+									<svg class="absolute bottom-0 -left-1 -z-1" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.145508 17.6829V17.9514H5.05179C11.3743 17.9514 16.4998 12.826 16.4998 6.50346V0.370605H4.23437V4.00731C4.23437 8.57489 4.23437 10.8587 3.59195 12.6946C2.90395 14.6608 1.70298 16.3757 0.145508 17.6829Z" fill="white"/>
+									</svg>
+								</div>
+							</div>
+
+							<div 
+								class="absolute top-0 left-0"
+								style="transform: translateY(-15%); scale: 0.9; opacity: 0.25; z-index: 0;"
+							>
+								<div class="relative w-full py-[6px] px-[9px] lg:text-base bg-white rounded-xl">
+									<p>🏝 <strong>Anonymous</strong> paid your invoice #IV53.</p> 
+									<p>You received <strong>1176 TON ($2000).</strong></p>
+									<br/>
+									<p>💬 A substantial gift! Keep striving for excellence! 🎉</p>
+									<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
+										21:25
+									</span>
+									<svg class="absolute bottom-0 -left-1 -z-1" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.145508 17.6829V17.9514H5.05179C11.3743 17.9514 16.4998 12.826 16.4998 6.50346V0.370605H4.23437V4.00731C4.23437 8.57489 4.23437 10.8587 3.59195 12.6946C2.90395 14.6608 1.70298 16.3757 0.145508 17.6829Z" fill="white"/>
+									</svg>
+								</div>
+							</div>
+
+							<div 
+								class="absolute top-0 left-0"
+								style="transform: translateY(-15%); scale: 0.9; opacity: 0.25; z-index: 0;"
+							>
+								<div class="relative w-full py-[6px] px-[9px] lg:text-base bg-white rounded-xl">
+									<p>🏝 <strong>Anonymous</strong> paid your invoice #IV53.</p> 
+									<p>You received <strong>3442 TON ($5000).</strong></p>
+									<br/>
+									<p>💬 A generous donation! Keep working hard 💪</p>
+									<span class="absolute bottom-1 right-3 text-[10px] lg:text-sm text-black text-opacity-40">
+										21:25
+									</span>
+									<svg class="absolute bottom-0 -left-1 -z-1" xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M0.145508 17.6829V17.9514H5.05179C11.3743 17.9514 16.4998 12.826 16.4998 6.50346V0.370605H4.23437V4.00731C4.23437 8.57489 4.23437 10.8587 3.59195 12.6946C2.90395 14.6608 1.70298 16.3757 0.145508 17.6829Z" fill="white"/>
+									</svg>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div class="flex flex-col gap-4">

@@ -1,34 +1,26 @@
-export default class SwapAnimation {
+import Animation from './Animation';
+
+export default class SwapAnimation extends Animation {
 	container;
 	items = [];
-	delay = 2000;
-	timer = null;
-	activeIndex = 0;
+	activeIndex = -1;
 
 	constructor(container, delay) {
+		super(delay);
+
 		this.container = container;
 		this.items = container.children;
-		
-		if(delay) this.delay = delay;
 	}
 
 	run() {
-		if(this.timer) return;
-		
-		this.animate();
-
-		this.timer = setInterval(() => {
-			this.animate();
-		}, this.delay);
+		super.run(this.animate);
 	}
 
 	stop() {
-		if(this.timer) {
-			this.timer = clearInterval(this.timer);
-		} 
+		super.stop();
 	}
 
-	animate() {
+	animate = () => {
 		const len = this.items.length;
 		this.activeIndex = this.getNextActiveIndex(this.activeIndex, len);
 

@@ -83,6 +83,10 @@
 			width: 180px;
 		}
 
+		.lg\:w-\[356px\] {
+			width: 356px;
+		}
+
 		.lg\:w-\[590px\] {
 			width: 590px;
 		}
@@ -118,6 +122,10 @@
 
 		.lg\:h-\[104px\] {
 			height: 104px;
+		}
+
+		.lg\:h-\[126px\] {
+			height: 126px;
 		}
 
 		.lg\:h-\[488px\] {

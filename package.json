@@ -13,7 +13,6 @@
   },
   "dependencies": {
     "embla-carousel": "^8.0.0-rc14",
-    "embla-carousel-autoplay": "^8.0.0-rc14",
-    "gsap": "^3.12.2"
+    "embla-carousel-autoplay": "^8.0.0-rc14"
   }
 }
