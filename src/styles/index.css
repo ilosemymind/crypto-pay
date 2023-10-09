@@ -1141,14 +1141,18 @@
 		transition-duration: 200ms;
 	}
 
-	.duration-400 {
-		transition-duration: 400ms;
+	.duration-300 {
+		transition-duration: 300ms;
 	}
 
-	.delay-150 {
-		transition-delay: 150ms;
+	.duration-500 {
+		transition-duration: 500ms;
 	}
 
+	.delay-250 {
+		transition-delay: 250ms;
+	}
+	
 	/* Overflow */
 	.overflow-hidden {
 		overflow: hidden;
