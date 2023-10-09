@@ -3,6 +3,7 @@ import Autoplay from 'embla-carousel-autoplay';
 import { addDotBtnsAndClickHandlers } from './embla-nav';
 import { listen } from './utils';
 import { enter, leave } from './transition';
+import SwapAnimation from './SwapAnimation';
 
 const emblaNode = document.querySelector('#embla');
 const dotsNode = document.querySelector('#embla-nav__dots');
@@ -40,3 +41,9 @@ listen('click', '.statistics-timeframe[data-value="today"]', selectStatisticsTim
 listen('click', '.statistics-timeframe[data-value="yesterday"]', selectStatisticsTimeframe);
 listen('click', '.statistics-timeframe[data-value="week"]', selectStatisticsTimeframe);
 listen('click', '.statistics-timeframe[data-value="month"]', selectStatisticsTimeframe);
+
+const exchangeRatesSection = document.getElementById('exchange-rates-section');
+const exchangeRatesContainer = document.getElementById('exchange-rates-container');
+const exchangeRatesAnimation = new SwapAnimation(exchangeRatesContainer, 1500);
+exchangeRatesSection.addEventListener('pointerenter', () => { exchangeRatesAnimation.run() });
+exchangeRatesSection.addEventListener('pointerleave', () => { exchangeRatesAnimation.stop() }); 

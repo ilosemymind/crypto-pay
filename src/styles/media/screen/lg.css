@@ -75,6 +75,10 @@
 			width: 6rem; /* 96px */
 		}
 
+		.lg\:w-\[172px\] {
+			width: 172px;
+		}
+
 		.lg\:w-\[180px\] {
 			width: 180px;
 		}
@@ -110,6 +114,10 @@
 
 		.lg\:h-24 {
 			height: 6rem; /* 96px */
+		}
+
+		.lg\:h-\[104px\] {
+			height: 104px;
 		}
 
 		.lg\:h-\[488px\] {

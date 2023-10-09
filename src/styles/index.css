@@ -267,6 +267,10 @@
 		width: 6.5rem; /* 104px */
 	}
 
+	.w-\[106px\] {
+		width: 106px;
+	}
+
 	.w-\[336px\] {
 		width: 21rem; /* 336px */
 	}
@@ -1109,6 +1113,17 @@
 		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
 	}
 
+	.translate-x-1\/3 {
+		--translate-x: 33%;
+		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
+	}
+
+	.translate-x-2\/3 {
+		--translate-x: 66%;
+		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
+	}
+
+
 	.translate-x-130 {
 		--translate-x: 130%;
 		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
@@ -1152,7 +1167,7 @@
 	.delay-250 {
 		transition-delay: 250ms;
 	}
-	
+
 	/* Overflow */
 	.overflow-hidden {
 		overflow: hidden;
@@ -1163,8 +1178,16 @@
 		z-index: -1;
 	}
 
+	.z-0 {
+		z-index: 0;
+	}
+
 	.z-1 {
 		z-index: 1;
+	}
+
+	.z-2 {
+		z-index: 2;
 	}
 
 	/* Cursor */

@@ -748,13 +748,16 @@
 					</div>
 				</section>
 
-				<section class="
-					flex flex-col gap-6 p-8 lg:py-[42px] lg:px-14 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-2 
-					lg:row-span-2 lg:row-start-5
-				">
+				<section 
+					id="exchange-rates-section"
+					class="
+						flex flex-col gap-6 p-8 lg:py-[42px] lg:px-14 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl lg:col-span-2 
+						lg:row-span-2 lg:row-start-5
+					"
+				>
 					<div class="flex justify-center items-center">
-						<div class="flex">
-							<div class="border-4 border-gray-50 dark:border-gray-900 rounded-full">
+						<div id="exchange-rates-container" class="relative w-[106px] h-16 lg:w-[172px] lg:h-[104px] flex z-0">
+							<div class="absolute border-4 border-gray-50 dark:border-gray-900 rounded-full translate-x-2/3 z-2 transition-transform duration-500">
 								<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="usdt-title-2" role="img">
 									<title id="usdt-title-2">Tether Icon</title>
 									<defs>
@@ -796,7 +799,7 @@
 									</g>
 								</svg>
 							</div>
-							<div class="-ml-[44px] border-4 border-gray-50 dark:border-gray-900 rounded-full">
+							<div class="absolute border-4 border-gray-50 dark:border-gray-900 rounded-full translate-x-1/3 z-1 transition-transform duration-500">
 								<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="btc-title-2" role="img">
 									<title id="btc-title-2">Bitcoin Icon</title>
 									<defs>
@@ -836,7 +839,7 @@
 									</g>
 								</svg>
 							</div>
-							<div class="-ml-[44px] border-4 border-gray-50 dark:border-gray-900 rounded-full">
+							<div class="absolute border-4 border-gray-50 dark:border-gray-900 rounded-full z-0 transition-transform duration-500">
 								<svg xmlns="http://www.w3.org/2000/svg" class="w-14 h-14 lg:w-24 lg:h-24" viewBox="0 0 112 112" aria-labelledby="bnb-title-2" role="img">
 									<title id="ton-title-2">Toncoin Icon</title>
 									<defs>
