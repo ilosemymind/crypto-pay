@@ -1,0 +1,16 @@
+@layer animations {
+	@media(prefers-reduced-motion: no-preference) {
+		/* Animations */
+		@keyframes click {
+			0% {
+				scale: 1;
+			}
+			50% {
+				scale: 1.1;
+			}
+			100% {
+				scale: 1;
+			}
+		}
+	}
+}

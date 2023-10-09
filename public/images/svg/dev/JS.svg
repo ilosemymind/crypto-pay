@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" aria-labelledby="js-title" role="img">
 	<title id="js-title">JavaScript Icon</title>
 	<defs>
-		<linearGradient id="g1" x1="NaN" x2="NaN" y1="NaN" y2="NaN">
+		<linearGradient id="g1">
 			<stop offset="0.02" stop-color="#83CD29" />
 			<stop offset="1" stop-color="#74BE1A" />
 		</linearGradient>

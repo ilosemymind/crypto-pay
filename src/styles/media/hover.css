@@ -15,16 +15,37 @@
 			--border-opacity: 1;
 		}
 
-		/* Group */
+		/* Group Text */
 		.group:hover .group-hover\:text-black {
 			--text-opacity: 1;
 			color: hsl(var(--black) / var(--text-opacity))
 		}
 
+		/* Group Transform */
 		.group:hover .group-hover\:scale-110 {
 			--scale-x: 1.1;
 			--scale-y: 1.1;
 			transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
+		}
+
+		.group:hover .group-hover\:translate-1\/3 {
+			--translate-x: 33%;
+			--translate-y: 33%;
+			transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
+		}
+
+		.group:hover .group-hover\:brightness-95 {
+			--brightness: brightness(.95);
+			filter: var(--blur) var(--brightness) var(--contrast) var(--grayscale) var(--hue-rotate) var(--invert) var(--saturate) var(--sepia) var(--drop-shadow);
+		}
+
+		/* Group Animations */
+		.group:hover .group-hover\:animate-click {
+			animation-name: click;
+			animation-duration: 400ms;
+			animation-direction: normal;
+			animation-timing-function: linear;
+			animation-delay: 400ms;
 		}
 
 		@media(prefers-color-scheme: dark) {

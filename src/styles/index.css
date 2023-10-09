@@ -2,7 +2,7 @@
 @import "./normalise.css";
 @import "./transitions.css";
 
-@layer normalise, base, utilities, media, transitions, noscript;
+@layer normalise, base, utilities, media, transitions, animations, noscript;
 
 @layer base {
 	:root {
@@ -1101,15 +1101,17 @@
 	.-translate-1\/2 {
 		--translate-x: -50%;
 		--translate-y: -50%;
-
-		transform: translate(var(--translate-x), var(--translate-y));
+		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
 	}
 
-	.translate-1\/3 {
-		--translate-x: 33%;
-		--translate-y: 33%;
+	.translate-y-full {
+		--translate-y: 100%;
+		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
+	}
 
-		transform: translate(var(--translate-x), var(--translate-y));
+	.translate-x-130 {
+		--translate-x: 130%;
+		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
 	}
 
 	/* Transition */
@@ -1125,12 +1127,26 @@
 		transition-duration: 150ms;
 	}
 
+	.transition-filter {
+		transition-property: filter;
+		transition-timing-function: ease;
+		transition-duration: 150ms;
+	}
+
 	.duration-50 {
 		transition-duration: 50ms;
 	}
 
 	.duration-200 {
 		transition-duration: 200ms;
+	}
+
+	.duration-400 {
+		transition-duration: 400ms;
+	}
+
+	.delay-150 {
+		transition-delay: 150ms;
 	}
 
 	/* Overflow */

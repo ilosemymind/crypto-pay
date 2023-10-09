@@ -7,7 +7,7 @@
 		<meta name="keywords" content="crypto payments, telegram crypto">
 		<meta property="og:title" content="Crypto Pay">
 		<meta property="og:type" content="website">
-		<meta property="og:image" content="https://meet.jit.si/images/jitsilogo.png?v=1">
+		<meta property="og:image" content="https://crypto-pay-theta.vercel.app/logo/icon-512x512.png">
 		<meta property="og:image:width" content="512"/>
 		<meta property="og:image:height" content="512"/>
 		<meta property="og:locale" content="en_US">
@@ -15,6 +15,7 @@
 		<meta name="color-scheme" content="light dark">
 		<meta name="theme-color" content="#41A4DF">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
 		<link rel="icon" type="image/webp" href="/logo/icon-128x128.webp">
 		<link rel="stylesheet" type="text/css" media="all" href="/src/styles/index.css">
 		<link rel="stylesheet" type="text/css" media="all and (prefers-color-scheme: light)" href="/src/styles/media/light.css"/>
@@ -27,6 +28,7 @@
 		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1280px)" href="/src/styles/media/screen/xl.css">
 		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1440px)" href="/src/styles/media/screen/2xl.css">
 		<link rel="stylesheet" type="text/css" media="screen and (min-width: 1600px)" href="/src/styles/media/screen/3xl.css">
+		<link rel="stylesheet" type="text/css" media="screen and (prefers-reduced-motion: no-preference)" href="/src/styles/animations.css">
 		<noscript>
 			<link rel="stylesheet" type="text/css" href="/src/styles/noscript.css">
 		</noscript>
@@ -704,15 +706,25 @@
 					flex flex-col items-center gap-6 p-8 lg:py-[42px] lg:px-14 dark:text-gray-300 bg-gray-50 dark:bg-gray-900 rounded-3xl 
 					lg:col-span-2 lg:row-span-2
 				">
-					<div class="py-7 px-5">
-						<div class="
-							relative max-w-max py-4 px-10 text-[22px] text-black
-							bg-gradient direction-[240deg] from-gray-150 to-darkblue-100 rounded-2xl
-							dark:text-white dark:from-blue-300 dark:to-blue-600
-						">
-							<span class="cursor-default">🏝 Create App</span>
+					<div class="group py-7 px-5">
+						<div class="relative">
+							<div class="
+								max-w-max py-4 px-10 text-[22px] text-black
+								bg-gradient direction-[240deg] from-gray-150 to-darkblue-100 rounded-2xl
+								dark:text-white dark:from-blue-300 dark:to-blue-600 
+								group-hover:animate-click group-hover:brightness-95 transform-filter delay-150
+							">
+								<span class="cursor-default">🏝 Create App</span>
 
-							<svg class="absolute bottom-0 right-0 translate-1/3" xmlns="http://www.w3.org/2000/svg" width="46" height="50" viewBox="0 0 46 50" fill="none">
+							</div>
+							
+							<svg 
+								class="absolute bottom-0 right-0 translate-y-full translate-x-130 group-hover:translate-1/3 transition-transform duration-400" 
+								xmlns="http://www.w3.org/2000/svg" 
+								width="46" height="50" 
+								viewBox="0 0 46 50" 
+								fill="none"
+							>
 								<path d="M11.1275 3.64677C6.7178 1.12449 1.36473 4.88154 2.23774 9.88607L8.10158 43.5003C8.98108 48.542 15.9691 49.1632 17.724 44.3556L22.4947 31.2864C22.782 30.4994 23.5293 29.9749 24.3671 29.9723L38.2797 29.9285C43.3975 29.9124 45.189 23.1294 40.7465 20.5884L11.1275 3.64677Z" fill="url(#paint0_linear_955_4961)" stroke="#F1F5F9" stroke-width="4"/>
 								<defs>
 									<linearGradient id="paint0_linear_955_4961" x1="1.90306" y1="-33.3301" x2="-24.3108" y2="39.2676" gradientUnits="userSpaceOnUse">
@@ -1353,7 +1365,7 @@
 							<svg xmlns="http://www.w3.org/2000/svg" class="w-16 h-16 lg:w-24 lg:h-24" viewBox="0 0 300 300" aria-labelledby="js-title" role="img">
 								<title id="js-title">JavaScript Icon</title>
 								<defs>
-									<linearGradient id="g1" x1="NaN" x2="NaN" y1="NaN" y2="NaN">
+									<linearGradient id="g1">
 										<stop offset="0.02" stop-color="#83CD29" />
 										<stop offset="1" stop-color="#74BE1A" />
 									</linearGradient>
