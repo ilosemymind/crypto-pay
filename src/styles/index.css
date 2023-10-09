@@ -1108,8 +1108,9 @@
 		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
 	}
 
-	.translate-y-full {
-		--translate-y: 100%;
+	.translate-1\/2 {
+		--translate-x: 50%;
+		--translate-y: 50%;
 		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
 	}
 
@@ -1120,12 +1121,6 @@
 
 	.translate-x-2\/3 {
 		--translate-x: 66%;
-		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
-	}
-
-
-	.translate-x-130 {
-		--translate-x: 130%;
 		transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
 	}
 

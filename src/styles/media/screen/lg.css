@@ -351,5 +351,15 @@
 			--translate-y: -50%;
 			transform: translate(var(--translate-x), var(--translate-y));
 		}
+
+		.lg\:translate-y-full {
+			--translate-y: 100%;
+			transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
+		}
+
+		.lg\:translate-x-130 {
+			--translate-x: 130%;
+			transform: translate(var(--translate-x), var(--translate-y)) rotate(var(--rotate)) skewX(var(--skew-x)) skewY(var(--skew-y)) scaleX(var(--scale-x)) scaleY(var(--scale-y));
+		}
 	}
 }
