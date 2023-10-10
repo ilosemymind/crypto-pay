@@ -1,5 +1,5 @@
-// import EmblaCarousel from 'embla-carousel';
-// import Autoplay from 'embla-carousel-autoplay';
+import EmblaCarousel from 'embla-carousel';
+import Autoplay from 'embla-carousel-autoplay';
 import { addDotBtnsAndClickHandlers } from '/src/js/embla-nav';
 import { listen } from '/src/js/utils';
 import { enter, leave } from '/src/js/transition';
