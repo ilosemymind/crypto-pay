@@ -1,51 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" aria-labelledby="etc-title" role="img">
-	<title id="etc-title">Ethereum Icon</title>
+<svg 
+	viewBox="0 0 112 112"
+	width="112" height="112" 
+	aria-labelledby="eth-title" 
+	role="img"
+	xmlns="http://www.w3.org/2000/svg"
+	xmlns:svg="http://www.w3.org/2000/svg"
+>
+	<title id="eth-title">Ethereum Icon</title>
 	<defs>
-		<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
-			id="filter0_dd_955_4317" width="112" x="0" y="0">
-			<feFlood flood-opacity="0" result="BackgroundImageFix" />
-			<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-			<feOffset />
-			<feGaussianBlur stdDeviation="4" />
-			<feComposite in2="hardAlpha" operator="out" />
-			<feColorMatrix type="matrix"
-				values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
-			<feBlend in2="BackgroundImageFix" />
-			<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-			<feOffset dy="2" />
-			<feGaussianBlur stdDeviation="1.5" />
-			<feComposite in2="hardAlpha" operator="out" />
-			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
-			<feBlend in2="effect1_dropShadow_955_4317" />
-			<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4317" />
-		</filter>
-		<linearGradient id="paint0_linear_955_4317" x1="1.54" x2="-0.39" y1="-0.41" y2="1.52">
-			<stop stop-color="#E9E9E7" />
-			<stop offset="0.27" stop-color="#EFEEEC" />
-			<stop offset="0.61" stop-color="#EEEEEC" />
-			<stop offset="1" stop-color="#D5D4D0" />
-		</linearGradient>
-		<linearGradient id="paint1_linear_955_4317" x1="-0.02" x2="1.16" y1="1.86" y2="1.61">
+		<linearGradient id="g1" x1="1" x2="0" y2="1">
 			<stop stop-color="#EEEDF1" />
-			<stop offset="1" stop-color="white" />
+			<stop offset="0.84" stop-color="#FFF" />
 		</linearGradient>
 	</defs>
 	<g class="layer">
-		<g filter="url(#filter0_dd_955_4317)" id="svg_1">
-			<rect fill="url(#paint0_linear_955_4317)" height="96" id="svg_2" rx="48" width="96" x="8"
-				y="8" />
-			<rect fill="url(#paint1_linear_955_4317)" height="112" id="svg_3" rx="56" width="112" x="0"
-				y="0" />
-			<path d="m55.77,24.58l-0.44,1.44l0,41.68l0.44,0.42l19.83,-11.43l-19.83,-32.11z" fill="#343434"
-				id="svg_4" transform="matrix(1 0 0 1 0 0)" />
-			<path d="m55.76,24.58l-19.83,32.11l19.83,11.43l0,-20.23l0,-23.31z" fill="#8C8C8C" id="svg_5" />
-			<path d="m55.76,71.78l-0.24,0.3l0,14.84l0.24,0.7l19.85,-27.27l-19.85,11.43z" fill="#3C3C3B"
-				id="svg_6" />
-			<path d="m55.76,87.62l0,-15.84l-19.83,-11.43l19.83,27.27z" fill="#8C8C8C" id="svg_7" />
-			<path d="m55.76,68.12l19.84,-11.44l-19.84,-8.79l0,20.23z" fill="#141414" id="svg_8" />
-			<path d="m35.93,56.68l19.83,11.44l0,-20.23l-19.83,8.79z" fill="#393939" id="svg_9" />
+		<rect fill="url(#g1)" height="112" id="svg_2" rx="56" width="112" x="0" y="0" />
+		<g id="svg_3">
+			<path d="m56.24,17.75l-0.51,1.71l0,49.53l0.51,0.5l23.49,-13.59l-23.49,-38.15z" fill="#343434"
+				id="svg_4" />
+			<path d="m56.24,17.75l-23.49,38.15l23.49,13.59l0,-24.04l0,-27.7z" fill="#8C8C8C" id="svg_5" />
+			<path d="m56.24,73.84l-0.29,0.34l0,17.64l0.29,0.83l23.51,-32.4l-23.51,13.58l0,0.01z"
+				fill="#3C3C3B" id="svg_6" />
+			<path d="m56.24,92.66l0,-18.82l-23.49,-13.58l23.49,32.4z" fill="#8C8C8C" id="svg_7" />
+			<path d="m56.24,69.49l23.49,-13.59l-23.49,-10.45l0,24.04z" fill="#141414" id="svg_8" />
+			<path d="m32.75,55.9l23.49,13.59l0,-24.04l-23.49,10.45z" fill="#393939" id="svg_9" />
 		</g>
 	</g>
 </svg>

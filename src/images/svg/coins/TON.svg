@@ -1,38 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112 112" aria-labelledby="ton-title" role="img">
+<svg 
+	viewBox="0 0 56 56" 
+	width="96" height="96"
+	aria-labelledby="ton-title" 
+	role="img"
+	xmlns="http://www.w3.org/2000/svg" 
+	xmlns:svg="http://www.w3.org/2000/svg"
+>
 	<title id="ton-title">Toncoin Icon</title>
 	<defs>
-		<filter color-interpolation-filters="sRGB" filterUnits="userSpaceOnUse" height="112"
-			id="filter0_dd_955_4333" width="112" x="0" y="0">
-			<feFlood flood-opacity="0" result="BackgroundImageFix" />
-			<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-			<feOffset />
-			<feGaussianBlur stdDeviation="4" />
-			<feComposite in2="hardAlpha" operator="out" />
-			<feColorMatrix type="matrix"
-				values="0 0 0 0 0.715625 0 0 0 0 0.728516 0 0 0 0 0.75 0 0 0 0.04 0" />
-			<feBlend in2="BackgroundImageFix" />
-			<feColorMatrix in="SourceAlpha" result="hardAlpha" type="matrix"
-				values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" />
-			<feOffset dy="2" />
-			<feGaussianBlur stdDeviation="1.5" />
-			<feComposite in2="hardAlpha" operator="out" />
-			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.02 0" />
-			<feBlend in2="effect1_dropShadow_955_4333" />
-			<feBlend in="SourceGraphic" in2="effect2_dropShadow_955_4333" />
-		</filter>
-		<linearGradient id="paint0_linear_955_4333" x1="0.93" x2="0.15" y1="-0.08" y2="1.22">
-			<stop stop-color="#04BEFE" />
-			<stop offset="1" stop-color="#4481EB" />
+		<linearGradient id="g1" x1="85.34%" y1="-8.81%" x2="14.66%" y2="108.81%">
+		<stop stop-color="#04BEFE"/>
+		<stop offset="1.08" stop-color="#4481EB"/>
 		</linearGradient>
 	</defs>
 	<g class="layer">
-		<g filter="url(#filter0_dd_955_4333)" id="svg_1">
-			<rect fill="url(#paint0_linear_955_4333)" height="112" id="svg_2" rx="56" width="112" x="0"
-				y="0" />
-			<path
-				d="m72.82,34.79l-32.78,0c-6.03,0 -9.85,6.5 -6.82,11.76l20.23,35.06c1.32,2.29 4.63,2.29 5.95,0l20.24,-35.06c3.02,-5.25 -0.8,-11.76 -6.82,-11.76l0,0zm-19.38,36.31l-4.41,-8.53l-10.63,-19.01c-0.7,-1.22 0.16,-2.78 1.63,-2.78l13.4,0l0,30.32l0.01,0zm21.01,-27.55l-10.63,19.02l-4.41,8.53l0,-30.32l13.4,0c1.47,0 2.34,1.56 1.64,2.77z"
-				fill="white" id="svg_3" />
-		</g>
+		<circle cx="28" cy="28" fill="url(#g1)" id="svg_1" r="28"/>
+		<path d="m17.97,15.08l19.74,0c0.75,0 1.38,0.12 2.14,0.49c0.88,0.37 1.38,0.98 1.63,1.48c0,0 0,0.12 0.13,0.12c0.38,0.61 0.63,1.35 0.63,2.21c0,0.74 -0.13,1.48 -0.63,2.21c0,0 0,0 0,0l-12.45,20.9c-0.25,0.49 -0.75,0.74 -1.38,0.74c-0.5,0 -1.01,-0.25 -1.38,-0.74l-12.19,-20.9c0,0 0,0 0,0c-0.25,-0.49 -0.75,-1.11 -0.75,-2.09c-0.13,-0.86 0.13,-1.6 0.5,-2.34c0.38,-0.74 1.01,-1.35 1.89,-1.6c0.75,-0.49 1.63,-0.49 2.14,-0.49zm8.3,2.95l-8.3,0c-0.5,0 -0.75,0 -0.88,0.12c-0.25,0.12 -0.38,0.25 -0.5,0.49c-0.13,0.12 -0.13,0.37 -0.13,0.61c0,0.12 0.13,0.25 0.38,0.74c0,0 0,0 0,0l9.43,15.98l0,-17.95zm3.02,0l0,18.07l9.55,-16.1c0.13,-0.25 0.13,-0.49 0.13,-0.74c0,-0.25 0,-0.49 -0.13,-0.61c-0.13,-0.12 -0.13,-0.25 -0.25,-0.25c0,0 -0.13,-0.12 -0.13,-0.12c-0.25,-0.12 -0.5,-0.12 -0.88,-0.12l-8.3,0l0,-0.12z" fill="#FFFFFF" id="svg_2"/>
 	</g>
 </svg>
