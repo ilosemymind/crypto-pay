@@ -3,7 +3,7 @@
 	font-style:  normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url("src/fonts/SFMono-Regular.otf");
+	src: url("../fonts/SFMono-Regular.otf");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
 	font-style:  normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url("src/fonts/SFPro-Regular.otf");
+	src: url("../fonts/SFPro-Regular.otf");
 }
 
 
@@ -20,7 +20,7 @@
 	font-style:  normal;
 	font-weight: 400;
 	font-display: swap;
-	src: url("src/fonts/Inter-Regular.woff2?v=3.19") format("woff2");
+	src: url("../fonts/Inter-Regular.woff2?v=3.19") format("woff2");
 }
 
 @font-face {
@@ -28,7 +28,7 @@
 	font-style:  normal;
 	font-weight: 500;
 	font-display: swap;
-	src: url("src/fonts/Inter-Medium.woff2?v=3.19") format("woff2");
+	src: url("../fonts/Inter-Medium.woff2?v=3.19") format("woff2");
 }
 
 @font-face {
@@ -36,5 +36,5 @@
 	font-style:  normal;
 	font-weight: 600;
 	font-display: swap;
-	src: url("src/fonts/Inter-SemiBold.woff2?v=3.19") format("woff2");
+	src: url("../fonts/Inter-SemiBold.woff2?v=3.19") format("woff2");
 }

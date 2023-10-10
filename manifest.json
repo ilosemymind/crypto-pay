@@ -12,38 +12,38 @@
 	"orientation": "portrait-primary",
 	"icons": [
 		{
-			"src": "/public/logo/icon-64x64.webp",
+			"src": "src/logo/icon-64x64.webp",
 			"type": "image/webp",
 			"sizes": "64x64"
 		},
 		{
-			"src": "/public/logo/icon-96x96.webp",
+			"src": "src/logo/icon-96x96.webp",
 			"type": "image/webp",
 			"sizes": "96x96"
 		},
 		{
-			"src": "/public/logo/icon-128x128.webp",
+			"src": "src/logo/icon-128x128.webp",
 			"type": "image/webp",
 			"sizes": "128x128"
 		},
 		{
-			"src": "/public/logo/icon-144x144.webp",
+			"src": "src/logo/icon-144x144.webp",
 			"type": "image/webp",
 			"sizes": "144x144",
 			"purpose": "maskable"
 		},
 		{
-			"src": "/public/logo/icon-192x192.webp",
+			"src": "src/logo/icon-192x192.webp",
 			"type": "image/webp",
 			"sizes": "192x192"
 		},
 		{
-			"src": "/public/logo/icon-256x256.webp",
+			"src": "src/logo/icon-256x256.webp",
 			"type": "image/webp",
 			"sizes": "256x256"
 		},
 		{
-			"src": "/public/logo/icon-512x512.png",
+			"src": "src/logo/icon-512x512.png",
 			"type": "image/png",
 			"sizes": "512x512"
 		}
