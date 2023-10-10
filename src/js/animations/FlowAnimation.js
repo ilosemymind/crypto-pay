@@ -1,5 +1,4 @@
 import Animation from './Animation';
-import anime from 'animejs/lib/anime.es.js';
 
 export default class FlowAnimation extends Animation {
 	container;
