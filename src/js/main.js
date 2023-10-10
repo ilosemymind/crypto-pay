@@ -1,10 +1,10 @@
 // import EmblaCarousel from 'embla-carousel';
 // import Autoplay from 'embla-carousel-autoplay';
-import { addDotBtnsAndClickHandlers } from './embla-nav';
-import { listen } from './utils';
-import { enter, leave } from './transition';
-import SwapAnimation from './animations/SwapAnimation';
-import FlowAnimation from './animations/FlowAnimation';
+import { addDotBtnsAndClickHandlers } from '/src/js/embla-nav';
+import { listen } from '/src/js/utils';
+import { enter, leave } from '/src/js/transition';
+import SwapAnimation from '/src/js/animations/SwapAnimation';
+import FlowAnimation from '/src/js/animations/FlowAnimation';
 
 const emblaNode = document.querySelector('#embla');
 const dotsNode = document.querySelector('#embla-nav__dots');
