@@ -263,8 +263,8 @@
 		width: 4rem; /* 64px */
 	}
 
-	.w-\[82px\] {
-		width: 82px;
+	.w-\[70px\] {
+		width: 70px;
 	}
 
 	.w-\[104px\] {
@@ -604,6 +604,11 @@
 	.px-\[9px\] {
 		padding-left: 9px;
 		padding-right: 9px;
+	}
+
+	.px-2 {
+		padding-left: 0.5rem; /* 8px */
+		padding-right: 0.5rem; /* 8px */
 	}
 
 	.px-3 {
