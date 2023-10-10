@@ -15,6 +15,10 @@
 			min-width: 445px;
 		}
 
+		.lg\:max-w-max {
+			max-width: max-content;
+		}
+
 		.lg\:max-w-reset {
 			max-width: initial;
 		}
